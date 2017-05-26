@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{$goods.name}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="__PUBLIC__/css/public.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/clss.css">
+    <style>
+        .p_line{line-height: 30px;}
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="logo">
+        <img src="__PUBLIC__/img/logo_s.png" alt="">
+        <div class="content">
+            <h2>A梦校园</h2>
+            <p>A梦校园</p>
+        </div>
+    </div>
+    <div class="download">
+        <a href="{$tc_yyb}">点击下载</a>
+    </div>
+</div>
+
+<div class="box">
+    <div class="details">
+        <img src="__APP__{$goods.image}" alt="">
+        <h2>{$goods.name}</h2>
+        <p class="price">￥{$goods.price}</p>
+        <p class="p_line"><i class="xin"></i>{$goods.collect_count}</p>
+        <p class="text">{$goods.text_content}</p>
+    </div>
+    <div class="list">
+        <h2>
+            <span></span>
+            <p>猜你喜欢</p>
+            <span></span>
+        </h2>
+        <ul>
+            <foreach name="list" item="l">
+            <li>
+                <img src="__APP__{$l.image}" alt="">
+                <p>{$l.name}</p>
+                <p class="price">￥89.00</p>
+            </li>
+            </foreach>
+        </ul>
+    </div>
+
+</div>
+
+
+<div class="app">
+    <img src="__PUBLIC__/img/logo_s.png" alt="">
+    <p><strong>A梦校园</strong> <span>A梦校园</span></p>
+    <a href="{$tc_yyb}">
+        下载A梦校园 客户端查看更多
+    </a>
+</div>
+
+<div class="footer">
+    <div class="footer_box">
+        <a href="{$goods.tb_link}">立即前往购买</a>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

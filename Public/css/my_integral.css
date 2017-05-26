@@ -1,0 +1,128 @@
+#my_integral{
+    min-width:1280px;
+}
+#my_integral .integral_box{
+    width:960px;
+    margin:0 auto;
+}
+#my_integral .integral_content{
+    float: left;
+    margin:60px 0;
+}
+#my_integral .integral_content .integral_left{
+    width:126px;
+    height:246px;
+    border:1px solid #e6e6e6;
+    float: left;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    margin-right:30px;
+    padding:10px;
+}
+#my_integral .name_box{
+    text-align: center;
+    margin:30px 0 15px 0;
+    padding-bottom:30px;
+    font-size:16px;
+    color: #4e9ee9;
+    border-bottom:1px solid #e6e6e6;
+}
+#my_integral .name_box img{
+    width:64px;
+    height:64px;
+    margin-bottom:10px;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+}
+#my_integral .name_box p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#my_integral .integral_num{
+    color: #4e9ee9;
+    font-size:16px;
+}
+#my_integral .integral_num p{
+    font-size:14px;
+}
+
+#my_integral .integral_num .integral_num{
+    padding-left:30px;
+    margin-left:40px;
+    height:30px;
+    background-image: url("../img/integral_num.png");
+    background-repeat:no-repeat;
+    background-position: 0px 2px;
+    float: left;
+    margin-top:10px;
+}
+#my_integral .integral_num .integral_num p{
+    width:80px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#my_integral .record_title{
+    border-bottom:1px solid #d6d6d6;
+    height:45px;
+    line-height: 45px;
+    color: #4c4c4c;
+}
+#my_integral .record_title .dui_ico{
+    width: 30px;
+    height:45px;
+    float: left;
+    margin-left:25px;
+    background-image: url(../img/dui_ico.png);
+    background-repeat:no-repeat;
+    background-position: 2px 12px;
+}
+#my_integral .integral_right ul{
+    padding:24px 0px 24px 24px;
+}
+#my_integral .integral_right ul li{
+    height:75px;
+    overflow: hidden;
+}
+#my_integral .integral_right .record_left{
+    float: left;
+    width:300px;
+    border-bottom:1px solid #f6f6f6;
+}
+#my_integral .integral_content .record_name{
+    color: #1a1a1a;
+    height:20px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
+    white-space:nowrap;
+    margin-bottom:10px;
+}
+#my_integral .integral_content .record_time{
+    color: #808080;
+}
+#my_integral .integral_right .record_right{
+    float: right;
+    line-height:44px;
+    margin-right:40px;
+    color: #f3450f;
+}
+
+
+
+
+
+
+#my_integral .integral_content .integral_right{
+    float: left;
+    width:478px;
+    border:1px solid #e6e6e6;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+}

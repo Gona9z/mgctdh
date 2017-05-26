@@ -1,0 +1,301 @@
+[ 2017-04-08T13:48:46+08:00 ] ::1 /axd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000980s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001171s ]
+ERR: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI)
+
+[ 2017-04-08T13:49:18+08:00 ] ::1 /axd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+ERR: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI)
+
+[ 2017-04-08T13:49:19+08:00 ] ::1 /axd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+ERR: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI)
+
+[ 2017-04-08T13:49:26+08:00 ] ::1 /axd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+ERR: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI)
+
+[ 2017-04-08T13:49:27+08:00 ] ::1 /axd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+ERR: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI)
+
+[ 2017-04-08T13:49:33+08:00 ] ::1 /axd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `axd_banner` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `axd_banner` ORDER BY order_n  [ RunTime:0.0014s ]
+SQL: SELECT s.subject_id,s.image,s.`name`,s.text_content FROM axd_subject s GROUP BY s.subject_id ORDER BY s.add_time DESC LIMIT 0,24 [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) as count FROM axd_subject s [ RunTime:0.0037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001491s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001599s ]
+NOTIC: [8] Undefined variable: keyword G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 139 行.
+NOTIC: [8] Undefined index: axd_user G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 149 行.
+NOTIC: [8] Undefined variable: URL G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 226 行.
+NOTIC: [8] Undefined index: name G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 253 行.
+NOTIC: [8] Undefined index: name G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 253 行.
+NOTIC: [8] Undefined index: name G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 253 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038910s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000814s ]
+
+[ 2017-04-08T13:49:33+08:00 ] ::1 /axd/Index/qr_code/type/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000728s ]
+
+[ 2017-04-08T13:49:33+08:00 ] ::1 /axd/Index/qr_code/type/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000756s ]
+
+[ 2017-04-08T13:49:36+08:00 ] ::1 /axd/User/checkIsLogin?0.040279636609876324
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+
+[ 2017-04-08T13:49:36+08:00 ] ::1 /axd/User/checkIsLogin?0.6995802944666727
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+
+[ 2017-04-08T13:49:37+08:00 ] ::1 /axd/Subject/subjectDetail/sid/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `axd_subject` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `axd_subject` WHERE `subject_id` = 14 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `axd_goods` [ RunTime:0.0072s ]
+SQL: SELECT g.* FROM axd_goods g INNER JOIN axd_subject_goods sg ON sg.goods_id = g.goods_id  WHERE ( subject_id='14' )  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `axd_subject_collect` [ RunTime:0.0065s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `axd_subject_collect` WHERE `user_id` = null AND `subject_id` = 14 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000315s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000430s ]
+NOTIC: [8] Undefined variable: keyword G:\proj_php\axd\Application\Runtime\Cache\Home\e77bb5348092951721b3f5087d38e9e4.php 第 141 行.
+NOTIC: [8] Undefined index: axd_user G:\proj_php\axd\Application\Runtime\Cache\Home\e77bb5348092951721b3f5087d38e9e4.php 第 151 行.
+NOTIC: [8] Undefined variable: URL G:\proj_php\axd\Application\Runtime\Cache\Home\e77bb5348092951721b3f5087d38e9e4.php 第 228 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\e77bb5348092951721b3f5087d38e9e4.php 第 260 行.
+NOTIC: [8] Undefined index: axd_user G:\proj_php\axd\Application\Runtime\Cache\Home\e77bb5348092951721b3f5087d38e9e4.php 第 445 行.
+NOTIC: [8] Undefined index: axd_user G:\proj_php\axd\Application\Runtime\Cache\Home\e77bb5348092951721b3f5087d38e9e4.php 第 448 行.
+NOTIC: [8] Undefined index: axd_user G:\proj_php\axd\Application\Runtime\Cache\Home\e77bb5348092951721b3f5087d38e9e4.php 第 452 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029474s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2017-04-08T13:49:38+08:00 ] ::1 /axd/Index/qr_code/type/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000520s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+
+[ 2017-04-08T13:49:38+08:00 ] ::1 /axd/Index/qr_code/type/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000631s ]
+
+[ 2017-04-08T13:49:38+08:00 ] ::1 /axd/Subject/subjectComment.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `axd_subject_comment` [ RunTime:0.0163s ]
+SQL: SELECT u.*,sc.content,sc.time FROM axd_subject_comment sc INNER JOIN axd_user u ON u.user_id = sc.user_id  WHERE `subject_id` = '14' ORDER BY time DESC LIMIT 0,10   [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM axd_subject_comment sc INNER JOIN axd_user u ON u.user_id = sc.user_id  WHERE `subject_id` = '14' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-08T13:49:39+08:00 ] ::1 /axd/User/checkIsLogin?0.26942390346722456
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+
+[ 2017-04-08T13:49:42+08:00 ] ::1 /axd/Subject/subjectDetail/sid/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `axd_subject` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `axd_subject` WHERE `subject_id` = 14 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `axd_goods` [ RunTime:0.0045s ]
+SQL: SELECT g.* FROM axd_goods g INNER JOIN axd_subject_goods sg ON sg.goods_id = g.goods_id  WHERE ( subject_id='14' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `axd_subject_collect` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `axd_subject_collect` WHERE `user_id` = null AND `subject_id` = 14 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000301s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000414s ]
+NOTIC: [8] Undefined variable: keyword G:\proj_php\axd\Application\Runtime\Cache\Home\e77bb5348092951721b3f5087d38e9e4.php 第 141 行.
+NOTIC: [8] Undefined index: axd_user G:\proj_php\axd\Application\Runtime\Cache\Home\e77bb5348092951721b3f5087d38e9e4.php 第 151 行.
+NOTIC: [8] Undefined variable: URL G:\proj_php\axd\Application\Runtime\Cache\Home\e77bb5348092951721b3f5087d38e9e4.php 第 228 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\e77bb5348092951721b3f5087d38e9e4.php 第 260 行.
+NOTIC: [8] Undefined index: axd_user G:\proj_php\axd\Application\Runtime\Cache\Home\e77bb5348092951721b3f5087d38e9e4.php 第 445 行.
+NOTIC: [8] Undefined index: axd_user G:\proj_php\axd\Application\Runtime\Cache\Home\e77bb5348092951721b3f5087d38e9e4.php 第 448 行.
+NOTIC: [8] Undefined index: axd_user G:\proj_php\axd\Application\Runtime\Cache\Home\e77bb5348092951721b3f5087d38e9e4.php 第 452 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000606s ]
+
+[ 2017-04-08T13:49:42+08:00 ] ::1 /axd/Index/qr_code/type/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000619s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000739s ]
+
+[ 2017-04-08T13:49:42+08:00 ] ::1 /axd/Index/qr_code/type/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000688s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000812s ]
+
+[ 2017-04-08T13:49:43+08:00 ] ::1 /axd/Subject/subjectComment.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+SQL: SHOW COLUMNS FROM `axd_subject_comment` [ RunTime:0.0044s ]
+SQL: SELECT u.*,sc.content,sc.time FROM axd_subject_comment sc INNER JOIN axd_user u ON u.user_id = sc.user_id  WHERE `subject_id` = '14' ORDER BY time DESC LIMIT 0,10   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM axd_subject_comment sc INNER JOIN axd_user u ON u.user_id = sc.user_id  WHERE `subject_id` = '14' LIMIT 1   [ RunTime:0.0005s ]
+

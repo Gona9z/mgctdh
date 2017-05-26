@@ -1,0 +1,283 @@
+[ 2017-04-24T10:21:46+08:00 ] ::1 /axd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001197s ]
+ERR: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI)
+
+[ 2017-04-24T10:21:49+08:00 ] ::1 /axd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+ERR: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI)
+
+[ 2017-04-24T10:21:50+08:00 ] ::1 /axd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+ERR: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI)
+
+[ 2017-04-24T10:21:50+08:00 ] ::1 /axd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+ERR: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI)
+
+[ 2017-04-24T10:21:51+08:00 ] ::1 /axd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001661s ]
+ERR: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI)
+
+[ 2017-04-24T10:21:51+08:00 ] ::1 /axd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+ERR: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI)
+
+[ 2017-04-24T10:21:53+08:00 ] ::1 /axd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+ERR: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI)
+
+[ 2017-04-24T10:22:30+08:00 ] ::1 /axd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+SQL: SHOW COLUMNS FROM `axd_banner` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `axd_banner` ORDER BY order_n  [ RunTime:0.0003s ]
+SQL: SELECT s.subject_id,s.image,s.`name`,s.text_content FROM axd_subject s GROUP BY s.subject_id ORDER BY s.add_time DESC LIMIT 0,24 [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) as count FROM axd_subject s [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+NOTIC: [8] Undefined variable: keyword G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 139 行.
+NOTIC: [8] Undefined index: axd_user G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 149 行.
+NOTIC: [8] Undefined variable: URL G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 226 行.
+NOTIC: [8] Undefined index: name G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 253 行.
+NOTIC: [8] Undefined index: name G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 253 行.
+NOTIC: [8] Undefined index: name G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 253 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031295s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000916s ]
+
+[ 2017-04-24T10:22:30+08:00 ] ::1 /axd/Index/qr_code/type/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000753s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000886s ]
+
+[ 2017-04-24T10:22:30+08:00 ] ::1 /axd/Index/qr_code/type/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000720s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000848s ]
+
+[ 2017-04-24T10:22:39+08:00 ] ::1 /axd/Index/ApiTempIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000241s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000362s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010963s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011078s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2017-04-24T10:24:43+08:00 ] ::1 /axd/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+SQL: SHOW COLUMNS FROM `axd_banner` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `axd_banner` ORDER BY order_n  [ RunTime:0.0003s ]
+SQL: SELECT s.subject_id,s.image,s.`name`,s.text_content FROM axd_subject s GROUP BY s.subject_id ORDER BY s.add_time DESC LIMIT 0,24 [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) as count FROM axd_subject s [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000313s ]
+NOTIC: [8] Undefined variable: keyword G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 139 行.
+NOTIC: [8] Undefined index: axd_user G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 149 行.
+NOTIC: [8] Undefined variable: URL G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 226 行.
+NOTIC: [8] Undefined index: name G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 253 行.
+NOTIC: [8] Undefined index: name G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 253 行.
+NOTIC: [8] Undefined index: name G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 253 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+NOTIC: [8] Undefined index: logo_image G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 275 行.
+NOTIC: [8] Undefined index: user_id G:\proj_php\axd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 298 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029098s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000599s ]
+
+[ 2017-04-24T10:24:43+08:00 ] ::1 /axd/Index/qr_code/type/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000635s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000763s ]
+
+[ 2017-04-24T10:24:43+08:00 ] ::1 /axd/Index/qr_code/type/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000793s ]
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{$pro_name}台管理系统</title>
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/share.css" /><!--另添加样式文件-->
+    <include  file="Public/assets/common/header.html"/><!--头部文件-->
+    <link href="__PUBLIC__/assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <!--讨论区滚动条begin-->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/css/jscrollpane1.css" />
+    <!--上传文件-->
+    <link href="__PUBLIC__/assets/plugins/bootstrap-fileinput/css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="__PUBLIC__/back_css/edit_common.css">
+
+    <script src="__PUBLIC__/back_js/jquery-form.js"></script>
+    <style>
+        #commodity_main textarea{
+            width: 98%;
+            height: 600px;
+        }
+    </style>
+</head>
+
+<body>
+<include  file="Public/assets/common/top.html"/>
+<div class="main-container" id="main-container">
+    <include  file="Public/assets/common/nav.html"/><!--左侧导航栏-->
+    <div class="main-content">
+        <div class="breadcrumbs" id="breadcrumbs">
+            <ul class="breadcrumb">
+                <li>
+                    <i class="icon-home home-icon"></i>
+                    <a href="#">首页</a>
+                </li>
+                <li class="active">系统设置</li>
+                <li class="active">服务协议</li>
+            </ul><!-- .breadcrumb -->
+        </div>
+
+        <div id="commodity_details">
+            <h1><img src="__PUBLIC__/back_img/ico.png" alt="">修改PC大事件</h1>
+            <div id="commodity_list">
+                <!--通用信息_开始-->
+                <form action="__ACTION__" method="post" id="edit_form" enctype="multipart/form-data" >
+
+                    <div id="commodity_main" class="clear">
+                        <table>
+                            <tr>
+                                <th>服务协议：</th>
+                                <td>
+                                    <textarea name="service">{$service.service}</textarea>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <input id="li1_btn" type="button" value="保存"/>
+                </form>
+                <!--通用信息_结束-->
+            </div>
+        </div>
+    </div><!-- /.main-content -->
+</div><!--main-container-->
+
+<include  file="Public/assets/common/footer.html"/>
+
+</body>
+
+<script>
+    $(".xtsz").addClass("active open");
+    $(".xtsz .fwxy").addClass("active");
+    $('#li1_btn').click(function(){
+        $('#edit_form').ajaxSubmit({
+            url:"__ACTION__",
+            dataType: "json",
+            beforeSend: function() {
+                $('#li1_btn').attr('disabled','true');
+                $('#li1_btn').attr('value','上传中...');
+            },
+            type: "post",
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            success : function(data){
+                alert(data.msg);
+                if(0==data.errorCode){
+                    window.location.reload();
+                }else{
+                    $('#li1_btn').removeAttr('disabled');
+                    $('#li1_btn').attr('value','保存');
+                }
+            }
+        });
+    });
+</script>
+</html>

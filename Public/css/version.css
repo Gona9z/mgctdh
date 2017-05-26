@@ -1,0 +1,194 @@
+#version{
+    min-width:1280px;
+}
+#version .version_box{
+    width:960px;
+    margin:0 auto;
+}
+#version .version_box .version_choose{
+    border:1px solid #ddd;
+    float: left;
+    margin:20px 0px 30px 0px;
+    width:100%;
+}
+#version .version_box .choose_text{
+    float: left;
+    width:100%;
+    line-height: 48px;
+    border-bottom:1px solid #ddd;
+}
+#version .version_box .choose_text li{
+    float: left;
+    margin:0px 10px 0px 20px;
+    cursor: pointer;
+}
+#version .version_box .choose_text li:hover{
+    color: #139ffc;
+    border-bottom:3px solid #139ffc;
+}
+#version .choose_text .border{
+    color: #139ffc;
+    border-bottom:3px solid #139ffc;
+}
+#version .choose_img{
+    float: left;
+    width:100%;
+    height:150px;
+    cursor: pointer;
+}
+#version .choose_img .border,.hover_border{
+    border:1px solid #139ffc;
+    margin:-1px;
+}
+#version .choose_img .color,.hover_color{
+    color: #139ffc;
+}
+
+#version .choose_img li{
+    float: left;
+    width:60px;
+    margin:30px 10px 0px 46px;
+    text-align: center;
+}
+#version .choose_img li p{
+    margin-top:10px;
+}
+.god_zxz,.god_xh,.god_nsp,.god_ssp,.god_xqx,.god_xxr,.god_bl,.god_hlf{
+    width:58px;
+    height:58px;
+    overflow: hidden;
+    background-repeat:no-repeat;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+}
+#version .god_zxz{
+    background-image: url("../img/god_zxz_ico.png");
+}
+#version .god_xh{
+    background-image: url("../img/god_xhmm_ico.png");
+}
+#version .god_nsp{
+    background-image: url("../img/god_nsp_ico.png");
+}
+#version .god_ssp{
+    background-image: url("../img/god_ssp_ico.png");
+}
+#version .god_xqx{
+    background-image: url("../img/god_xqx_ico.png");
+}
+#version .god_xxr{
+    background-image: url("../img/god_xxr_ico.png");
+    background-position: -20px 0;
+}
+#version .god_bl{
+    background-image: url("../img/god_bl_ico.png");
+    background-position: -4px 0
+}
+#version .god_hlf{
+    background-image: url("../img/god_hlf_ico.png");
+}
+
+
+
+#version .baby_details {
+    float: left;
+}
+#version .baby_details ul{
+    float: left;
+    margin-left:-20px;
+}
+#version .baby_details ul li{
+    width:222px;
+    height:332px;
+    float: left;
+    border:1px solid #e6e6e6;
+    margin-bottom:20px;
+    margin-left:20px;
+}
+#version .baby_details ul li:hover{
+    -webkit-box-shadow: 2px 2px 8px #999;
+    -moz-box-shadow: 2px 2px 8px #999;
+    box-shadow: 1px 2px 8px #ddd;
+}
+#version .baby_img{
+    width: 222px;
+    height:222px;
+    overflow: hidden;
+}
+#version .baby_img img{
+    max-width:222px;
+    max-height:222px;
+}
+#version .baby_content {
+    padding:20px 10px;
+}
+#version .baby_content p{
+    height:40px;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+#version .baby_price{
+    padding:0px 10px;
+}
+#version .baby_price .price{
+    float: left;
+    color: #ff2d47;
+}
+#version .baby_price .praise_ico{
+    width:18px;
+    height:20px;
+    float: left;
+    background-image: url(../img/praise_ico.png);
+    background-repeat:no-repeat;
+    background-position: 0px 4px;
+}
+#version .baby_price .praise{
+    float: right;
+    color: #999;
+}
+#version .choose_page{
+    margin-bottom:70px;
+    margin-top:30px;
+    float: left;
+    margin-left:50%;
+}
+#version .choose_page ul{
+    float: left;
+}
+#version .choose_page ul li{
+    float: left;
+    margin-left:10px;
+    text-align: center;
+    width:30px;
+    height:30px;
+    line-height:30px;
+    background: #e6e6e6;
+}
+#version .choose_page ul li:hover{
+    color: #fff;
+    background: #139ffc;
+}
+#version .choose_page a{
+    color: #999;
+}
+#version .choose_page .point{
+    background: none;
+    color: #999;
+}
+#version .choose_page .point:hover{
+    background: none;
+    color: #999;
+}
+#version .choose_page .selected{
+    color: #fff;
+    background: #139ffc;
+}
+
+
+
+

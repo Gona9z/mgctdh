@@ -1,0 +1,75 @@
+
+.banner {
+    height:240px;
+    overflow: hidden;
+}
+.banner img{
+    width:100%;
+}
+.theme{
+    padding:0.4rem;
+    font-size:12px;
+}
+.text{
+    display: flex;
+    text-indent:2em;
+    color: #333;
+}
+.list {
+    margin-bottom:40px;
+    float: left;
+}
+.list ul li{
+    margin-top:1rem;
+    color: #999;
+    width:100%;
+    float: left;
+}
+.list ul li p{
+    padding:0.4rem;
+    text-indent:2em;
+}
+.list ul li img{
+    width:100%;
+}
+.list .details{
+    display: flex;
+    justify-content: space-between;
+    margin-top:4px;
+}
+.list .details .left {
+    text-align: left;
+    float: left;
+}
+.list .details .left span{
+    float: left;
+    margin-right:10px;
+    line-height:20px;
+}
+.list .price{
+    color: #FF2D47;
+}
+.list .details i{
+    float: left;
+    width:20px;
+    height:20px;
+    background-image: url('../img/xin.png');
+    -webkit-background-size:12px 12px;
+    background-size:12px 12px;
+    background-position: center center;
+    background-repeat:no-repeat;
+}
+.list .right{
+    margin-right:6px;
+}
+.list .right a{
+    display: block;
+    width:70px;
+    height:24px;
+    line-height:24px;
+    background: #eee;
+    text-align: center;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+}

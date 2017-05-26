@@ -1,0 +1,125 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+}
+li{list-style:none}
+a{
+    text-decoration: none;
+    color: #0099cc;
+}
+.header{
+    height:40px;
+    display: flex;
+    align-content: center;
+    justify-content:space-between;
+    padding:10px;
+    border-bottom:1px solid #eee;
+}
+.header .logo {
+    display: flex;
+}
+.header img {
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+.content{
+    padding:2px 0 0 5px;
+}
+.content p {
+    font-size: 14px;
+    color: #999;
+}
+.content h2 {
+    font-size: 16px;
+    font-weight:bold;
+    margin-bottom:2px;
+    color: #0099cc;
+}
+.download{
+    margin-top:5px;
+    width:80px;
+    height:24px;
+    line-height:24px;
+    text-align: center;
+    border:1px solid #0099cc;
+}
+.box{
+    max-width:750px;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+.app{
+    text-align: center;
+    padding:30px 0 80px 0;
+    font-size:12px;
+}
+.app strong{
+    font-weight:bold;
+    color: #0099cc;
+}
+.app img{
+    width:50px;
+    height:50px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+}
+.app p{
+    margin-bottom:16px;
+    margin-top:4px;
+}
+.app a{
+    margin-top:10px;
+    border:1px solid #0099cc;
+    padding:0.4rem 0.6rem;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+}
+
+
+.footer{
+    position: fixed;
+    bottom:0;
+    z-index: 111;
+    border-top:1px solid #eee;
+    padding:10px;
+    width:100%;
+    background: #fff;
+}
+.footer .footer_box{
+    display: flex;
+    justify-content:center;
+    width:100%;
+}
+.footer .footer_box a{
+    width:120px;
+    display: block;
+    text-align: center;
+    padding:0.4rem;
+    color: #fff;
+    background: #0099cc;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    font-size:14px;
+}

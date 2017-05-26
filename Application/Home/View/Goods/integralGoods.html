@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{$pro_name}</title>
+    <meta name="keywords" content="{$pro_name},学校,青春,购物,APP,安卓android,苹果iphone">
+    <link rel="stylesheet" href="__CSS__/unified.css">
+    <link rel="stylesheet" href="__CSS__/integral.css">
+    <script src="__JS__/jquery-1.12.4.js"></script>
+    <script src="__JS__/unified.js"></script>
+    <script src="__JS__/integral.js"></script>
+</head>
+<script>
+    $(function(){
+        $('.t_btn').click(function(){
+            $.ajax({
+                url: "__MODULE__/User/exchangeGoods?"+Math.random(),
+                data: $('#exchange_form').serialize(),
+                dataType: "json",
+                success: function(data){
+                    var result = eval(data);
+                    if(result.errorCode==0){
+                        $('#maskLayer').hide();
+                        $('#information').hide();
+                    }
+                    alert(result.msg);
+                }
+            });
+        });
+    });
+</script>
+<body>
+
+<div id="information">
+    <div class="information_box">
+        <form action="{:U('User/exchangeGoods')}" method="POST" id="exchange_form">
+        <div class="title">
+            <ul>
+                <li>
+                    <div class="share_fork"></div>
+                </li>
+                <li>
+                    <span>兑换的礼物</span>
+                </li>
+                <li class="t_info">
+                    <p class="t_name">宽松西装开衫马甲</p>
+                    <p class="t_integral">2000积分</p>
+                    <input type="hidden" value="" name="i_gid"/>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            <ul>
+                <li>
+                    <p>请填写个人信息</p>
+                </li>
+                <li>
+                    <label>姓&nbsp;&nbsp;&nbsp;&nbsp;名</label>
+                    <input type="text" placeholder="请填写您的姓名" name="name">
+                </li>
+                <li>
+                    <label>手机号</label>
+                    <input type="text" placeholder="请填写您的手机号码" name="phone">
+                </li>
+                <li>
+                    <label>地&nbsp;&nbsp;&nbsp;&nbsp;址</label>
+                    <textarea placeholder="请填写您的详细地址" name="address"></textarea>
+                </li>
+                <li>
+                    <input class="t_btn" type="button" value="提交">
+                </li>
+            </ul>
+        </div>
+        </form>
+    </div>
+</div>
+
+<include file="Public/link_file/top_nav.html" />
+
+<div id="couples" class="clear">
+    <div class="couples_box">
+        <div class="baby_details">
+            <ul>
+                <foreach name="goods_list" item="g">
+                <li data-i_gid="{$g.i_goods_id}">
+                    <a href="javascript:;">
+                        <div class="baby_img">
+                            <img src="__APP__{$g.image}" alt="">
+                        </div>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="baby_content">
+                            <p>{$g.name}</p>
+                        </div>
+                    </a>
+                    <div class="baby_price">
+                        <div class="price">
+                            <span>{$g.integral}积分</span>
+                        </div>
+                        <div class="praise">
+                            <p>兑换</p>
+                        </div>
+                    </div>
+                </li>
+                </foreach>
+            </ul>
+
+        </div>
+        <div class="choose_page">
+            {$page}
+        </div>
+    </div>
+
+
+</div>
+
+
+</div>
+
+<include file="Public/link_file/footer.html" />
+
+</body>
+</html>

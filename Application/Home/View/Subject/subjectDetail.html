@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{$pro_name}</title>
+    <meta name="keywords" content="{$pro_name},学校,青春,购物,APP,安卓android,苹果iphone">
+    <link rel="stylesheet" href="__CSS__/unified.css">
+    <link rel="stylesheet" href="__CSS__/notes_details.css">
+    <script src="__JS__/jquery-1.12.4.js"></script>
+    <script src="__JS__/unified.js"></script>
+    <script src="__JS__/notes_details.js"></script>
+</head>
+<html xmlns:wb="http://open.weibo.com/wb">
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+<body>
+<script>
+    $(function(){
+        $('wb_s').click(function(){
+            alert(2);
+        });
+    });
+</script>
+<include file="Public/link_file/top_nav.html" />
+
+<div id="details_content" class="clear">
+    <input type="hidden" value="{$sid}" id="sid">
+    <div class="details_box">
+        <div class="title">
+            <div class="title_img">
+                <div class="mask"></div>
+                <img src="__APP__{$subject.image_content}" alt="">
+                <p>{$subject.name}</p>
+                <!--<div class="take_big">
+                    <img src="__APP__{$subject.logo_image}" alt="">
+                </div>-->
+            </div>
+
+        <div class="s_c_c">
+                <div class="title_left">
+                    <ul>
+                        <li>
+                            <div class="share_big"></div>
+                            <span id="share_co">{$subject.share_count}</span>
+                        </li>
+                        <li class="collection">
+                            <if condition="$is_coll eq 1">
+                                <div class="collection_heart_big"></div>
+                                <else/>
+                              <div class="collection_big"></div>
+                            </if>
+                            <span id="coll_co">{$subject.collect_count}</span>
+                        </li>
+                        <li>
+                            <div class="comment_big"></div>
+                            <span id="cm1">{$subject.comment_count}</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="title_right">
+                    <ul>
+                        <li>分享到</li>
+                        <a class="jiathis_button_weixin" class="share_add_click">
+                        <li><img src="__IMG__/wx_big.png" alt=""></li>
+                        </a>
+                        <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1" charset="utf-8"></script>
+                        <a class="share_add_click" href="http://service.weibo.com/share/share.php?url={$url}/Subject/subjectDetail/sid/{$subject['subject_id']}&type=icon&language=zh_cn&appkey=1494721552&title={$subject['text_content']}&searchPic=true&style=simple" target="_blank">
+                        <li><img src="__IMG__/wb_big.png" alt=""></li>
+                        </a>
+                        <!--<wb:share-button appkey="1494721552" addition="simple" searchPic="true"
+                             type="icon" default_text="{$subject.text_content}">
+                        </wb:share-button>-->
+                        <a class="share_add_click" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={$url}/Subject/subjectDetail/sid/{$subject['subject_id']}&pics=&title=分享到QQ空间&summary={$subject['text_content']}" target="_blank">
+                        <li><img src="__IMG__/qqkj_big.png" alt=""></li>
+                        </a>
+                        <a class="share_add_click"
+                           href="http://connect.qq.com/widget/shareqq/index.html?url={$url}/Subject/subjectDetail/sid/{$subject['subject_id']}&desc=&title={$subject['text_content']}&pics=&flash=&site=" target="_blank">
+                            <li><img src="__IMG__/qq_big.png" alt=""></li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="notes_info">{$subject.text_content}</div>
+        <foreach name="goods_list" item="g">
+        <div class="content_box">
+            <div class="content">
+                <p>{$g.text_content}</p>
+            </div>
+            <div class="content_details">
+                <div class="content_img">
+                    <img src="__APP__{$g.image}" alt="">
+                    <div class="content_bottom">
+                        <div class="content_price">
+                            <span>￥{$g.price}</span>
+                        </div>
+                        <!--<div class="content_praise">
+                            <div class="praise_ico"></div>
+                            <span>{$g.collect_count}</span>
+                        </div>-->
+                        <div class="content_btn">
+                            <a href="{$g.tb_link}" target="_blank"><p>查看详情</p></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </foreach>
+
+        <div class="comments_box">
+            <div class="comments_title">
+                <div class="comments_ico"></div>
+                <p>评论（<span id="cm2">{$subject.comment_count}</span>）</p>
+            </div>
+            <ul id="comment_ul">
+            </ul>
+        </div>
+
+        <div class="choose_page" id="page_info">
+        </div>
+
+
+    </div>
+    <div class="textarea">
+        <textarea placeholder="请输入您的评论" id="content"></textarea>
+        <input class="text_btn" type="button" value="提交评论" onclick="submitComment();">
+    </div>
+
+</div>
+<div class="jump_top">
+    <div class="jump_box">
+        <img src="__IMG__/jump_top.png" alt="">
+    </div>
+</div>
+<script>
+    $(function(){
+        var sid = $('#sid').val();
+        getSubjectComment(sid,1);
+
+        $('.collection').click(function(){
+            var pathName=window.document.location.pathname;
+            var projectName=pathName.substring(0,pathName.substr(1).indexOf('/')+1);
+            $.ajax({
+                type: "GET",
+                url: projectName+"/User/checkIsLogin?"+Math.random(),
+                success: function(data){
+                    var result = eval(data);
+                    var status = result.status;
+                    console.log(status);
+                    if(status){
+                        if($('.collection').children('div').hasClass('collection_big')){
+                            $.post("{:U('Subject/collectSubject')}",{'sid':sid,'type':0},function(data){
+                                if(0==data.errorCode){
+                                    $('.collection').children('div').attr('class','collection_heart_big');
+                                    $('#coll_co').html(parseInt($('#coll_co').html())+1);
+                                }
+                            });
+                        }else{
+                            $.post("{:U('Subject/collectSubject')}",{'sid':sid,'type':1},function(data){
+                                if(0==data.errorCode){
+                                    $('.collection').children('div').attr('class','collection_big');
+                                    $('#coll_co').html(parseInt($('#coll_co').html())-1);
+                                }
+                            });
+                        }
+                    }else{
+                        $('#maskLayer').show();
+                        $('#login').show();
+                        $("#maskLayer").height(pageHeight());
+                    }
+                }
+            });
+
+        });
+
+        $('.share_add_click').click(function(){
+            $.post("{:U('Subject/addSubjectShare')}",{'sid':sid},function(data){
+                if(0==data.errorCode){
+                    $('#share_co').html(parseInt($('#share_co').html())+1);
+                }
+            });
+        });
+
+    });
+    function getSubjectComment(sid,page){
+        var str = '';
+        $.post("{:U('Subject/subjectComment')}",{'sid':sid,'page':page,'methodName':'getSubjectComment'},function(data){
+            $.each(data.comment_list,function(){
+                str += '<li><div class="comments_content"><div class="comments_name">';
+                if(this.image==null){
+                    str += '<img src="__IMG__/default_headicon.png" alt="">';
+                }else{
+//                    str += '<img src="__APP__'+this.image+'" alt="">';
+                    var img_url = this.image;
+                    var img_url = img_url.replace("/Public/uploads/","__APP__/Public/uploads/");
+                    str += '<img src="'+img_url+'" >';
+
+                }
+                str += '<span>'+this.nickname+'</span><div class="comments_time"><p>'+this.time+'</p></div></div>';
+                str += '<p>'+this.content+'</p></div></li>';
+            });
+            $('#comment_ul').html(str);
+            $('#page_info').html(data.page_info);
+        });
+    }
+    function submitComment(){
+        var pathName=window.document.location.pathname;
+        var projectName=pathName.substring(0,pathName.substr(1).indexOf('/')+1);
+        $.ajax({
+            type: "GET",
+            url: projectName+"/User/checkIsLogin?"+Math.random(),
+            success: function(data){
+                var result = eval(data);
+                var status = result.status;
+                console.log(status);
+                if(status){
+                    var sid = $('#sid').val();
+                    var content = $('#content').val().trim();
+                    $.post('__CONTROLLER__/commentSubject',{'sid':sid,'content':content},function(data){
+                        alert(data.msg);
+                        if(0==data.errorCode){
+                            str = '<li><div class="comments_content"><div class="comments_name">';
+                            if('{$Think.session.axd_user.image}'==''){
+                                str += '<img src="__IMG__/default_headicon.png">';
+                            }else{
+                                var img_url = '{$Think.session.axd_user.image}';
+                                var img_url = img_url.replace("/Public/uploads/","__APP__/Public/uploads/");
+                                str += '<img src="'+img_url+'">';
+                            }
+                            str += '<span>{$Think.session.axd_user.nickname}</span><div class="comments_time"><p>刚刚</p></div></div>';
+                            str += '<p>'+content+'</p></div></li>';
+                            $('#comment_ul').prepend(str);
+                            $('#cm1').html(parseInt($('#cm1').html())+1);
+                            $('#cm2').html(parseInt($('#cm2').html())+1);
+                        }
+                    });
+                }else{
+                    $('#maskLayer').show();
+                    $('#login').show();
+                    $("#maskLayer").height(pageHeight());
+                }
+            }
+        });
+    }
+</script>
+<script>
+
+    /*
+     * 注意：
+     * 1. 所有的JS接口只能在公众号绑定的域名下调用，公众号开发者需要先登录微信公众平台进入“公众号设置”的“功能设置”里填写“JS接口安全域名”。
+     * 2. 如果发现在 Android 不能分享自定义内容，请到官网下载最新的包覆盖安装，Android 自定义分享接口需升级至 6.0.2.58 版本及以上。
+     * 3. 常见问题及完整 JS-SDK 文档地址：http://mp.weixin.qq.com/wiki/7/aaa137b55fb2e0456bf8dd9148dd613f.html
+     *
+     * 开发中遇到问题详见文档“附录5-常见错误及解决办法”解决，如仍未能解决可通过以下渠道反馈：
+     * 邮箱地址：weixin-open@qq.com
+     * 邮件主题：【微信JS-SDK反馈】具体问题
+     * 邮件内容说明：用简明的语言描述问题所在，并交代清楚遇到该问题的场景，可附上截屏图片，微信团队会尽快处理你的反馈。
+     */
+
+</script>
+<include file="Public/link_file/footer.html" />
+
+</body>
+</html>

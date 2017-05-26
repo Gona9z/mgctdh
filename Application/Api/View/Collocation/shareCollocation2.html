@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{$collocation.title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="__PUBLIC__/css/public.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/collocation.css">
+    <script src="__PUBLIC__/js/jquery-1.12.4.js"></script>
+    <style>
+        .class_list{position: relative ;float: left;margin:0;padding:4px;}
+        .class_list i{width:10px;height:10px;-webkit-border-radius:50%;-moz-border-radius:50%;
+            border-radius:50%;background: #2b7dbc;z-index: 100;float: left;margin-left:-14px;margin-top:8px;}
+        .class_list p{position: absolute;background: rgba(0,0,0,0.3);}
+        .class_list p span{border:none;background: none;color: #fff;
+            width:auto;display: block;padding: 8px;}
+        .test{height: 600px; max-width: 600px; font-size: 40px;}
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="logo">
+        <img src="__PUBLIC__/img/logo_s.png" alt="">
+        <div class="content">
+            <h2>A梦校园</h2>
+            <p>A梦校园</p>
+        </div>
+    </div>
+    <div class="download">
+        <a href="{$tc_yyb}">点击下载</a>
+    </div>
+</div>
+
+
+<div class="box">
+    <!--<img src="__APP__{$collocation.image}" alt="">-->
+    <div class="class_list">
+        <img id="img_c" src="__APP__{$collocation.image}">
+    </div>
+    <div class="content">
+        <p>{$collocation.introduce}</p>
+        <div class="label">
+            <foreach name="collocation['label_text']" item="l">
+                <span>{$l}</span>
+            </foreach>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--<div class="app">
+    <img src="__PUBLIC__/img/logo_s.png" alt="">
+    <p><strong>A梦校园</strong> <span>A梦校园</span></p>
+    <a href="{$tc_yyb}">
+        下载A梦校园 客户端查看更多
+    </a>
+</div>-->
+
+
+<div class="footer">
+    <div class="footer_box">
+        <a href="{$tc_yyb}">下载A梦校园</a>
+    </div>
+</div>
+
+
+</body>
+<script>
+    var MODULE = '__MODULE__';
+
+//    $(function(){
+//        var img_wid = $('.class_list img').width();
+//        $('.class_list img').attr('height',img_wid*1.2+'px');
+//
+//        var id = "{$Think.get.id}";
+//        $.post(MODULE+'/Collocation/getCGoodsNode',{'id':id},function(data){
+//            var node_list = data.data;
+//            $.each(node_list,function(k,v){
+//                addNode(this.index_x,this.index_y,this.goods_text,this.goods_id);
+//            });
+//        });
+//    });
+
+    document.onreadystatechange = subSomething;
+    function subSomething(){
+        if(document.readyState == "complete"){
+            var img_wid = $('.class_list img').width();
+            $('.class_list img').attr('height',img_wid*1.2+'px');
+
+            var id = "{$Think.get.id}";
+            $.post(MODULE+'/Collocation/getCGoodsNode',{'id':id},function(data){
+                var node_list = data.data;
+                $.each(node_list,function(k,v){
+                    addNode(this.index_x,this.index_y,this.goods_text,this.goods_id);
+                });
+            });
+        }
+    }
+
+
+
+    var num = 0;
+    //添加节点
+    function addNode(xx,yy,goods_text,goods_id){
+
+
+        xx = xx*$('.class_list img').width();
+        yy = yy*$('.class_list img').height();
+
+        var imgWidth = $('.class_list img').width()/2;
+        var x2 = xx;
+        $('.class_list').append(
+                '<a href="javascript:clickIfWeixin('+goods_id+')">' +
+                '<p class="num'+num+'"><i></i><span>'+goods_text+'</span></p></a>');
+        if(xx > imgWidth){
+            $('.class_list .num'+num+'').css({
+                'left':xx,
+                'top': yy
+            });
+        }else{
+            $('.class_list .num'+num+' i').css({
+                'float':'left',
+                'margin-right':'-14px'
+            });
+            $('.class_list .num'+num+'').css({
+                'left':xx,
+                'top': yy
+            });
+        }
+        num++;
+    }
+</script>
+<script type="text/javascript">
+    function is_weixin() {
+        var ua = navigator.userAgent.toLowerCase();
+        if (ua.match(/MicroMessenger/i) == "micromessenger") {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    var isWeixin = is_weixin();
+    var winHeight = typeof window.innerHeight != 'undefined' ? window.innerHeight : document.documentElement.clientHeight;
+    function loadHtml(){
+        var div = document.createElement('div');
+        div.id = 'weixin-tip';
+        div.innerHTML = '<p><img style="width: 100%;" src="__IMG__/live_weixin.png" alt="微信打开"/>111</p>';
+        document.body.appendChild(div);
+    }
+
+    function loadStyleText(cssText) {
+        var style = document.createElement('style');
+        style.rel = 'stylesheet';
+        style.type = 'text/css';
+        try {
+            style.appendChild(document.createTextNode(cssText));
+        } catch (e) {
+            style.styleSheet.cssText = cssText; //ie9以下
+        }
+        var head=document.getElementsByTagName("head")[0]; //head标签之间加上style样式
+        head.appendChild(style);
+    }
+    var cssText = "#weixin-tip{position: fixed;z-index:999!important; left:0; top:0; background: rgba(0,0,0,0.8); filter:alpha(opacity=80); width: 100%; height:100%;} ";
+    function clickIfWeixin(id){
+        if(isWeixin){
+            loadHtml();
+            loadStyleText(cssText);
+        }else{
+            var ua = navigator.userAgent.toLowerCase();
+            if (/iphone|ipad|ipod/.test(ua)) {
+                window.location.href = 'kufengxfg://'+id;
+            }else{
+                window.location.href = 'axd://match/?id='+id;
+            }
+        }
+    }
+
+</script>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{$pro_name}后台管理系统</title>
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/share.css" /><!--另添加样式文件-->
+    <include  file="Public/assets/common/header.html"/><!--头部文件-->
+    <link href="__PUBLIC__/assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <!--讨论区滚动条begin-->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/css/jscrollpane1.css" />
+    <!--上传文件-->
+    <link href="__PUBLIC__/assets/plugins/bootstrap-fileinput/css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
+    <style>
+        #search a{margin-bottom: 10px;}
+        #myTabContent img{width: 40px;height: 40px;}
+        #home a{margin: 0 0 10px 10px;}
+    </style>
+    <script type="text/javascript">
+        // 以下是 bootstrap 自带的  js
+        function rowClicked(obj){
+            span = obj;
+            obj = obj.parentNode.parentNode;
+            var tbl = document.getElementById("list-table");
+            var lvl = parseInt(obj.className);
+            var fnd = false;
+            var sub_display = $(span).hasClass('glyphicon-minus') ? 'none' : '' ? 'block' : 'table-row' ;
+            //console.log(sub_display);
+            if(sub_display == 'none'){
+                $(span).removeClass('glyphicon-minus btn-info');
+                $(span).addClass('glyphicon-plus btn-warning');
+            }else{
+                $(span).removeClass('glyphicon-plus btn-info');
+                $(span).addClass('glyphicon-minus btn-warning');
+            }
+            for (i = 0; i < tbl.rows.length; i++){
+                var row = tbl.rows[i];
+                if (row == obj){
+                    fnd = true;
+                }else{
+                    if (fnd == true){
+                        var cur = parseInt(row.className);
+                        var icon = 'icon_' + row.id;
+                        if (cur > lvl){
+                            row.style.display = sub_display;
+                            if (sub_display != 'none'){
+                                var iconimg = document.getElementById(icon);
+                                $(iconimg).removeClass('glyphicon-plus btn-info');
+                                $(iconimg).addClass('glyphicon-minus btn-warning');
+                            }else{
+                                $(iconimg).removeClass('glyphicon-minus btn-info');
+                                $(iconimg).addClass('glyphicon-plus btn-warning');
+                            }
+                        }else{
+                            fnd = false;
+                            break;
+                        }
+                    }
+                }
+            }
+            for (i = 0; i < obj.cells[0].childNodes.length; i++){
+                var imgObj = obj.cells[0].childNodes[i];
+                if (imgObj.tagName == "IMG"){
+                    if($(imgObj).hasClass('glyphicon-plus btn-info')){
+                        $(imgObj).removeClass('glyphicon-plus btn-info');
+                        $(imgObj).addClass('glyphicon-minus btn-warning');
+                    }else{
+                        $(imgObj).removeClass('glyphicon-minus btn-warning');
+                        $(imgObj).addClass('glyphicon-plus btn-info');
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+<include  file="Public/assets/common/top.html"/>
+<div class="main-container" id="main-container">
+    <include  file="Public/assets/common/nav.html"/><!--左侧导航栏-->
+    <div class="main-content">
+        <div class="breadcrumbs" id="breadcrumbs">
+            <ul class="breadcrumb">
+                <li>
+                    <i class="icon-home home-icon"></i>
+                    <a href="#">首页</a>
+                </li>
+                <li class="active">商品管理</li>
+                <li class="active">商品分类列表</li>
+            </ul><!-- .breadcrumb -->
+        </div>
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade in active" id="search">
+                <!--<div class="col-sm-4 col-xs-6">
+                    <form class="bs-example bs-example-form" action="__ACTION__" id="sf">
+                        <div class="input-group" style="margin-bottom: 3%;">
+                            <input type="text" class="form-control" placeholder="昵称/账号搜索" value="{$keyword}" name="keyword">
+                            <a onClick="document.getElementById('sf').submit();" class="input-group-addon"><i class="icon-search"></i></a>
+                        </div>
+                    </form>
+                </div>-->
+                <a href="{:U('Admin/Goods/addEditGCate');}" class='btn btn-sm btn-primary pull-left'>添加</a>
+            </div>
+
+            <table class="table table-bordered" id="list-table">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>分类名称</th>
+                    <th>分类图片</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <foreach name="list" item="c" key="k">
+                    <tr role="row" align="center" class="{$c.level}" id="{$c.level}_{$c.g_cate_id}">
+                    <td>{$c.g_cate_id}</td>
+                    <td style="padding-left:<?php echo ($c[level] * 5); ?>em;text-align:left;">
+                        <if condition="$c.level neq 3">
+                            <span class="glyphicon glyphicon-minus btn-warning" style="padding:2px; font-size:12px;"  id="icon_{$c.level}_{$vo.id}" aria-hidden="false" onclick="rowClicked(this)" ></span>&nbsp;
+                        </if>
+                        <span>{$c.name}</span>
+                    </td>
+                    <td>
+                        <notempty name="c['image']">
+                            <img src="__APP__{$c.image }">
+                        </notempty>
+                    </td>
+                    <td class="operation">
+                        <if condition="$c['sys_value'] neq 1">
+                            <a href="{:U('Admin/Goods/addEditGCate',array('id'=>$c['g_cate_id']))}">编辑</a>
+                            <a href="javaScript:void(0);" onclick="delGCate('{$c.g_cate_id}')">删除</a>
+                        </if>
+                    </td>
+                    </tr>
+                </foreach>
+
+                </tbody>
+            </table>
+            <div class="text-center">
+                {$page}
+            </div>
+        </div><!--myTabContent-->
+    </div><!-- /.main-content -->
+</div><!--main-container-->
+
+<include  file="Public/assets/common/footer.html"/>
+
+</body>
+
+<script>
+    $(".spgl").addClass("active open");
+    $(".spgl .spfllb").addClass("active");
+</script>
+<script>
+    //删除商品
+    function delGCate(id){
+        if(confirm("是否删除该数据")){
+            $.post("{:U('Admin/Goods/delGCate')}",{'id':id},function(data){
+                alert(data.msg);
+                if('0'==data.errorCode){
+                    window.location.reload();
+                }
+            });
+        }
+    }
+</script>
+</html>

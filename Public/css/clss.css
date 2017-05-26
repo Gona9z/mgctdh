@@ -1,0 +1,85 @@
+body{
+    background: #f9f9f9;
+}
+.details{
+    text-align: center;
+    background: #fff;
+}
+.details img{
+    width:100%;
+}
+.details h2{
+    margin:20px 0;
+    font-size:16px;
+}
+.details p{
+    /*height:30px;*/
+    /*line-height:30px;*/
+    color:#999;
+    font-size:14px;
+}
+.details i{
+    display: inline-block;
+    vertical-align: top;
+    width:20px;
+    height:20px;
+    background-image: url('../img/xin.png');
+    -webkit-background-size:12px 12px;
+    background-size:12px 12px;
+    background-position: center 8px;
+    background-repeat:no-repeat;
+}
+.details .price {
+    color: #FF2D47;
+    font-size:16px;
+}
+.details .text{
+    text-align: left;
+    padding:0.4rem;
+}
+.list h2{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size:14px;
+    color: #999;
+    margin:20px 0 10px 0;
+}
+.list > p{
+    margin:0 10px;
+}
+.list span{
+    display: block;
+    width:80px;
+    height:1px;
+    border-top:1px solid #ddd;
+}
+.list ul {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background: #fff;
+    flex-wrap: wrap;
+}
+.list ul li {
+    width:47%;
+    margin:10px 1%;
+    border:1px solid #eee;
+    overflow: hidden;
+}
+.list ul li img{
+    width:100%;
+}
+.list ul li p{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    font-size:14px;
+    padding:0 4px;
+    color: #333;
+}
+.list ul li .price{
+    color: #FF2D47;
+    margin:10px 0;
+}

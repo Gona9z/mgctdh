@@ -1,0 +1,194 @@
+#god_female{
+    min-width:1280px;
+}
+#god_female .female_box{
+    width:960px;
+    margin:0 auto;
+}
+#god_female .female_box .female_choose{
+    border:1px solid #ddd;
+    float: left;
+    margin:20px 0px 30px 0px;
+    width:100%;
+}
+#god_female .female_box .choose_text{
+    float: left;
+    width:100%;
+    line-height: 48px;
+    border-bottom:1px solid #ddd;
+}
+#god_female .female_box .choose_text li{
+    float: left;
+    margin:0px 10px 0px 20px;
+    cursor: pointer;
+}
+#god_female .female_box .choose_text li:hover{
+    color: #139ffc;
+    border-bottom:3px solid #139ffc;
+}
+#god_female .choose_text .border{
+    color: #139ffc;
+    border-bottom:3px solid #139ffc;
+}
+#god_female .choose_img{
+    float: left;
+    width:100%;
+    height:150px;
+    cursor: pointer;
+}
+#god_female .choose_img .border,.hover_border{
+    border:1px solid #139ffc;
+    margin:-1px;
+}
+#god_female .choose_img .color,.hover_color{
+    color: #139ffc;
+}
+
+#god_female .choose_img li{
+    float: left;
+    width:60px;
+    margin:30px 10px 0px 46px;
+    text-align: center;
+}
+#god_female .choose_img li p{
+    margin-top:10px;
+}
+.god_zxz,.god_xh,.god_nsp,.god_ssp,.god_xqx,.god_xxr,.god_bl,.god_hlf{
+    width:58px;
+    height:58px;
+    overflow: hidden;
+    background-repeat:no-repeat;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+}
+#god_female .god_zxz{
+    background-image: url("../img/god_zxz_ico.png");
+}
+#god_female .god_xh{
+    background-image: url("../img/god_xhmm_ico.png");
+}
+#god_female .god_nsp{
+    background-image: url("../img/god_nsp_ico.png");
+}
+#god_female .god_ssp{
+    background-image: url("../img/god_ssp_ico.png");
+}
+#god_female .god_xqx{
+    background-image: url("../img/god_xqx_ico.png");
+}
+#god_female .god_xxr{
+    background-image: url("../img/god_xxr_ico.png");
+    background-position: -20px 0;
+}
+#god_female .god_bl{
+    background-image: url("../img/god_bl_ico.png");
+    background-position: -4px 0
+}
+#god_female .god_hlf{
+    background-image: url("../img/god_hlf_ico.png");
+}
+
+
+
+#god_female .baby_details {
+    float: left;
+}
+#god_female .baby_details ul{
+    float: left;
+    margin-left:-20px;
+}
+#god_female .baby_details ul li{
+    width:222px;
+    height:332px;
+    float: left;
+    border:1px solid #e6e6e6;
+    margin-bottom:20px;
+    margin-left:20px;
+}
+#god_female .baby_details ul li:hover{
+    -webkit-box-shadow: 2px 2px 8px #999;
+    -moz-box-shadow: 2px 2px 8px #999;
+    box-shadow: 1px 2px 8px #ddd;
+}
+#god_female .baby_img{
+    width: 222px;
+    height:222px;
+    overflow: hidden;
+}
+#god_female .baby_img img{
+    max-width:222px;
+    max-height:222px;
+}
+#god_female .baby_content {
+    padding:20px 10px;
+}
+#god_female .baby_content p{
+    height:40px;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+#god_female .baby_price{
+    padding:0px 10px;
+}
+#god_female .baby_price .price{
+    float: left;
+    color: #ff2d47;
+}
+#god_female .baby_price .praise_ico{
+    width:18px;
+    height:20px;
+    float: left;
+    background-image: url(../img/praise_ico.png);
+    background-repeat:no-repeat;
+    background-position: 0px 4px;
+}
+#god_female .baby_price .praise{
+    float: right;
+    color: #999;
+}
+#god_female .choose_page{
+    margin-bottom:70px;
+    margin-top:30px;
+    float: left;
+    margin-left:50%;
+}
+#god_female .choose_page ul{
+    float: left;
+}
+#god_female .choose_page ul li{
+    float: left;
+    margin-left:10px;
+    text-align: center;
+    width:30px;
+    height:30px;
+    line-height:30px;
+    background: #e6e6e6;
+}
+#god_female .choose_page ul li:hover{
+    color: #fff;
+    background: #139ffc;
+}
+#god_female .choose_page a{
+    color: #999;
+}
+#god_female .choose_page .point{
+    background: none;
+    color: #999;
+}
+#god_female .choose_page .point:hover{
+    background: none;
+    color: #999;
+}
+#god_female .choose_page .selected{
+    color: #fff;
+    background: #139ffc;
+}
+
+
+
+

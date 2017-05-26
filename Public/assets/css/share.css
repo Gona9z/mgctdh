@@ -1,0 +1,16 @@
+.operation{margin-right: 3%;}
+.operation a{color: #128998; margin:0 8px;}
+.delete{ width:100%; margin-top: 5%; font-size: 1.7em;}
+.uploading{color: red; margin-top: 2%; font-size: 13px;}
+.redact a{color: #128998;}
+
+.roleJurisdiction-list li input{margin-right:1.5%}
+.roleJurisdiction-sublist{margin-left:20%}
+.roleJurisdiction-sublist li input{margin-right:2%;margin-top:3%}
+
+.textarea{width: 250px; height: 150px;}
+.ok{text-align:center; width: 25%;}
+
+.problem-txt{margin-top:7%;margin-left:22%;width:65%;font-size:15px;line-height:25px}
+.problem-time{float:left;margin-top:10%;margin-bottom:1%;width:100%;font-size:14px}
+

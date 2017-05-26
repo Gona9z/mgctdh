@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>后台管理页</title>
+		<!-- basic styles -->
+		<style>
+			.left_pic{width:40%;float:left;margin-left:10%;    margin-top: 6%;}
+			.left_pic img{width:100%;}
+		</style>
+		<link rel="stylesheet" href="__PUBLIC__/assets/css/share.css" /><!--另添加样式文件-->
+		<include file="Public/assets/common/header.html" /> <!--头部文件-->
+	</head>
+
+	<body>
+		<include file="Public/assets/common/top.html" />
+		<div class="main-container" id="main-container">
+			<include file="Public/assets/common/nav.html" /><!--左侧导航栏-->
+			<div class="main-content">
+				<div class="breadcrumbs" id="breadcrumbs">
+					<ul class="breadcrumb">
+						<li>
+							<i class="icon-home home-icon"></i>
+							<a href="#">首页</a>
+						</li>
+						<li class="active">欢迎页</li>						
+					</ul><!-- .breadcrumb -->
+
+					<!-- <div class="nav-search" id="nav-search">
+						<form class="form-search">
+							<span class="input-icon">
+								<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+								<i class="icon-search nav-search-icon"></i>
+							</span>
+						</form>
+					</div>#nav-search -->
+				</div>
+				
+				<div id="myTabContent" class="tab-content welcome">
+					<!--<div class="tab-pane fade in active" id="home" >						
+					    			
+				    </div>				-->
+					<div class="weall">
+				    	<p>欢迎进入<span>本荣科技</span>后台管理系统</p>
+				    </div>         			
+					</div><!--myTabContent-->
+				</div><!-- /.main-content -->
+			</div><!--main-container-->
+		<!--[if !IE]> -->
+
+		<script src="__PUBLIC__/assets/js/jquery-2.0.3.min.js"></script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<![endif]-->
+
+		<!--[if !IE]> -->
+
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
+		</script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+		<script type="text/javascript">
+		 window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+		</script>
+		<![endif]-->
+
+		<script type="text/javascript">
+			if("ontouchend" in document) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+		</script>
+
+		<!-- inline scripts related to this page -->
+
+		<script type="text/javascript">
+			function show_box(id) {
+			 jQuery('.widget-box.visible').removeClass('visible');
+			 jQuery('#'+id).addClass('visible');
+			}
+		</script>
+		<include  file="Public/assets/common/footer.html" />
+</html>

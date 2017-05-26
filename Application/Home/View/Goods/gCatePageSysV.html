@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{$pro_name}</title>
+    <meta name="keywords" content="{$pro_name},学校,青春,购物,APP,安卓android,苹果iphone">
+    <link rel="stylesheet" href="__CSS__/unified.css">
+    <link rel="stylesheet" href="__CSS__/couples.css">
+    <script src="__JS__/jquery-1.12.4.js"></script>
+    <script src="__JS__/unified.js"></script>
+    <script src="__JS__/couples.js"></script>
+</head>
+<body>
+
+<include file="Public/link_file/top_nav.html" />
+
+<div id="couples" class="clear">
+    <div class="couples_box">
+        <div class="couples_choose">
+            <ul class="choose_img">
+                <foreach name="c_list" item="c">
+                <li data-good_value="{$c.g_cate_id}">
+                    <div class="choose_img_box">
+                        <img src="__APP__{$c.image}" alt="1">
+                    </div>
+                    <span>{$c.name}</span>
+                </li>
+                </foreach>
+            </ul>
+        </div>
+
+
+        <div class="baby_details">
+            <ul>
+                <!--<li>
+                    <div class="baby_img">
+                        <img src="__IMG__/b1.png" alt="">
+                    </div>
+                    <div class="baby_content">
+                        <p>帽子男韩版嘻哈帽春夏天平檐潮 酷刺绣棒球帽女情侣....</p>
+                    </div>
+                    <div class="baby_price">
+                        <div class="price">
+                            <span>￥299.00</span>
+                        </div>
+                        <div class="praise">
+                            <div class="praise_ico"></div>
+                            <span>788</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="baby_img">
+                        <img src="__IMG__/b4.png" alt="">
+                    </div>
+                    <div class="baby_content">
+                        <p>帽子男韩版嘻哈帽春夏天平檐潮 酷刺绣棒球帽女情侣....</p>
+                    </div>
+                    <div class="baby_price">
+                        <div class="price">
+                            <span>￥299.00</span>
+                        </div>
+                        <div class="praise">
+                            <div class="praise_ico"></div>
+                            <span>788</span>
+                        </div>
+                    </div>
+                </li>-->
+
+
+
+
+
+            </ul>
+
+        </div>
+        <div class="choose_page">
+            <ul>
+                <a href="javascript:;"><li class="prev"> < </li></a>
+                <a href="javascript:;"><li>1</li></a>
+                <a href="javascript:;"><li class="selected">2</li></a>
+                <a href="javascript:;"><li>3</li></a>
+                <a href="javascript:;"><li>4</li></a>
+                <li class="point"><span>...</span></li>
+                <a href="javascript:;"><li>57</li></a>
+                <a href="javascript:;"><li class="next"> > </li></a>
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+
+</div>
+
+<include file="Public/link_file/footer.html" />
+<script>
+    $(function(){
+        var id_a = $('.couples_choose ul li:eq(0)').attr('data-good_value');
+        getGoods(id_a,1);
+    });
+
+    $('.couples_choose ul li').click(function(){
+        var cate_id = $(this).attr('data-good_value');
+        getGoods(cate_id,1);
+    });
+
+    function getGoods(cate_id,page){
+        $.ajax({
+            type: "GET",
+            url: "__CONTROLLER__/goodsList?"+Math.random(),
+            data: {'cate_id':cate_id, 'page':page, 'methodName':'getGoods'},
+            dataType: "json",
+            success: function(data){
+                var result = eval(data);
+                var goods_list = result.goods_list;
+                var page_info = result.page_info;
+                var str = "";
+                for(var i=0; i<goods_list.length; i++){
+                    str += '<li><a href="'+goods_list[i].tb_link+'" target="_blank"><div class="baby_img"><img src="__APP__'+goods_list[i].image+'" alt=""></div><a/>';
+                    str += '<a href="'+goods_list[i].tb_link+'" target="_blank"><div class="baby_content"><p>'+goods_list[i].name+'</p><a/>';
+                    str += '</div><div class="baby_price"><div class="price"><span>￥'+parseFloat(goods_list[i].price).toFixed(2)+'</span></div>';
+                    str += '<div class="praise" data-gid="'+goods_list[i].goods_id+'">';
+                    if(goods_list[i].is_col==1){
+                        str += '<div class="parise_solid_ico"></div>';
+                    }else{
+                        str += '<div class="praise_ico"></div>';
+                    }
+                    str += '<span>'+goods_list[i].collect_count+'</span></div></div></li>';
+                }
+                $('.baby_details ul').html(str);
+                $('.choose_page').html(page_info);
+                var page_div = $('.choose_page > div').width()/2;
+                $('.choose_page div').css('margin-left',-page_div);
+
+                //点赞
+                $('.praise').click(function(){
+
+                    var gid = $(this).attr('data-gid');
+                    if($(this).children('div').hasClass('praise_ico')){
+                        $.post('__CONTROLLER__/collectGoods',{'gid':gid,'type':0},function(data){
+                            if(data.errorCode==101){
+                                $('#maskLayer').show();
+                                $('#login').show();
+                                $("#maskLayer").height(pageHeight());
+                            }else{
+                                alert(data.msg);
+                                $(this).children('div').attr('class','parise_solid_ico');
+                            }
+                        });
+                    }else{
+                        $.post('__CONTROLLER__/collectGoods',{'gid':gid,'type':1},function(data){
+                            if(data.errorCode==101){
+                                $('#maskLayer').show();
+                                $('#login').show();
+                                $("#maskLayer").height(pageHeight());
+                            }else{
+                                alert(data.msg);
+                                $(this).children('div').attr('class','praise_ico');
+                            }
+                        });
+                    }
+
+                    if($(this).children('div').hasClass('praise_ico')){
+                        var zs = parseInt($(this).children('span').html()) +1;
+                        $(this).children('div').attr('class','parise_solid_ico');
+                        $(this).children('span').html(zs);
+
+                    }else{
+                        var fs = parseInt($(this).children('span').html()) -1;
+                        $(this).children('div').attr('class','praise_ico');
+                        $(this).children('span').html(fs);
+                    }
+
+
+                });
+
+
+            }
+        });
+    }
+</script>
+
+</body>
+</html>

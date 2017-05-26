@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{$pro_name}后台管理系统</title>
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/share.css" /><!--另添加样式文件-->
+    <include  file="Public/assets/common/header.html"/><!--头部文件-->
+    <link href="__PUBLIC__/assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <!--讨论区滚动条begin-->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/css/jscrollpane1.css" />
+    <!--上传文件-->
+    <link href="__PUBLIC__/assets/plugins/bootstrap-fileinput/css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
+    <style>
+        select{width: 69%;}
+        .current{background-color:rgba(0,255,150,0.5);}
+        .prev,.num,.next,.current{width:auto;height:auto;margin:4px;padding:8px 10px;box-shadow:0 0 2px rgba(0,0,0,0.2);background-color:rgba(255,255,255,0.1);}
+        tr img{width:108px;height:60px;}
+    </style>
+    <script type="text/javascript">
+        var APP = "__APP__";
+        var MODULE = "__MODULE__";
+        var CONTROLLER = "__CONTROLLER__";
+        var ACTION = "__ACTION__";
+    </script>
+</head>
+
+<body>
+<include  file="Public/assets/common/top.html"/>
+<div class="main-container" id="main-container">
+    <include  file="Public/assets/common/nav.html"/><!--左侧导航栏-->
+    <div class="main-content">
+        <div class="breadcrumbs" id="breadcrumbs">
+            <ul class="breadcrumb">
+                <li>
+                    <i class="icon-home home-icon"></i>
+                    <a href="#">首页</a>
+                </li>
+                <li class="active">文章管理</li>
+                <li class="active">文章列表</li>
+            </ul><!-- .breadcrumb -->
+        </div>
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade in active" id="home">
+                <div class="col-sm-4 col-xs-6">
+                    <form class="bs-example bs-example-form" action="__ACTION__" id="sf">
+                        <div class="input-group" style="margin-bottom: 3%;">
+                            <input type="text" class="form-control" placeholder="专题名称搜索" value="{$keyword}" name="keyword">
+                            <a onClick="document.getElementById('sf').submit();" class="input-group-addon"><i class="icon-search"></i></a>
+                        </div>
+                    </form>
+                </div>
+                <a href="{:U('Admin/Subject/addEditSubject');}" class='btn btn-sm btn-primary pull-left'>添加</a>
+            </div>
+
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>分类名称</th>
+                    <th>专题名称</th>
+                    <th>专题图片</th>
+                    <th>性别</th>
+                    <th>发布者昵称</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <foreach name="list" item="l" key="k">
+                    <tr>
+                        <td>{$k+1}</td>
+                        <td>{$l.cate_name}</td>
+                        <td>{$l.name}</td>
+                        <td><img src="__APP__{$l.image}"></td>
+                        <td>{$l['sex']==1?'男':'女'}</td>
+                        <td>{$l.user_nickname}</td>
+                        <td class="operation">
+                            <a href="{:U('Admin/Subject/addEditSubject',array('id'=>$l['subject_id']))}">编辑</a>
+                            <!--<a href="{:U('Admin/Subject/editSubjectGoods',array('id'=>$l['subject_id']))}">编辑商品</a>-->
+                            <a href="javaScript:void(0);" onclick="delSubject('{$l.subject_id}');">删除</a>
+                        </td>
+                    </tr>
+                </foreach>
+                </tbody>
+            </table>
+            <div class="text-center">
+                {$page}
+            </div>
+        </div><!--myTabContent-->
+    </div><!-- /.main-content -->
+</div><!--main-container-->
+
+<include  file="Public/assets/common/footer.html"/>
+</body>
+
+<script>
+    $(".wzgl").addClass("active open");
+    $(".wzgl .wzlb").addClass("active");
+</script>
+<script>
+    //删除文章
+    function delSubject(id){
+        if(confirm("是否删除该数据")){
+            $.post("{:U('Admin/Subject/delSubject')}",{'id':id},function(data){
+                alert(data.msg);
+                if('0'==data.errorCode){
+                    window.location.reload();
+                }
+            });
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{$pro_name}台管理系统</title>
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/share.css" /><!--另添加样式文件-->
+    <include  file="Public/assets/common/header.html"/><!--头部文件-->
+    <link href="__PUBLIC__/assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <!--讨论区滚动条begin-->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/css/jscrollpane1.css" />
+    <!--上传文件-->
+    <link href="__PUBLIC__/assets/plugins/bootstrap-fileinput/css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="__PUBLIC__/back_css/edit_common.css">
+    <script src="__PUBLIC__/back_js/thumb_img.js"></script>
+    <script src="__PUBLIC__/back_js/jquery-form.js"></script>
+    <script src="__PUBLIC__/jedate/jedate.js"></script>
+    <style>
+        #commodity_main input[type=file]{margin-bottom: 10px;}
+        #commodity_main img{width: 100px;height: 100px;}
+    </style>
+    <script>
+        $(function(){
+            jeDate({
+                dateCell:".dateinfo",
+                format:"YYYY-MM-DD",
+                isinitVal:true,
+                isTime:true, //isClear:false,
+                minDate:"1950-01-01 00:00:00",
+            })
+        })
+        var MODULE = "__MODULE__";
+    </script>
+</head>
+
+<body>
+<include  file="Public/assets/common/top.html"/>
+<div class="main-container" id="main-container">
+    <include  file="Public/assets/common/nav.html"/><!--左侧导航栏-->
+    <div class="main-content">
+        <div class="breadcrumbs" id="breadcrumbs">
+            <ul class="breadcrumb">
+                <li>
+                    <i class="icon-home home-icon"></i>
+                    <a href="#">首页</a>
+                </li>
+                <li class="active">会员管理</li>
+                <li class="active">会员列表</li>
+                <li class="active">编辑会员</li>
+            </ul><!-- .breadcrumb -->
+        </div>
+
+        <div id="commodity_details">
+            <h1><img src="__PUBLIC__/back_img/ico.png">修改会员信息
+                <a href="javascript:history.go(-1);"><span><img src="__PUBLIC__/back_img/return.png"></span></a></h1>
+            <div id="commodity_list">
+                <!--通用信息_开始-->
+                <form action="__ACTION__" method="post" id="edit_form" enctype="multipart/form-data" >
+
+                    <div id="commodity_main" class="clear">
+                        <table>
+                            <input type="hidden" value="{$user['user_id']}" name="id">
+                            <tr>
+                                <th>账号：</th>
+                                <td><input type="text" value="{$user['phone']}" disabled="disabled"></td>
+                            </tr>
+                            <tr>
+                                <th>学校：</th>
+                                <td>
+                                    <select name="school_id">
+                                        <foreach name="school_list" item="s" >
+                                            <option value="{$s['school_id']}"
+                                            <if condition="$s['school_id'] eq $user['school_id']">selected="selected"</if>
+                                            >{$s.name}</option>
+                                        </foreach>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>头像：</th>
+                                <td>
+                                    <notempty name="user['image']">
+                                        <img src="__APP__{$user['image']}" id="to_img">
+                                        <else/>
+                                        <img src="" id="to_img">
+                                    </notempty>
+                                    <input type="file" id="form_file" onchange="getImageFormat('form_file','to_img');" name="form_file"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>昵称：</th>
+                                <td><input type="text" value="{$user.nickname}" name="nickname"></td>
+                            </tr>
+                            <tr>
+                                <th>性别：</th>
+                                <td>
+                                    <select name="sex">
+                                        <option value="1">男</option>
+                                        <option value="2">女</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>出生日期：</th>
+                                <td>
+                                    <input type="text" value="{$user['birthday']|date='Y-m-d',###}" name="birthday"
+                                    class="dateinfo" readonly="readonly">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>是否单身：</th>
+                                <td>
+                                    <select name="single">
+                                        <option value="0">否</option>
+                                        <option value="1">是</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>积分：</th>
+                                <td><input type="text" value="{$user.integral}" name="integral"></td>
+                            </tr>
+                            <tr>
+                                <th>状态：</th>
+                                <td>
+                                    <select name="disable">
+                                        <option value="0"
+                                        <if condition="0 eq $user['disable']">selected="selected"</if>
+                                        >正常</option>
+                                        <option value="1"
+                                        <if condition="1 eq $user['disable']">selected="selected"</if>
+                                        >禁用</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <input id="li1_btn" type="button" value="保存"/>
+                </form>
+                <!--通用信息_结束-->
+            </div>
+        </div>
+    </div><!-- /.main-content -->
+</div><!--main-container-->
+
+<include  file="Public/assets/common/footer.html"/>
+
+</body>
+
+<script>
+    $(".hygl").addClass("active open");
+    $(".hygl .hylb").addClass("active");
+    $('#li1_btn').click(function(){
+        $('#edit_form').ajaxSubmit({
+            url:"__ACTION__",
+            dataType: "json",
+            beforeSend: function() {
+                $('#li1_btn').attr('disabled','true');
+                $('#li1_btn').attr('value','上传中...');
+            },
+            type: "post",
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            success : function(data){
+                alert(data.msg);
+                if(0==data.errorCode){
+                    location.href = document.referrer;
+                }else{
+                    $('#li1_btn').removeAttr('disabled');
+                    $('#li1_btn').attr('value','保存');
+                }
+            }
+        });
+    });
+</script>
+</html>

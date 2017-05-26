@@ -1,0 +1,610 @@
+[ 2017-03-25T08:52:35+08:00 ] ::1 /axd/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `axd_node` [ RunTime:0.0035s ]
+SQL: SELECT `method` FROM `axd_node` WHERE ( level=2 )  [ RunTime:0.0003s ]
+
+[ 2017-03-25T08:52:35+08:00 ] ::1 /axd/Admin/Index/welp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000320s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000606s ]
+
+[ 2017-03-25T08:52:42+08:00 ] ::1 /axd/Admin/Admin/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004755s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004869s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2017-03-25T08:52:43+08:00 ] ::1 /axd/Admin/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000742s ]
+
+[ 2017-03-25T08:52:47+08:00 ] ::1 /axd/Admin/Admin/adminLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+SQL: SHOW COLUMNS FROM `axd_admin` [ RunTime:0.0034s ]
+SQL: SELECT `admin_id`,`account`,`password` FROM `axd_admin` WHERE ( account='admin' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `axd_node` [ RunTime:0.0030s ]
+SQL: SELECT `id` FROM `axd_node` WHERE ( level=2 )  [ RunTime:0.0004s ]
+
+[ 2017-03-25T08:52:48+08:00 ] ::1 /axd/Admin/Index/welp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000212s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063276s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000831s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001172s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001446s ]
+
+[ 2017-03-25T09:07:56+08:00 ] ::1 /axd/Admin/Index/welp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001553s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000235s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000350s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024266s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000653s ]
+
+[ 2017-03-25T09:20:28+08:00 ] ::1 /axd/Admin/Index/welp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000574s ]
+
+[ 2017-03-25T09:20:31+08:00 ] ::1 /axd/Admin/Subject/subjectList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+SQL: SHOW COLUMNS FROM `axd_subject` [ RunTime:0.0037s ]
+SQL: SELECT s.*,sc.name AS cate_name FROM axd_subject s LEFT JOIN axd_subject_cate sc ON sc.s_cate_id = s.s_cate_id  WHERE s.name LIKE '%%' ORDER BY subject_id DESC LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM axd_subject s INNER JOIN axd_subject_cate sc ON sc.s_cate_id = s.s_cate_id  WHERE s.name LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000237s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000340s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000589s ]
+
+[ 2017-03-25T09:25:11+08:00 ] ::1 /axd/Admin/Subject/addEditSubject/id/44.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+SQL: SHOW COLUMNS FROM `axd_subject` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `axd_subject` WHERE `subject_id` = 44 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `axd_subject_cate` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `axd_subject_cate`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `axd_subject_goods` [ RunTime:0.0027s ]
+SQL: SELECT sg.sg_id,sg.text_content,g.goods_id,g.name,g.image FROM axd_subject_goods sg INNER JOIN axd_goods g ON sg.goods_id = g.goods_id  WHERE ( sg.subject_id='44' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000306s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000419s ]
+NOTIC: [8] Undefined index: goods_temp G:\proj_php\axd\Application\Runtime\Cache\Admin\bec1636dc6b9c71cb9d7071f2538a6e3.php 第 844 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026173s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026275s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000591s ]
+
+[ 2017-03-25T09:25:14+08:00 ] ::1 /axd/Admin/Subject/addEditSubject/id/37.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+SQL: SHOW COLUMNS FROM `axd_subject` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `axd_subject` WHERE `subject_id` = 37 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `axd_subject_cate` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `axd_subject_cate`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `axd_subject_goods` [ RunTime:0.0049s ]
+SQL: SELECT sg.sg_id,sg.text_content,g.goods_id,g.name,g.image FROM axd_subject_goods sg INNER JOIN axd_goods g ON sg.goods_id = g.goods_id  WHERE ( sg.subject_id='37' )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000327s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000468s ]
+NOTIC: [8] Undefined index: goods_temp G:\proj_php\axd\Application\Runtime\Cache\Admin\bec1636dc6b9c71cb9d7071f2538a6e3.php 第 844 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046319s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000618s ]
+
+[ 2017-03-25T09:26:45+08:00 ] ::1 /axd/Admin/Subject/addEditSubject/id/37.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `axd_subject` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `axd_subject` WHERE `subject_id` = 37 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `axd_subject_cate` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `axd_subject_cate`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `axd_subject_goods` [ RunTime:0.0038s ]
+SQL: SELECT sg.sg_id,sg.text_content,g.goods_id,g.name,g.image FROM axd_subject_goods sg INNER JOIN axd_goods g ON sg.goods_id = g.goods_id  WHERE ( sg.subject_id='37' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000362s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000487s ]
+NOTIC: [8] Undefined index: goods_temp G:\proj_php\axd\Application\Runtime\Cache\Admin\bec1636dc6b9c71cb9d7071f2538a6e3.php 第 844 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000671s ]
+
+[ 2017-03-25T09:28:11+08:00 ] ::1 /axd/Admin/Subject/addEditSubject/id/37.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `axd_subject` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `axd_subject` WHERE `subject_id` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `axd_subject_cate` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `axd_subject_cate`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `axd_subject_goods` [ RunTime:0.0026s ]
+SQL: SELECT sg.sg_id,sg.text_content,g.goods_id,g.name,g.image FROM axd_subject_goods sg INNER JOIN axd_goods g ON sg.goods_id = g.goods_id  WHERE ( sg.subject_id='37' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000307s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000411s ]
+NOTIC: [8] Undefined index: goods_temp G:\proj_php\axd\Application\Runtime\Cache\Admin\bec1636dc6b9c71cb9d7071f2538a6e3.php 第 844 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025981s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026083s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000460s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000562s ]
+
+[ 2017-03-25T09:36:07+08:00 ] ::1 /axd/Admin/Subject/addEditSubject
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+SQL: SHOW COLUMNS FROM `axd_subject` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `axd_subject` WHERE `subject_id` = 37 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: form_image G:\proj_php\axd\Application\Admin\Controller\SubjectController.class.php 第 155 行.
+NOTIC: [8] Undefined index: form_image_content G:\proj_php\axd\Application\Admin\Controller\SubjectController.class.php 第 166 行.
+NOTIC: [8] Undefined index: form_user_image G:\proj_php\axd\Application\Admin\Controller\SubjectController.class.php 第 177 行.
+SQL: SHOW COLUMNS FROM `axd_subject` [ RunTime:0.0032s ]
+SQL: UPDATE `axd_subject` SET `s_cate_id`='2',`name`='ceshi1',`sex`='1',`user_nickname`='ceshi3',`user_introduce`='ceshi4',`comment_count`='1',`collect_count`='2',`share_count`='3',`image`='/Public/uploads/subject/2017/03/19/9380230338.png',`image_content`='/Public/uploads/subject/2017/03/19/7615230338.png',`user_image`='/Public/uploads/subject/2017/03/19/9127230338.png' WHERE ( subject_id='37' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `axd_subject_goods` [ RunTime:0.0025s ]
+SQL: DELETE FROM `axd_subject_goods` WHERE ( subject_id='37' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `axd_subject_goods` [ RunTime:0.0052s ]
+SQL: INSERT INTO `axd_subject_goods` (`subject_id`,`goods_id`,`text_content`) VALUES ('37','56','35'),('37','58','36'),('37','59','373') [ RunTime:0.0003s ]
+
+[ 2017-03-25T09:36:08+08:00 ] ::1 /axd/Admin/Subject/subjectList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+SQL: SHOW COLUMNS FROM `axd_subject` [ RunTime:0.0032s ]
+SQL: SELECT s.*,sc.name AS cate_name FROM axd_subject s LEFT JOIN axd_subject_cate sc ON sc.s_cate_id = s.s_cate_id  WHERE s.name LIKE '%%' ORDER BY subject_id DESC LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM axd_subject s INNER JOIN axd_subject_cate sc ON sc.s_cate_id = s.s_cate_id  WHERE s.name LIKE '%%' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000247s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000349s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026399s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2017-03-25T09:36:10+08:00 ] ::1 /axd/Admin/Subject/addEditSubject/id/36.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+SQL: SHOW COLUMNS FROM `axd_subject` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `axd_subject` WHERE `subject_id` = 36 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `axd_subject_cate` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `axd_subject_cate`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `axd_subject_goods` [ RunTime:0.0022s ]
+SQL: SELECT sg.sg_id,sg.text_content,g.goods_id,g.name,g.image FROM axd_subject_goods sg INNER JOIN axd_goods g ON sg.goods_id = g.goods_id  WHERE ( sg.subject_id='36' )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000306s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000409s ]
+NOTIC: [8] Undefined index: goods_temp G:\proj_php\axd\Application\Runtime\Cache\Admin\bec1636dc6b9c71cb9d7071f2538a6e3.php 第 844 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026854s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2017-03-25T09:36:12+08:00 ] ::1 /axd/Admin/Subject/addEditSubject/id/37.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `axd_subject` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `axd_subject` WHERE `subject_id` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `axd_subject_cate` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `axd_subject_cate`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `axd_subject_goods` [ RunTime:0.0038s ]
+SQL: SELECT sg.sg_id,sg.text_content,g.goods_id,g.name,g.image FROM axd_subject_goods sg INNER JOIN axd_goods g ON sg.goods_id = g.goods_id  WHERE ( sg.subject_id='37' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000304s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000411s ]
+NOTIC: [8] Undefined index: goods_temp G:\proj_php\axd\Application\Runtime\Cache\Admin\bec1636dc6b9c71cb9d7071f2538a6e3.php 第 844 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026122s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000593s ]
+
+[ 2017-03-25T09:36:16+08:00 ] ::1 /axd/Admin/Subject/saveSubject2Session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+NOTIC: [8] Undefined index: form_image G:\proj_php\axd\Application\Admin\Controller\SubjectController.class.php 第 255 行.
+NOTIC: [8] Undefined index: form_image_content G:\proj_php\axd\Application\Admin\Controller\SubjectController.class.php 第 266 行.
+NOTIC: [8] Undefined index: form_user_image G:\proj_php\axd\Application\Admin\Controller\SubjectController.class.php 第 277 行.
+
+[ 2017-03-25T09:36:16+08:00 ] ::1 /axd/Admin/Subject/addSubjectGoodsPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `axd_goods_cate` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `axd_goods_cate` WHERE ( parent_id='1' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `axd_goods_cate` WHERE ( parent_id='3' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000263s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000369s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021535s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000587s ]
+
+[ 2017-03-25T09:36:17+08:00 ] ::1 /axd/Admin/Goods/getGoodsCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `axd_goods_cate` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `axd_goods_cate` WHERE ( parent_id='12' )  [ RunTime:0.0003s ]
+
+[ 2017-03-25T09:36:31+08:00 ] ::1 /axd/Admin/Subject/addSubjectGoodsPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+SQL: SHOW COLUMNS FROM `axd_goods_cate` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `axd_goods` [ RunTime:0.0029s ]
+SQL: INSERT INTO `axd_goods` (`image`,`name`,`g_cate_id`,`sex`,`price`,`tb_link`,`end_time`,`text_content`,`comment_count`,`collect_count`,`add_time`) VALUES ('/Public/uploads/goods/2017/03/25/3797093631.jpg','挤挤挤','52','1','41','212','1490371200','312312','0','12','1490405791') [ RunTime:0.0039s ]
+
+[ 2017-03-25T09:36:32+08:00 ] ::1 /axd/Admin/Subject/addEditSubject/id/37.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+SQL: SHOW COLUMNS FROM `axd_subject` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `axd_subject` WHERE `subject_id` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `axd_subject_cate` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `axd_subject_cate`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `axd_subject_goods` [ RunTime:0.0025s ]
+SQL: SELECT sg.sg_id,sg.text_content,g.goods_id,g.name,g.image FROM axd_subject_goods sg INNER JOIN axd_goods g ON sg.goods_id = g.goods_id  WHERE ( sg.subject_id='37' )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000306s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000412s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025911s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2017-03-25T09:36:43+08:00 ] ::1 /axd/Admin/Subject/addEditSubject
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `axd_subject` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `axd_subject` WHERE `subject_id` = 37 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: form_image G:\proj_php\axd\Application\Admin\Controller\SubjectController.class.php 第 155 行.
+NOTIC: [8] Undefined index: form_image_content G:\proj_php\axd\Application\Admin\Controller\SubjectController.class.php 第 166 行.
+NOTIC: [8] Undefined index: form_user_image G:\proj_php\axd\Application\Admin\Controller\SubjectController.class.php 第 177 行.
+SQL: SHOW COLUMNS FROM `axd_subject` [ RunTime:0.0069s ]
+SQL: UPDATE `axd_subject` SET `s_cate_id`='2',`name`='ceshi1',`sex`='1',`user_nickname`='ceshi3',`user_introduce`='ceshi4',`comment_count`='1',`collect_count`='2',`share_count`='3',`image`='/Public/uploads/subject/2017/03/19/9380230338.png',`image_content`='/Public/uploads/subject/2017/03/19/7615230338.png',`user_image`='/Public/uploads/subject/2017/03/19/9127230338.png' WHERE ( subject_id='37' ) [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `axd_subject_goods` [ RunTime:0.0042s ]
+SQL: DELETE FROM `axd_subject_goods` WHERE ( subject_id='37' ) [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `axd_subject_goods` [ RunTime:0.0048s ]
+SQL: INSERT INTO `axd_subject_goods` (`subject_id`,`goods_id`,`text_content`) VALUES ('37','56','35'),('37','58','36'),('37','59','373'),('37','65','号的好的好的') [ RunTime:0.0006s ]
+
+[ 2017-03-25T09:36:45+08:00 ] ::1 /axd/Admin/Subject/subjectList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `axd_subject` [ RunTime:0.0034s ]
+SQL: SELECT s.*,sc.name AS cate_name FROM axd_subject s LEFT JOIN axd_subject_cate sc ON sc.s_cate_id = s.s_cate_id  WHERE s.name LIKE '%%' ORDER BY subject_id DESC LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM axd_subject s INNER JOIN axd_subject_cate sc ON sc.s_cate_id = s.s_cate_id  WHERE s.name LIKE '%%' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000238s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000346s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000590s ]
+
+[ 2017-03-25T09:36:46+08:00 ] ::1 /axd/Admin/Subject/addEditSubject/id/36.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+SQL: SHOW COLUMNS FROM `axd_subject` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `axd_subject` WHERE `subject_id` = 36 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `axd_subject_cate` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `axd_subject_cate`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `axd_subject_goods` [ RunTime:0.0027s ]
+SQL: SELECT sg.sg_id,sg.text_content,g.goods_id,g.name,g.image FROM axd_subject_goods sg INNER JOIN axd_goods g ON sg.goods_id = g.goods_id  WHERE ( sg.subject_id='36' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000311s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000415s ]
+NOTIC: [8] Undefined index: goods_temp G:\proj_php\axd\Application\Runtime\Cache\Admin\bec1636dc6b9c71cb9d7071f2538a6e3.php 第 844 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000598s ]
+
+[ 2017-03-25T09:36:49+08:00 ] ::1 /axd/Admin/Subject/addEditSubject/id/36.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+SQL: SHOW COLUMNS FROM `axd_subject` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `axd_subject` WHERE `subject_id` = 36 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `axd_subject_cate` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `axd_subject_cate`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `axd_subject_goods` [ RunTime:0.0054s ]
+SQL: SELECT sg.sg_id,sg.text_content,g.goods_id,g.name,g.image FROM axd_subject_goods sg INNER JOIN axd_goods g ON sg.goods_id = g.goods_id  WHERE ( sg.subject_id='36' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000336s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000451s ]
+NOTIC: [8] Undefined index: goods_temp G:\proj_php\axd\Application\Runtime\Cache\Admin\bec1636dc6b9c71cb9d7071f2538a6e3.php 第 844 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034122s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034302s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000655s ]
+
+[ 2017-03-25T09:36:51+08:00 ] ::1 /axd/Admin/Subject/addEditSubject/id/37.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+SQL: SHOW COLUMNS FROM `axd_subject` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `axd_subject` WHERE `subject_id` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `axd_subject_cate` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `axd_subject_cate`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `axd_subject_goods` [ RunTime:0.0024s ]
+SQL: SELECT sg.sg_id,sg.text_content,g.goods_id,g.name,g.image FROM axd_subject_goods sg INNER JOIN axd_goods g ON sg.goods_id = g.goods_id  WHERE ( sg.subject_id='37' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000342s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000461s ]
+NOTIC: [8] Undefined index: goods_temp G:\proj_php\axd\Application\Runtime\Cache\Admin\bec1636dc6b9c71cb9d7071f2538a6e3.php 第 844 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044235s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044420s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000660s ]
+
+[ 2017-03-25T09:54:13+08:00 ] ::1 /axd/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000890s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001172s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000679s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000786s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008590s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000918s ]
+
+[ 2017-03-25T09:54:14+08:00 ] ::1 /axd/Admin/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001444s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008470s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008594s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000857s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000985s ]
+

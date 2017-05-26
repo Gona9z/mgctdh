@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{$pro_name}台管理系统</title>
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/share.css" /><!--另添加样式文件-->
+    <include  file="Public/assets/common/header.html"/><!--头部文件-->
+    <link href="__PUBLIC__/assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <!--讨论区滚动条begin-->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/css/jscrollpane1.css" />
+    <!--上传文件-->
+    <link href="__PUBLIC__/assets/plugins/bootstrap-fileinput/css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="__PUBLIC__/back_css/edit_common.css">
+
+    <script src="__PUBLIC__/back_js/thumb_img.js"></script>
+    <script src="__PUBLIC__/back_js/jquery-form.js"></script>
+    <style>
+        #commodity_main input[type=file]{margin-bottom: 10px;}
+        #commodity_main img{width: 150px;height: 120px;}
+    </style>
+</head>
+
+<body>
+<include  file="Public/assets/common/top.html"/>
+<div class="main-container" id="main-container">
+    <include  file="Public/assets/common/nav.html"/><!--左侧导航栏-->
+    <div class="main-content">
+        <div class="breadcrumbs" id="breadcrumbs">
+            <ul class="breadcrumb">
+                <li>
+                    <i class="icon-home home-icon"></i>
+                    <a href="#">首页</a>
+                </li>
+                <li class="active">代理管理</li>
+                <li class="active">代理列表</li>
+                <li class="active">编辑代理信息</li>
+            </ul><!-- .breadcrumb -->
+        </div>
+
+        <div id="commodity_details">
+            <h1><img src="__PUBLIC__/back_img/ico.png"><empty name="Think.get.id">添加<else/>修改</empty>代理信息
+                <a href="javascript:history.go(-1);"><span><img src="__PUBLIC__/back_img/return.png"></span></a></h1>
+            <div id="commodity_list">
+                <!--通用信息_开始-->
+                <form action="__ACTION__" method="post" id="goods_form" enctype="multipart/form-data" >
+
+                    <div id="commodity_main" class="clear">
+                        <table>
+                            <input type="hidden" value="{$agent['agent_id']}" name="id">
+                            <tr>
+                                <th>名称：</th>
+                                <td><input type="text" value="{$agent.account}" name="account"></td>
+                            </tr>
+                            <tr>
+                                <th>密码：</th>
+                                <td><input type="text" value="" name="password"></td>
+                            </tr>
+                            <tr>
+                                <th>学校：</th>
+                                <td>
+                                    <select name="school_id">
+                                        <foreach name="school_list" item="s">
+                                        <option value="{$s.school_id}"
+                                            <if condition="$agent['school_id'] eq $s['school_id']">selected="selected"</if>
+                                        >{$s.name}</option>
+                                        </foreach>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>长号：</th>
+                                <td><input type="text" value="{$agent.long_link}" name="long_link"></td>
+                            </tr>
+                            <tr>
+                                <th>短号：</th>
+                                <td><input type="text" value="{$agent.short_link}" name="short_link"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <input id="li1_btn" type="button" value="保存"/>
+                </form>
+                <!--通用信息_结束-->
+            </div>
+        </div>
+    </div><!-- /.main-content -->
+</div><!--main-container-->
+
+<include  file="Public/assets/common/footer.html"/>
+
+</body>
+
+<script>
+    $(".dlgl").addClass("active open");
+    $(".dlgl .dllb").addClass("active");
+    $('#li1_btn').click(function(){
+        $('#goods_form').ajaxSubmit({
+            url:"__ACTION__",
+            dataType: "json",
+            beforeSend: function() {
+                $('#li1_btn').attr('disabled','true');
+                $('#li1_btn').attr('value','上传中...');
+            },
+            type: "post",
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            success : function(data){
+                alert(data.msg);
+                if(0==data.errorCode){
+                    location.href = document.referrer;
+                }else{
+                    $('#li1_btn').removeAttr('disabled');
+                    $('#li1_btn').attr('value','保存');
+                }
+            }
+        });
+    });
+</script>
+</html>

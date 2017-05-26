@@ -1,0 +1,144 @@
+#search_baby{
+    min-width:1280px;
+}
+#search_baby .search_box {
+    width:960px;
+    margin: 0 auto;
+}
+#search_baby .search_title{
+    margin:30px 0;
+    float: left;
+    width:100%;
+    border-bottom:2px solid #e6e6e6;
+}
+#search_baby .search_title .baby_title{
+    display: block;
+    float: left;
+    width:65px;
+    height:37px;
+    text-align: center;
+    line-height:37px;
+    border:2px solid #e6e6e6;
+    border-bottom:none;
+    background: #fff;
+    margin-bottom:-2px;
+    margin-left:20px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    color: #139ffc;
+}
+#search_baby .search_title .notes_title{
+    display: block;
+    float: left;
+    width:65px;
+    height:37px;
+    line-height:37px;
+    text-align: center;
+    cursor: pointer;
+}
+#search_baby .baby_details {
+    float: left;
+}
+#search_baby .baby_details ul{
+    float: left;
+    margin-left:-20px;
+}
+#search_baby .baby_details ul li{
+    width:222px;
+    height:332px;
+    float: left;
+    border:1px solid #e6e6e6;
+    margin-bottom:20px;
+    margin-left:20px;
+}
+#search_baby .baby_details ul li:hover{
+    -webkit-box-shadow: 2px 2px 8px #999;
+    -moz-box-shadow: 2px 2px 8px #999;
+    box-shadow: 1px 2px 8px #ddd;
+}
+#search_baby .baby_img{
+    width: 222px;
+    height:222px;
+    overflow: hidden;
+}
+#search_baby .baby_img img{
+    max-width:222px;
+    max-height:222px;
+}
+#search_baby .baby_content {
+    padding:20px 10px;
+}
+#search_baby .baby_content p{
+    height:40px;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+#search_baby .baby_price{
+    padding:0px 10px;
+}
+#search_baby .baby_price .price{
+    float: left;
+    color: #ff2d47;
+}
+#search_baby .baby_price .praise_ico{
+    width:18px;
+    height:20px;
+    float: left;
+    background-image: url(../img/praise_ico.png);
+    background-repeat:no-repeat;
+    background-position: 0px 4px;
+}
+#search_baby .baby_price .praise{
+    float: right;
+    color: #999;
+}
+#search_baby .choose_page{
+    margin-bottom:70px;
+    margin-top:30px;
+    float: left;
+    margin-left:50%;
+}
+#search_baby .choose_page ul{
+    float: left;
+}
+#search_baby .choose_page ul li{
+    float: left;
+    margin-left:10px;
+    text-align: center;
+    width:30px;
+    height:30px;
+    line-height:30px;
+    background: #e6e6e6;
+}
+#search_baby .choose_page ul li:hover{
+    color: #fff;
+    background: #139ffc;
+}
+#search_baby .choose_page a{
+    color: #999;
+}
+#search_baby .choose_page .point{
+    background: none;
+    color: #999;
+}
+#search_baby .choose_page .point:hover{
+    background: none;
+    color: #999;
+}
+#search_baby .choose_page .selected{
+    color: #fff;
+    background: #139ffc;
+}
+.parise_solid_ico{
+    width:18px;
+    height:20px;
+    float: left;
+    background-image: url(../img/parise_solid_ico.png);
+    background-repeat:no-repeat;
+    background-position: 0px 2px;
+}

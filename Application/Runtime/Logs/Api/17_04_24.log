@@ -1,0 +1,111 @@
+[ 2017-04-24T10:22:33+08:00 ] ::1 /axd/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+
+[ 2017-04-24T10:22:45+08:00 ] ::1 /axd/Api/Index/homeBanner
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `axd_banner` [ RunTime:0.0028s ]
+SQL: SELECT `image`,`link` FROM `axd_banner` ORDER BY order_n  [ RunTime:0.0002s ]
+
+[ 2017-04-24T10:23:24+08:00 ] ::1 /axd/Api/Subject/getSubjectList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+SQL: SELECT s.subject_id,s.image,s.`name`,s.user_nickname,s.user_nickname,s.user_image,s.text_content,s.collect_count FROM axd_subject s INNER JOIN axd_subject_cate sc ON sc.s_cate_id = s.s_cate_id ORDER BY s.comment_count DESC LIMIT 0,10 [ RunTime:0.0025s ]
+
+[ 2017-04-24T10:23:45+08:00 ] ::1 /axd/Api/Subject/getSubjectList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+ERR: 1054:Champ 's.parise_count' inconnu dans order clause
+ [ SQL语句 ] : SELECT s.subject_id,s.image,s.`name`,s.user_nickname,s.user_nickname,s.user_image,s.text_content,s.collect_count FROM axd_subject s INNER JOIN axd_subject_cate sc ON sc.s_cate_id = s.s_cate_id ORDER BY s.parise_count DESC LIMIT 0,10
+ERR: 1054:Champ 's.parise_count' inconnu dans order clause
+ [ SQL语句 ] : SELECT s.subject_id,s.image,s.`name`,s.user_nickname,s.user_nickname,s.user_image,s.text_content,s.collect_count FROM axd_subject s INNER JOIN axd_subject_cate sc ON sc.s_cate_id = s.s_cate_id ORDER BY s.parise_count DESC LIMIT 0,10
+
+[ 2017-04-24T10:23:54+08:00 ] ::1 /axd/Api/Subject/getSubjectList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+ERR: 1054:Champ 's.praise_count' inconnu dans order clause
+ [ SQL语句 ] : SELECT s.subject_id,s.image,s.`name`,s.user_nickname,s.user_nickname,s.user_image,s.text_content,s.collect_count FROM axd_subject s INNER JOIN axd_subject_cate sc ON sc.s_cate_id = s.s_cate_id ORDER BY s.praise_count DESC LIMIT 0,10
+ERR: 1054:Champ 's.praise_count' inconnu dans order clause
+ [ SQL语句 ] : SELECT s.subject_id,s.image,s.`name`,s.user_nickname,s.user_nickname,s.user_image,s.text_content,s.collect_count FROM axd_subject s INNER JOIN axd_subject_cate sc ON sc.s_cate_id = s.s_cate_id ORDER BY s.praise_count DESC LIMIT 0,10
+
+[ 2017-04-24T10:25:33+08:00 ] ::1 /axd/Api/Subject/getSubjectList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001534s ]
+SQL: SELECT s.subject_id,s.image,s.`name`,s.user_nickname,s.user_nickname,s.user_image,s.text_content,s.collect_count FROM axd_subject s INNER JOIN axd_subject_cate sc ON sc.s_cate_id = s.s_cate_id ORDER BY s.collect_count DESC LIMIT 0,10 [ RunTime:0.0006s ]
+
+[ 2017-04-24T10:25:39+08:00 ] ::1 /axd/Api/Subject/getSubjectList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+ERR: 1064:Erreur de syntaxe près de 's.add_time DESC LIMIT 0,10' à la ligne 1
+ [ SQL语句 ] : SELECT s.subject_id,s.image,s.`name`,s.user_nickname,s.user_nickname,s.user_image,s.text_content,s.collect_count FROM axd_subject s INNER JOIN axd_subject_cate sc ON sc.s_cate_id = s.s_cate_id WHERE sc.s_cate_id ='1' ORDER BY s.collect_count s.add_time DESC LIMIT 0,10
+ERR: 1064:Erreur de syntaxe près de 's.add_time DESC LIMIT 0,10' à la ligne 1
+ [ SQL语句 ] : SELECT s.subject_id,s.image,s.`name`,s.user_nickname,s.user_nickname,s.user_image,s.text_content,s.collect_count FROM axd_subject s INNER JOIN axd_subject_cate sc ON sc.s_cate_id = s.s_cate_id WHERE sc.s_cate_id ='1' ORDER BY s.collect_count s.add_time DESC LIMIT 0,10
+
+[ 2017-04-24T10:25:46+08:00 ] ::1 /axd/Api/Subject/getSubjectList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+ERR: 1064:Erreur de syntaxe près de 's.add_time DESC LIMIT 0,10' à la ligne 1
+ [ SQL语句 ] : SELECT s.subject_id,s.image,s.`name`,s.user_nickname,s.user_nickname,s.user_image,s.text_content,s.collect_count FROM axd_subject s INNER JOIN axd_subject_cate sc ON sc.s_cate_id = s.s_cate_id WHERE sc.s_cate_id ='2' ORDER BY s.collect_count s.add_time DESC LIMIT 0,10
+ERR: 1064:Erreur de syntaxe près de 's.add_time DESC LIMIT 0,10' à la ligne 1
+ [ SQL语句 ] : SELECT s.subject_id,s.image,s.`name`,s.user_nickname,s.user_nickname,s.user_image,s.text_content,s.collect_count FROM axd_subject s INNER JOIN axd_subject_cate sc ON sc.s_cate_id = s.s_cate_id WHERE sc.s_cate_id ='2' ORDER BY s.collect_count s.add_time DESC LIMIT 0,10
+
+[ 2017-04-24T10:25:51+08:00 ] ::1 /axd/Api/Subject/getSubjectList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+SQL: SELECT s.subject_id,s.image,s.`name`,s.user_nickname,s.user_nickname,s.user_image,s.text_content,s.collect_count FROM axd_subject s INNER JOIN axd_subject_cate sc ON sc.s_cate_id = s.s_cate_id WHERE sc.s_cate_id ='2' ORDER BY s.collect_count,s.add_time DESC LIMIT 0,10 [ RunTime:0.0004s ]
+
+[ 2017-04-24T10:26:31+08:00 ] ::1 /axd/Api/Subject/getSubjectList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+SQL: SELECT s.subject_id,s.image,s.`name`,s.user_nickname,s.user_nickname,s.user_image,s.text_content,s.collect_count FROM axd_subject s INNER JOIN axd_subject_cate sc ON sc.s_cate_id = s.s_cate_id WHERE sc.s_cate_id ='2' ORDER BY s.collect_count,s.add_time DESC LIMIT 0,10 [ RunTime:0.0004s ]
+
+[ 2017-04-24T10:26:31+08:00 ] ::1 /axd/Api/Subject/getSubjectList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+SQL: SELECT s.subject_id,s.image,s.`name`,s.user_nickname,s.user_nickname,s.user_image,s.text_content,s.collect_count FROM axd_subject s INNER JOIN axd_subject_cate sc ON sc.s_cate_id = s.s_cate_id WHERE sc.s_cate_id ='2' ORDER BY s.collect_count,s.add_time DESC LIMIT 0,10 [ RunTime:0.0004s ]
+

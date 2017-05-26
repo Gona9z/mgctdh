@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{$pro_name}后台管理系统</title>
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/share.css" /><!--另添加样式文件-->
+    <include  file="Public/assets/common/header.html"/><!--头部文件-->
+    <link href="__PUBLIC__/assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <!--讨论区滚动条begin-->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/css/jscrollpane1.css" />
+    <!--上传文件-->
+    <link href="__PUBLIC__/assets/plugins/bootstrap-fileinput/css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="__PUBLIC__/back_css/edit_common.css">
+    <script src="__PUBLIC__/back_js/jquery-form.js"></script>
+    <style>
+        tr th{text-align: left;color: #707070;}
+        #myTabContent tr td {background: #ffffff;}
+        #myTabContent tr td span{float: left;margin-left: 20px;}
+        #myTabContent input[type=checkbox]{margin:3px 5px 0 0;float: left;}
+        #home span{float: left;}
+        #home h5{float: left;margin:0 10px 10px 0;font-weight: bold;}
+        .tab-pane{ position: relative;  }
+        .tab-return{position: absolute;right:10px;top:-10px;height:30px;width:40px;
+            border:1px solid #ddd;background: #fff;cursor: pointer;}
+        .tab-return:hover{background: #eee;}
+        .tab-return img{width:30px;height:30px;}
+    </style>
+    <script type="text/javascript">
+        var MODULE = "__MODULE__";
+    </script>
+</head>
+
+<body>
+<include  file="Public/assets/common/top.html"/>
+<div class="main-container" id="main-container">
+    <include  file="Public/assets/common/nav.html"/><!--左侧导航栏-->
+    <div class="main-content">
+        <div class="breadcrumbs" id="breadcrumbs">
+            <ul class="breadcrumb">
+                <li>
+                    <i class="icon-home home-icon"></i>
+                    <a href="#">首页</a>
+                </li>
+                <li class="active">管理员管理</li>
+                <li class="active">管理员角色列表</li>
+                <li class="active">配置角色权限</li>
+            </ul><!-- .breadcrumb -->
+        </div>
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade in active" id="home">
+                <!--<div class="col-sm-4 col-xs-6">
+                    <form class="bssexample bs-example-form" action="__ACTION__" id="sf">
+                        <div class="input-group" style="margin-bottom: 3%;">
+                            <input type="text" class="form-control" placeholder="昵称/账号搜索" value="{$keyword}" name="keyword">
+                            <a onClick="document.getElementById('sf').submit();" class="input-group-addon"><i class="icon-search"></i></a>
+                        </div>
+                    </form>
+                </div>-->
+                <span><h5>{$role.name}</h5>权限配置</span>
+                <p class="tab-return">
+                    <a href="javascript:history.go(-1);"><img src="__PUBLIC__/back_img/return.png"></a>
+                </p>
+            </div>
+
+            <form action="__ACTION__" method="post" id="edit_form" enctype="multipart/form-data" >
+                <input type="hidden" value="{$role.role_id}" name="id">
+                <table class="table table-bordered">
+                <foreach name="all_pri" item="p1">
+                    <tr>
+                        <th>{$p1.name}</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <foreach name="p1['secnd_pri']" item="p2">
+                                <span>
+                                    <input type="checkbox" value="{$p2.id}" name="role_pri[]"
+                                        <in name="p2[id]" value="$role_pri">checked="checked"</in>
+                                    >{$p2.name}</span>
+                            </foreach>
+                        </td>
+                    </tr>
+                </foreach>
+                </table>
+                <input id="li1_btn" type="button" value="保存"/>
+            </form>
+
+            <div class="text-center">
+                {$page}
+            </div>
+        </div><!--myTabContent-->
+    </div><!-- /.main-content -->
+</div><!--main-container-->
+
+<include  file="Public/assets/common/footer.html"/>
+</body>
+
+<script>
+    $(".glygl").addClass("active open");
+    $(".glygl .glyjslb").addClass("active");
+    $('#li1_btn').click(function(){
+        $('#edit_form').ajaxSubmit({
+            url:"__ACTION__",
+            dataType: "json",
+            beforeSend: function() {
+                $('#li1_btn').attr('disabled','true');
+                $('#li1_btn').attr('value','上传中...');
+            },
+            type: "post",
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            success : function(data){
+                alert(data.msg);
+                if(0==data.errorCode){
+                    location.href = document.referrer;
+                }else{
+                    $('#li1_btn').removeAttr('disabled');
+                    $('#li1_btn').attr('value','保存');
+                }
+            }
+        });
+    });
+</script>
+</html>
