@@ -1,0 +1,23 @@
+[ 2017-05-27T14:26:33+08:00 ] ::1 /mgctdh/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001079s ]
+ERR: 1146:Table 'db_mgctdh.ar_banner' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ar_banner`
+ERR: 1146:Table 'db_mgctdh.ar_banner' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ar_banner`
+
+[ 2017-05-27T14:27:07+08:00 ] ::1 /mgctdh/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008888s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009047s ]
+

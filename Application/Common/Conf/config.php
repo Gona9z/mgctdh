@@ -8,7 +8,7 @@ $sysArr = array(
     'MODULE_DENY_LIST'      =>  array('Common','Runtime'),
     // 设置允许访问的模块列表
     'MODULE_ALLOW_LIST'    =>    array('Home','Admin','public','Api'),
-    'DEFAULT_MODULE'       =>    'Home',
+    'DEFAULT_MODULE'       =>    'Api',
     'URL_CASE_INSENSITIVE'  =>    true,     // URL地址是否不区分大小写
     'URL_MODEL'             =>    2,        // URL访问模式
     'LANG_SWITCH_ON'        =>    false,     // 默认关闭多语言包功能
@@ -28,17 +28,16 @@ $databaseArr = array(
 	/* 数据库设置 */
 	'DB_TYPE'               =>  'mysql',     // 数据库类型
 	'DB_HOST'               =>  '127.0.0.1', // 服务器地址
-	'DB_NAME'               =>  'db_axd',          // 数据库名
+	'DB_NAME'               =>  'db_mgctdh',          // 数据库名
 	'DB_USER'               =>  'root',      // 用户名
 	'DB_PWD'                =>  '',          // 密码
 	'DB_PORT'               =>  '3306',        // 端口
-	'DB_PREFIX'             =>  'axd_',    // 数据库表前缀
+	'DB_PREFIX'             =>  'ar_',    // 数据库表前缀
 );
 
 
 $otherArr = array(
-//    'PRO_NAME'  =>  'Ueditor测试',
-    'PRO_NAME'  =>  'A梦校园',
+    'PRO_NAME'  =>  'AMEERICAN',
 	/* 模板相关配置 */
 	'TMPL_PARSE_STRING' => array (
 			'__IMG__' => __ROOT__.'/Public/img',
@@ -46,30 +45,18 @@ $otherArr = array(
 			'__JS__' => __ROOT__.'/Public/js',
 	),
 	//网站路径返回//C('BASE_URL')
-//	'WEB_URL'	=>	'http://localhost:8088/axd/',
-//	'WEB_URL'	=>	'http://192.168.0.187:8088/axd/',
-// 	'WEB_URL'	=>	'http://'.$_SERVER['SERVER_NAME'].'/axd/',
- 	'WEB_URL'	=>	'http://demo.itwukai.com/',
+	'WEB_URL'	=>	'http://localhost:8088/mgctdh/',
+//	'WEB_URL'	=>	'http://192.168.0.187:8088/mgctdh/',
+// 	'WEB_URL'	=>	'http://'.$_SERVER['SERVER_NAME'].'/mgctdh/',
     //助通短信-请求链接
     'VCODE_URL' => 'http://www.ztsms.cn/sendNSms.do',
     //助通短信-用户名
     'ZT_SMS_USERNAME'   =>  'qirun666',
     //助通短信-密码
     'ZT_SMS_PASSWORD'   =>  '6x9Rc9pY',
-    //===========================微信相关
-    //微信refresh_token
-    'WX_GET_INFO'  =>   'https://api.weixin.qq.com/sns/userinfo',
-    //===========================微信相关
-    //QQ
-    'QQ_GET_INFO'  =>   'http://openapi.sparta.html5.qq.com/v3/user/get_info ',
-//    'QQ_GET_INFO'  =>   'http://openapi.tencentyun.com/v3/user/get_info ',
-    //===========================微博相关
-    'WB_GET_INFO'  => 'https://api.weibo.com/2/users/show.json',
     //==================极光推送相关
     'JG_APP_KEY'   =>  'c32cb6d465f0ae8a7eb4c8f3',
     'JG_MASTER_SECRET'   =>  '4a7c33631f5e8739ea9a1130',
-    //-=======应用宝下载地址
-    'TC_YYB'    =>  'http://a.app.qq.com/o/simple.jsp?pkgname=com.tencent.mm',
 );
 
 $language = include APP_PATH.'Message/Language.php';

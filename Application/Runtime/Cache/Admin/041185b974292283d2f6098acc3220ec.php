@@ -12,11 +12,11 @@
     <![endif]-->
 
 
-    <title><?php echo ($pro_name); ?>后台管理系统</title>
+    <title><?php echo ($pro_name); ?> management system</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- basic styles -->
-    <link href="/axd/Public/assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/axd/Public/assets/css/font-awesome.min.css" />
+    <link href="/mgctdh/Public/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/mgctdh/Public/assets/css/font-awesome.min.css" />
     <!--[if IE 7]>
     <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
     <![endif]-->
@@ -28,15 +28,15 @@
     <!--<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />-->
     <!-- page specific plugin styles -->
 
-    <link rel="stylesheet" href="/axd/Public/assets/css/jquery-ui-1.10.3.full.min.css" />
-    <link rel="stylesheet" href="/axd/Public/assets/css/datepicker.css" />
-    <link rel="stylesheet" href="/axd/Public/assets/css/ui.jqgrid.css" />
+    <link rel="stylesheet" href="/mgctdh/Public/assets/css/jquery-ui-1.10.3.full.min.css" />
+    <link rel="stylesheet" href="/mgctdh/Public/assets/css/datepicker.css" />
+    <link rel="stylesheet" href="/mgctdh/Public/assets/css/ui.jqgrid.css" />
 
     <!-- ace styles -->
 
-    <link rel="stylesheet" href="/axd/Public/assets/css/ace.min.css" />
-    <link rel="stylesheet" href="/axd/Public/assets/css/ace-rtl.min.css" />
-    <link rel="stylesheet" href="/axd/Public/assets/css/ace-skins.min.css" />
+    <link rel="stylesheet" href="/mgctdh/Public/assets/css/ace.min.css" />
+    <link rel="stylesheet" href="/mgctdh/Public/assets/css/ace-rtl.min.css" />
+    <link rel="stylesheet" href="/mgctdh/Public/assets/css/ace-skins.min.css" />
 
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
@@ -45,8 +45,8 @@
     <!-- inline styles related to this page -->
 
     <!-- ace settings handler -->
-    <script src="/axd/Public/assets/js/jquery-2.0.3.min.js"></script>
-    <script src="/axd/Public/assets/js/ace-extra.min.js"></script>
+    <script src="/mgctdh/Public/assets/js/jquery-2.0.3.min.js"></script>
+    <script src="/mgctdh/Public/assets/js/ace-extra.min.js"></script>
     <!-- <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script> -->
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -54,7 +54,7 @@
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif]-->
-    <script src="/axd/Public/back_js/jquery-form.js"></script>
+    <script src="/mgctdh/Public/back_js/jquery-form.js"></script>
 </head>
 
 <body class="login-layout">
@@ -65,8 +65,8 @@
                 <div class="login-container">
                     <div class="center">
                         <h2>
-                            <i><img alt="" src="/axd/Public/back_img/logo.png" style="height: 30px;"></i>
-                            <span class="white"><?php echo ($pro_name); ?>后台管理系统</span>
+                            <i><img alt="" src="/mgctdh/Public/back_img/logo.png" style="height: 30px;"></i>
+                            <span class="white"><?php echo ($pro_name); ?><br/>management system</span>
                         </h2>
                     </div>
 
@@ -78,7 +78,7 @@
                                 <div class="widget-main">
                                     <h4 class="header blue lighter bigger">
                                         <i class="icon-flag blue"></i>
-                                        输入信息
+                                        Sign Up
                                     </h4>
 
                                     <div class="space-6"></div>
@@ -86,14 +86,14 @@
                                     <form method="post" action="###" id="login_form">
                                         <label class="block clearfix">
                                             <span class="block input-icon input-icon-right">
-                                                <input type="text" class="form-control" name="account" placeholder="用户名" />
+                                                <input type="text" class="form-control" name="account" placeholder="account" />
                                                 <i class="icon-user"></i>
                                             </span>
                                         </label>
 
                                         <label class="block clearfix">
                                             <span class="block input-icon input-icon-right">
-                                                <input type="password" class="form-control" name="password" placeholder="密码" />
+                                                <input type="password" class="form-control" name="password" placeholder="password" />
                                                 <i class="icon-lock"></i>
                                             </span>
                                         </label>
@@ -101,69 +101,31 @@
                                         <div class="space"></div>
 
                                         <div class="clearfix">
-                                            <label class="inline">
+                                            <!--<label class="inline">
                                                 <input type="checkbox" class="ace" />
-                                                <span class="lbl">记住密码</span>
-                                            </label>
+                                                <span class="lbl">password</span>
+                                            </label>-->
                                             <button type="button" class="width-35 pull-right btn btn-sm btn-primary" style="margin-top: 15px;" id="login_button">
                                                 <i class="icon-key"></i>
-                                                登陆
+                                                Log In
                                             </button>
                                         </div>
                                     </form>
 
                                 </div><!-- /widget-main -->
 
-                                <div class="toolbar clearfix">
+                                <!--<div class="toolbar clearfix">
                                     <div>
                                         <a href="#" onclick="show_box('forgot-box'); return false;" class="forgot-password-link">
                                             <i class="icon-arrow-left"></i>
                                             忘记密码
                                         </a>
                                     </div>
-                                </div>
+                                </div>-->
 
                             </div><!-- /widget-body -->
                         </div><!-- /login-box -->
 
-                        <div id="forgot-box" class="forgot-box widget-box no-border">
-                            <div class="widget-body">
-                                <div class="widget-main">
-                                    <h4 class="header red lighter bigger">
-                                        <i class="icon-key"></i>
-                                        找回密码
-                                    </h4>
-
-                                    <div class="space-6"></div>
-                                    <p>
-                                        输入你注册的手机号码
-                                    </p>
-
-                                    <form>
-                                        <label class="block clearfix">
-                                            <span class="block input-icon input-icon-right">
-                                                <input type="email" class="form-control" placeholder="手机" id="find_phone"/>
-                                                <i class="icon-envelope"></i>
-                                            </span>
-                                        </label>
-
-                                        <div class="clearfix">
-                                            <button type="button" class="width-35 pull-right btn btn-sm btn-danger">
-                                                <i class="icon-lightbulb"></i>
-                                                发送
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div><!-- /widget-main -->
-
-                                <div class="toolbar center">
-                                    <a href="#" onclick="show_box('login-box'); return false;" class="back-to-login-link">
-                                        返回登陆
-                                        <i class="icon-arrow-right"></i>
-                                    </a>
-                                </div>
-                            </div><!-- /widget-body -->
-                        </div><!-- /forgot-box -->
 
                     </div><!-- /position-relative -->
                 </div>

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>接口测试页面</title>
+</head>
+<style>
+    form input{
+        width: 80px;
+    }
+</style>
+<body>
+    <h1>接口测试</h1>
+    <strong style="color: green;"> 1.发送短信验证码__APP__/Api/User/sendVCode</strong><br/>
+    <form action="__APP__/Api/User/sendVCode" method="post">
+        phone：<input type="text" name="phone" value=""/>
+        type:
+        <select name="type">
+            <option value="0">0:注册</option>
+            <option value="1">1:找回密码</option>
+        </select>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color:green;"> 2.检查短信验证码__APP__/Api/User/checkVCode</strong><br/>
+    <form action="__APP__/Api/User/checkVCode" method="post">
+        phone：<input type="text" name="phone" value=""/>
+        v_code:<input type="text" name="v_code" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color:green;"> 3.注册__APP__/Api/User/registUser</strong><br/>
+    <form action="__APP__/Api/User/registUser" method="post">
+        phone：<input type="text" name="phone" value=""/>
+        password:<input type="text" name="password" value=""/>
+        openid:<input type="text" name="openid" value=""/>
+        image_url:<input type="text" name="image_url" value=""/>
+        nickname:<input type="text" name="nickname" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color:green;"> 4.登录__APP__/Api/User/loginUser</strong><br/>
+    <form action="__APP__/Api/User/loginUser" method="post">
+        phone：<input type="text" name="phone" value=""/>
+        password:<input type="text" name="password" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 5.获取启动页__APP__/Api/Index/getStartPage</strong><br/>
+    <form action="__APP__/Api/Index/getStartPage" method="post">
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 6.编辑用户资料__APP__/Api/User/editUserInfo</strong><br/>
+    <form action="__APP__/Api/User/editUserInfo" method="post">
+        phone：<input type="text" name="phone" value=""/>
+        nickname:<input type="text" name="nickname" value=""/>
+        sex:<input type="text" name="sex" value=""/>
+        birthday:<input type="text" name="birthday" value=""/>
+        single:<input type="text" name="single" value=""/>
+        school_id:<input type="text" name="school_id" value=""/>
+        image:<input type="text" name="image" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color:green;"> 7.获取学校列表__APP__/Api/User/getSchoolList</strong><br/>
+    <form action="__APP__/Api/User/getSchoolList" method="post">
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 8.签到__APP__/Api/User/userSign</strong><br/>
+    <form action="__APP__/Api/User/userSign" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 9.获取积分商品列表__APP__/Api/Goods/getIntegralGoods</strong><br/>
+    <form action="__APP__/Api/Goods/getIntegralGoods" method="post">
+        page：<input type="text" name="page" value="1"/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 10.兑换积分商品__APP__/Api/User/exchangeGoods</strong><br/>
+    <form action="__APP__/Api/User/exchangeGoods" method="post">
+        i_goods_id：<input type="text" name="i_goods_id" value=""/>
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        name：<input type="text" name="name" value=""/>
+        link_phone：<input type="text" name="link_phone" value=""/>
+        address：<input type="text" name="address" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 11.首页-banner__APP__/Api/Index/homeBanner</strong><br/>
+    <form action="__APP__/Api/Index/homeBanner" method="post">
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 12.获取专题分类__APP__/Api/Subject/getSubjectCate</strong><br/>
+    <form action="__APP__/Api/Subject/getSubjectCate" method="post">
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 13.根据专题根类获取美文__APP__/Api/Subject/getSubjectList</strong><br/>
+    <form action="__APP__/Api/Subject/getSubjectList" method="post">
+        s_cate_id：<input type="text" name="s_cate_id" value=""/>
+        page：<input type="text" name="page" value="1"/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 14.获取美文详情__APP__/Api/Subject/getSubjectDetail</strong><br/>
+    <form action="__APP__/Api/Subject/getSubjectDetail" method="post">
+        subject_id：<input type="text" name="subject_id" value=""/>
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 15.美文收藏/取消收藏__APP__/Api/Subject/collectSubject</strong><br/>
+    <form action="__APP__/Api/Subject/collectSubject" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        subject_id：<input type="text" name="subject_id" value=""/>
+        type：
+        <select name="type">
+            <option value="0">收藏</option>
+            <option value="1">取消收藏</option>
+        </select>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 17.美文评论__APP__/Api/Subject/subjectComment</strong><br/>
+    <form action="__APP__/Api/Subject/subjectComment" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        subject_id：<input type="text" name="subject_id" value=""/>
+        content：<input type="text" name="content" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 18.获取美文评论列表__APP__/Api/Subject/getSubjectComment</strong><br/>
+    <form action="__APP__/Api/Subject/getSubjectComment" method="post">
+        page：<input type="text" name="page" value="1"/>
+        subject_id：<input type="text" name="subject_id" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 19.首页搜素__APP__/Api/Index/searchGoodsSubject</strong><br/>
+    <form action="__APP__/Api/Index/searchGoodsSubject" method="post">
+        page：<input type="text" name="page" value="1"/>
+        keyword：<input type="text" name="keyword" value=""/>
+        type:
+        <select name="type">
+            <option value="1">美文</option>
+            <option value="2">商品</option>
+        </select>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color:green;"> 20.获取商品分类__APP__/Api/Goods/getGoodsCate</strong><br/>
+    <form action="__APP__/Api/Goods/getGoodsCate" method="post">
+        g_cate_id：<input type="text" name="g_cate_id" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 21.获取商品列表__APP__/Api/Goods/getGoodsList</strong><br/>
+    <form action="__APP__/Api/Goods/getGoodsList" method="post">
+        sex：<input type="text" name="sex" value=""/>
+        g_cate_id：<input type="text" name="g_cate_id" value=""/>
+        page：<input type="text" name="page" value="1"/>
+        keyword：<input type="text" name="keyword" value=""/>
+        order_type：
+        <select name="order_type">
+            <option value="1">默认</option>
+            <option value="2">热度</option>
+            <option value="3">价格:升序</option>
+            <option value="4">价格:降序</option>
+        </select>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green"> 23.获取校趣分类__APP__/Api/School/getSchoolCate</strong><br/>
+    <form action="__APP__/Api/School/getSchoolCate" method="post">
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green"> 24.School-获取校趣帖子__APP__/Api/School/getInteractList</strong><br/>
+    <form action="__APP__/Api/School/getInteractList" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        page：<input type="text" name="page" value="1"/>
+        type：<input type="text" name="type" value=""/>
+        type_id：<input type="text" name="type_id" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green"> 25.School-帖子点赞/取消点赞__APP__/Api/School/praiseInteract</strong><br/>
+    <form action="__APP__/Api/School/praiseInteract" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        interact_id：<input type="text" name="interact_id" value=""/>
+        type：
+        <select name="type">
+            <option value="0">点赞</option>
+            <option value="1">取消点赞</option>
+        </select>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green"> 26.School-帖子评论__APP__/Api/School/interactComment</strong><br/>
+    <form action="__APP__/Api/School/interactComment" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        interact_id：<input type="text" name="interact_id" value=""/>
+        content：<input type="text" name="content" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green"> 28.School-帖子评论列表__APP__/Api/School/getInteractComment</strong><br/>
+    <form action="__APP__/Api/School/getInteractComment" method="post">
+        page：<input type="text" name="page" value="1"/>
+        interact_id：<input type="text" name="interact_id" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 31.我的-获取个人信息__APP__/Api/User/getUserInfo</strong><br/>
+    <form action="__APP__/Api/User/getUserInfo" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 32.修改密码__APP__/Api/User/editPassword</strong><br/>
+    <form action="__APP__/Api/User/editPassword" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        o_password：<input type="text" name="o_password" value=""/>
+        n_password：<input type="text" name="n_password" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 33.获取积分订单__APP__/Api/User/getInteractOrder</strong><br/>
+    <form action="__APP__/Api/User/getInteractOrder" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        page：<input type="text" name="page" value="1"/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 34.获取积分记录列表__APP__/Api/User/getIntegralList</strong><br/>
+    <form action="__APP__/Api/User/getIntegralList" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        page：<input type="text" name="page" value="1"/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 35.获取我的收藏-美文__APP__/Api/Subject/getSubjectCollect</strong><br/>
+    <form action="__APP__/Api/Subject/getSubjectCollect" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        page：<input type="text" name="page" value="1"/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 36.获取我的收藏-宝贝__APP__/Api/Goods/getGoodsCollect</strong><br/>
+    <form action="__APP__/Api/Goods/getGoodsCollect" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        page：<input type="text" name="page" value="1"/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 40.意见反馈__APP__/Api/User/feedback</strong><br/>
+    <form action="__APP__/Api/User/feedback" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        content：<input type="text" name="content" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong> 42.检查更新__APP__/Api/User/userSign</strong><br/>
+    <form action="__APP__/Api/User/userSign" method="post">
+        uid：<input type="text" name="uid" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color:green;"> 44.获取本月签到历史__APP__/Api/User/getMonthSign</strong><br/>
+    <form action="__APP__/Api/User/getMonthSign" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 45.忘记密码__APP__/Api/User/forgetPassword</strong><br/>
+    <form action="__APP__/Api/User/forgetPassword" method="post">
+        phone：<input type="text" name="phone" value=""/>
+        password：<input type="text" name="password" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color:green;"> 46.商品评论__APP__/Api/Goods/goodsComment</strong><br/>
+    <form action="__APP__/Api/Goods/goodsComment" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        good_id：<input type="text" name="good_id" value=""/>
+        content：<input type="text" name="content" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color:green;"> 47.获取商品评论列表__APP__/Api/Goods/getGoodsComment</strong><br/>
+    <form action="__APP__/Api/Goods/getGoodsComment" method="post">
+        page：<input type="text" name="page" value="1"/>
+        good_id：<input type="text" name="good_id" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 48.商品收藏/取消收藏__APP__/Api/Goods/collectGoods</strong><br/>
+    <form action="__APP__/Api/Goods/collectGoods" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        good_id：<input type="text" name="good_id" value=""/>
+        type：
+        <select name="type">
+            <option value="0">收藏</option>
+            <option value="1">取消收藏</option>
+        </select>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 49.第三方登录__APP__/Api/User/openLogin</strong><br/>
+    <form action="__APP__/Api/User/openLogin" method="post">
+        openid：<input type="text" name="openid" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 52.添加分享记录__APP__/Api/User/addShare</strong><br/>
+    <form action="__APP__/Api/User/addShare" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        type：
+        <select name="type">
+            <option value="1">1：商品</option>
+            <option value="2">2：美文</option>
+            <option value="3">3：搭配</option>
+        </select>
+        id：<input type="text" name="id" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong> 53.获取分享记录__APP__/Api/User/getShareRecord</strong><br/>
+    <form action="__APP__/Api/User/getShareRecord" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        type：<input type="text" name="type" value=""/>
+        page：<input type="text" name="page" value="1"/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 54.删除分享记录__APP__/Api/User/delShareRecord</strong><br/>
+    <form action="__APP__/Api/User/delShareRecord" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        record_id：<input type="text" name="record_id" value="1"/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 56.获取基本信息__APP__/Api/User/getInfo</strong><br/>
+    <form action="__APP__/Api/User/getInfo" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 58.热门关键字__APP__/Api/Index/hotKeyword</strong><br/>
+    <form action="__APP__/Api/Index/hotKeyword" method="post">
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 59.获取快递列表__APP__/Api/Index/expressList</strong><br/>
+    <form action="__APP__/Api/Index/expressList" method="post">
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 60.获取服务协议__APP__/Api/Index/getService</strong><br/>
+    <form action="__APP__/Api/Index/getService" method="post">
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 61.添加淘宝订单__APP__/Api/User/addTBOrder</strong><br/>
+    <form action="__APP__/Api/User/addTBOrder" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        tb_order：<input type="text" name="tb_order" value=""/>
+        goods_id：<input type="text" name="goods_id" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 62.检查订单是否存在__APP__/Api/User/checkOrderExist</strong><br/>
+    <form action="__APP__/Api/User/checkOrderExist" method="post">
+        order：<input type="text" name="order" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 63.添加代拿快递记录__APP__/Api/User/addOrderDaina</strong><br/>
+    <form action="__APP__/Api/User/addOrderDaina" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        username：<input type="text" name="username" value=""/>
+        phone：<input type="text" name="phone" value=""/>
+        s_phone：<input type="text" name="s_phone" value=""/>
+        school_id：<input type="text" name="school_id" value=""/>
+        room_num：<input type="text" name="room_num" value=""/>
+        express_address：<input type="text" name="express_address" value=""/>
+        send_time：
+        <select name="send_time">
+            <option value="0">0:  18:00-22:00</option>
+            <option value="1">1:  12:00-13:30</option>
+        </select>
+        note：<input type="text" name="note" value=""/>
+        order：<input type="text" name="order" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 64.获取帖子详情__APP__/Api/School/interactDetail</strong><br/>
+    <form action="__APP__/Api/School/interactDetail" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        interact_id：<input type="text" name="interact_id" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 65.获取搭配分类__APP__/Api/Collocation/collocationCate</strong><br/>
+    <form action="__APP__/Api/Collocation/collocationCate" method="post">
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 66.获取搭配列表__APP__/Api/Collocation/collocationList</strong><br/>
+    <form action="__APP__/Api/Collocation/collocationList" method="post">
+        page：<input type="text" name="page" value="1"/>
+        c_cate_id：<input type="text" name="c_cate_id" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 67.搭配收藏/取消收藏__APP__/Api/Collocation/collectCollocation</strong><br/>
+    <form action="__APP__/Api/Collocation/collectCollocation" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        collocation_id：<input type="text" name="collocation_id" value=""/>
+        type：
+        <select name="type">
+            <option value="0">收藏</option>
+            <option value="1">取消收藏</option>
+        </select>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 68.搭配详情__APP__/Api/Collocation/collocationDetail</strong><br/>
+    <form action="__APP__/Api/Collocation/collocationDetail" method="post">
+        collocation_id：<input type="text" name="collocation_id" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 69.获取我的收藏-搭配__APP__/Api/Collocation/getCollocationCollect</strong><br/>
+    <form action="__APP__/Api/Collocation/getCollocationCollect" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        page：<input type="text" name="page" value="1"/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 70.提交淘口令__APP__/Api/Index/submitTaoCommand</strong><br/>
+    <form action="__APP__/Api/Index/submitTaoCommand" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        tao_command：<input type="text" name="tao_command" value="1"/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 71.商品详情__APP__/Api/Goods/goodsDetail</strong><br/>
+    <form action="__APP__/Api/Goods/goodsDetail" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        goods_id：<input type="text" name="goods_id" value="1"/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 72.评论搭配__APP__/Api/Collocation/collocationComment</strong><br/>
+    <form action="__APP__/Api/Collocation/collocationComment" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        collocation_id：<input type="text" name="collocation_id" value=""/>
+        content：<input type="text" name="content" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green"> 73.搭配评论列表__APP__/Api/Collocation/getCollocationComment</strong><br/>
+    <form action="__APP__/Api/Collocation/getCollocationComment" method="post">
+        page：<input type="text" name="page" value="1"/>
+        collocation_id：<input type="text" name="collocation_id" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color:green;"> 74.代理登录__APP__/Api/Agent/loginAgent</strong><br/>
+    <form action="__APP__/Api/Agent/loginAgent" method="post">
+        account：<input type="text" name="account" value=""/>
+        password:<input type="text" name="password" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color:green;"> 75.代理-获取订单__APP__/Api/Agent/agentOrder</strong><br/>
+    <form action="__APP__/Api/Agent/agentOrder" method="post">
+        agent_accesstoken：<input type="text" name="agent_accesstoken" value=""/>
+        page:<input type="text" name="page" value="1"/>
+        type:
+        <select name="type">
+            <option value="0">0:待处理</option>
+            <option value="1">1:配送中</option>
+            <option value="2">2:已完成</option>
+            <option value="3">3:全部</option>
+        </select>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color:green;"> 76.获取客服热线__APP__/Api/Index/customerPhone</strong><br/>
+    <form action="__APP__/Api/Index/customerPhone" method="post">
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color: green;"> 77.获取版本号__APP__/Api/Index/checkVersion</strong><br/>
+    <form action="__APP__/Api/Index/checkVersion" method="post">
+        type(类型)：
+        <select name="type">
+            <option value="1">1:iOS</option>
+            <option value="2">2:Android</option>
+        </select>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color:green;"> 78.获取快递员信息__APP__/Api/Agent/getAgentInfo</strong><br/>
+    <form action="__APP__/Api/Agent/getAgentInfo" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color:green;"> 79.确认收货__APP__/Api/User/confirmAgentOrder</strong><br/>
+    <form action="__APP__/Api/User/confirmAgentOrder" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        a_order_id：<input type="text" name="a_order_id" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color:green;"> 80.获取我的订单__APP__/Api/User/myAgentOrder</strong><br/>
+    <form action="__APP__/Api/User/myAgentOrder" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        page:<input type="text" name="page" value="1"/>
+        type:
+        <select name="type">
+            <option value="0">0:待处理</option>
+            <option value="1">1:配送中</option>
+            <option value="2">2:已完成</option>
+            <option value="3">3:全部</option>
+        </select>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color:green;"> 81.确认发货__APP__/Api/Agent/sendGoods</strong><br/>
+    <form action="__APP__/Api/Agent/sendGoods" method="post">
+        agent_accesstoken：<input type="text" name="agent_accesstoken" value=""/>
+        a_order_id:<input type="text" name="a_order_id" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color:green;"> 82.自己拿快递__APP__/Api/User/aOrderByMyself</strong><br/>
+    <form action="__APP__/Api/User/aOrderByMyself" method="post">
+        accesstoken：<input type="text" name="accesstoken" value=""/>
+        a_order_id:<input type="text" name="a_order_id" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+    <strong style="color:green;"> 83.代理信息__APP__/Api/Agent/agentInfo</strong><br/>
+    <form action="__APP__/Api/Agent/agentInfo" method="post">
+        agent_accesstoken：<input type="text" name="agent_accesstoken" value=""/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <!-- ================================================================== -->
+</body>
+</html>

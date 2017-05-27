@@ -1,6 +1,5 @@
 <?php
 namespace Admin\Controller;
-use Think\Controller;
 use Think\Model;
 
 class AdminController extends AdminBaseController {
@@ -8,16 +7,16 @@ class AdminController extends AdminBaseController {
     //管理员登录
     public function adminLogin(){
         if(!IS_POST){
-            $this->error('错误请求', U('Admin/Index/login'), 1);
+            $this->error('error request', U('Admin/Index/login'), 1);
         }else{
             $account = I('post.account');
             $password = I('post.password', '', 'md5');
             $admin = M('Admin')->field('admin_id,account,password')->where("account='$account'")->find();
             if(empty($admin)){
-                $this->request_ajaxReturn('该账号不存在', 1);
+                $this->request_ajaxReturn('account does not exist', 1);
             }else{
                 if($password!=$admin['password']){
-                    $this->request_ajaxReturn('密码错误', 1);
+                    $this->request_ajaxReturn('error password', 1);
                 }
                 unset($admin['password']);
                 session('axd_admin', $admin);
@@ -41,7 +40,7 @@ class AdminController extends AdminBaseController {
                 }
                 $data['last_login'] = time();
                 M('Admin')->where("admin_id='$admin_id'")->save($data);
-                $this->request_ajaxReturn('登录成功', 0);
+                $this->request_ajaxReturn('success', 0);
             }
         }
     }
