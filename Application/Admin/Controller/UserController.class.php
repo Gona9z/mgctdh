@@ -97,47 +97,6 @@ class UserController extends AdminBaseController  {
         }
     }
 
-    //学校列表
-    public function schoolList(){
-        $keyword = I('keyword','');
-        $this->assign('keyword',$keyword);
-        $keyword = str_replace("%","\\%",$keyword);
-        $where['name'] = array('like','%'.$keyword.'%');
-        $page = I('p',1);
-        $this->list = M('School')->where($where)->page($page,20)->order('school_id DESC')->select();
-        //数据分页
-        $count = M('School')->where($where)->count();
-        $Page = new \Think\Page($count,20);
-        $show = $Page->show();
-        $this->assign('page',$show);
-        $this->display();
-    }
-
-    //删除学校选项
-    public function delSchool(){
-        $id = I('id');
-        if(false!==M('School')->delete($id)){
-            $this->request_ajaxReturn('删除成功',0);
-        }else{
-            $this->request_ajaxReturn('删除失败,请刷新后重试',1);
-        }
-    }
-
-    //添加学校
-    public function addSchool(){
-        if(IS_GET){
-            $this->display();
-        }else{
-            $name = I('name');
-            $this->empty_ajaxReturn(array($data['name']=I('name')),array('学校名称'));
-            if(false!==M('School')->add($data)){
-                $this->request_ajaxReturn('添加成功',0);
-            }else{
-                $this->request_ajaxReturn('添加失败,请刷新后重试',1);
-            }
-        }
-    }
-
     //导出用户表Excel
     public function exportExcelUser(){
         $keyword = I('get.keyword','');
