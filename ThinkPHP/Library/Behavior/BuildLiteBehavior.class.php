@@ -25,8 +25,8 @@ class BuildLiteBehavior {
         }
 
         // 生成数组定义
-        unset($defs['user']['BUILD_LITE_FILE']);
-        $content   .=   $this->buildArrayDefine($defs['user']).'}';
+        unset($defs['merchant']['BUILD_LITE_FILE']);
+        $content   .=   $this->buildArrayDefine($defs['merchant']).'}';
 
         // 读取编译列表文件
         $filelist   =   is_file(CONF_PATH.'lite.php')?

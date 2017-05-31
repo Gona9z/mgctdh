@@ -1,6 +1,5 @@
 <?php
 namespace Api\Controller;
-use Think\Model;
 
 class UserController extends ApiBaseController  {
 
@@ -33,4 +32,29 @@ class UserController extends ApiBaseController  {
         }
     }
 
+    //用户登录(包含注册:未注册用户直接注册) The 4-digit code you've entered is incorrect.
+    public function userLogin(){
+        $account = I('account');
+        $v_code = I('v_code');
+
+    }
+
+    //获取用户信息
+    public function getUserInfo(){
+        $at = I('accesstoken');
+        $user = getUserInfoByAT($at);
+        $data = array(
+            'image'  =>  $user['image'],
+            'ar_id'  =>  $user['ar_id'],
+            'integral'  =>  $user['integral'],
+            'nickname'  =>  $user['nicknanme'],
+            'pizza'  =>  $user['pizza'],
+            'account'   =>  $user['account'],
+            'birthday'  =>  $user['birthday'],
+            'email'     =>  $user['email'],
+            'favorite_food' =>  $user['favorite_food'],
+            'favorite_restaurants'  =>  $user['favorite_restaurants'],
+        );
+        request_result('', 0, $data);
+    }
 }

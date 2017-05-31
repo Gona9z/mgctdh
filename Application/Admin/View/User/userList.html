@@ -13,14 +13,11 @@
         select{width: 69%;}
         .current{background-color:rgba(0,255,150,0.5);}
         .prev,.num,.next,.current{width:auto;height:auto;margin:4px;padding:8px 10px;box-shadow:0 0 2px rgba(0,0,0,0.2);background-color:rgba(255,255,255,0.1);}
-        tr img{width:40px;height:40px;}
+        tr img{width:40px;height:30px;}
         #home a{margin-right: 10px;}
     </style>
     <script type="text/javascript">
-        var APP = "__APP__";
         var MODULE = "__MODULE__";
-        var CONTROLLER = "__CONTROLLER__";
-        var ACTION = "__ACTION__";
     </script>
 </head>
 
@@ -61,12 +58,13 @@
                     <th>帐号</th>
                     <th>昵称</th>
                     <th>头像</th>
-                    <th>性别</th>
-                    <th>出生日期</th>
-                    <th>是否单身</th>
-                    <th>用户状态</th>
-                    <th>学校</th>
                     <th>积分</th>
+                    <th>出生日期</th>
+                    <th>邮箱</th>
+                    <th>披萨数</th>
+                    <th>注册时间</th>
+                    <th>最后登录时间</th>
+                    <th>状态</th>
                     <th>操作</th>
                 </tr>
                 </thead>
@@ -74,29 +72,25 @@
                 <foreach name="list" item="l" key="k">
                     <tr>
                         <td>{$k+1}</td>
-                        <td>{$l.phone}</td>
+                        <td>{$l.account}</td>
                         <td>{$l.nickname}</td>
+                        <td><img src="__APP__{$l['image']}" alt=""></td>
+                        <td>{$l.integral|intval}</td>
+                        <td>{$l.birthday}</td>
+                        <td>{$l.email}</td>
+                        <td>{$l.pizza|intval}</td>
+                        <td>{$l.reg_time}</td>
+                        <td>{$l.last_login}</td>
                         <td>
-                            <empty name="l['image']">
-                                <img src="__PUBLIC__/img/default_headicon.png" alt="">
+                            <if condition="0 eq $l['status']">
+                                <span style="color: green;">正常</span>
                                 <else/>
-                                <img src="{:str_replace('/Public/uploads/','__APP__/Public/uploads/',$l['image'])}" alt="">
-                            </empty>
-                        </td>
-                        <td>{$l['sex']==1?'男':'女'}</td>
-                        <td>{$l.birthday|date='Y-m-d',###}</td>
-                        <td>{$l['single']==0?'否':'是'}</td>
-                        <td>
-                            <if condition="0 eq $l['disable']">
-                                <span style="color:green;">正常</span>
-                                <else/>
-                                <span style="color:red;">禁用</span>
+                                <span style="color: red;">禁用</span>
                             </if>
                         </td>
-                        <td>{$l.school_name}</td>
-                        <td>{$l.integral}</td>
                         <td class="operation">
                             <a href="{:U('Admin/User/editUser',array('id'=>$l['user_id']))}">编辑</a>
+                            <a href="{:U('Admin/User/userBankCard',array('id'=>$l['user_id']))}">银行卡</a>
                             <a href="javaScript:void(0);" onclick="delUser('{$l.user_id}');">删除</a>
                         </td>
                     </tr>

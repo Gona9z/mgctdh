@@ -62,7 +62,7 @@
 					<a href="#" class="navbar-brand">
 						<small>
 							<i class="icon-tags"></i>
-							<?php echo ($pro_name); ?> management system
+							<?php echo ($pro_name); ?> 后台管理系统
 						</small>
 					</a><!-- /.brand -->
 				</div><!-- /.navbar-header -->
@@ -101,7 +101,7 @@
 								<li>
 									<a href="#" rel="rs-dialog" data-target="exitBlock">
 										<i class="icon-off"></i>
-										Sign out
+										退出
 									</a>
 								</li>
 							</ul>
@@ -199,7 +199,7 @@
 				<li>
 					<a href="/mgctdh/Admin/Index/welp">
 						<i class="icon-dashboard"></i>
-						<span class="menu-text"> Welcome </span>
+						<span class="menu-text"> 欢迎页 </span>
 					</a>
 				</li>
 
@@ -233,18 +233,18 @@
 					</ul>
 				</li>
 
-				<li class="dlgl">
+				<li class="sjgl">
 					<a href="" class="dropdown-toggle">
 						<i class="icon-github-alt"></i>
-						<span class="menu-text"> 代理管理 </span>
+						<span class="menu-text"> 商家管理 </span>
 						<b class="arrow fa fa-angle-down"></b>
 					</a>
 					<ul class="submenu nav-show pfdt">
 						<?php if(in_array(16,session('role_pri'))) { ?>
-						<li class="dllb">
-							<a href="<?php echo U('Admin/Agent/agentList');?>">
+						<li class="sjlb">
+							<a href="<?php echo U('Admin/Merchant/merchantList');?>">
 								<i class="menu-icon fa fa-caret-right"></i>
-								代理列表
+								商家列表
 							</a>
 							<b class="arrow"></b>
 						</li>
@@ -303,20 +303,20 @@
 					<ul class="submenu nav-show fzsb">
 						<!--===========-->
 						<?php if(in_array(20,session('role_pri'))) { ?>
-						<li class="rmsslb">
-							<a href="<?php echo U('Admin/Index/hotKeyword');?>">
+						<li class="lpklb">
+							<a href="<?php echo U('Admin/Index/giftCardList');?>">
 								<i class="menu-icon fa fa-caret-right"></i>
-								热门搜索列表
+								礼品卡列表
 							</a>
 							<b class="arrow"></b>
 						</li>
 						<?php } ?>
 						<!--===========-->
 						<?php if(in_array(21,session('role_pri'))) { ?>
-						<li class="kdlb">
-							<a href="<?php echo U('Admin/Index/expressList');?>">
+						<li class="yjfklb">
+							<a href="<?php echo U('Admin/System/opinionList');?>">
 								<i class="menu-icon fa fa-caret-right"></i>
-								快递列表
+								意见反馈列表
 							</a>
 							<b class="arrow"></b>
 						</li>
@@ -703,9 +703,9 @@
 					<ul class="breadcrumb">
 						<li>
 							<i class="icon-home home-icon"></i>
-							<a href="#">home</a>
+							<a href="#">主页</a>
 						</li>
-						<li class="active">Welcome</li>
+						<li class="active">欢迎页</li>
 					</ul><!-- .breadcrumb -->
 
 					<!-- <div class="nav-search" id="nav-search">
@@ -723,7 +723,7 @@
 					    			
 				    </div>				-->
 					<div class="weall">
-				    	<p><span><?php echo ($pro_name); ?></span> management system</p>
+				    	<p><span><?php echo ($pro_name); ?></span> 后台管理系统</p>
 				    </div>         			
 					</div><!--myTabContent-->
 				</div><!-- /.main-content -->

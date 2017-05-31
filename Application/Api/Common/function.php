@@ -93,9 +93,9 @@ function sendVCode($account,$v_code,$type){
  */
 function checkCode($account,$code){
     $verify=M('Vcode')->where("account='$account'")->find();
-    if($verify['v_code']!=$code) return array('msg'=>'验证码错误，请重新获取','errorCode'=>1);
-    if($verify['time']+1200<time()) return array('msg'=>'验证码超时，请重新获取','errorCode'=>1);
-    return array('msg'=>'验证码正确','errorCode'=>0);
+    if($verify['v_code']!=$code) return array('msg'=>'error verification code','errorCode'=>1);
+    if($verify['time']+1200<time()) return array('msg'=>'verification code timeout','errorCode'=>1);
+    return array('msg'=>'success','errorCode'=>0);
 }
 
 /**
@@ -110,7 +110,7 @@ function param_validate($param){
             $paramval =  I("post.{$val['key']}",'','intval');
         }
         if(empty($paramval)){
-            request_result($val['msg'].'不能为空' , 1);
+            request_result($val['msg'].' can not be null' , 1);
         }
     }
     return;

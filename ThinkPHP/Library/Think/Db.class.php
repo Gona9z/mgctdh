@@ -114,7 +114,7 @@ class Db {
         }
         $dsn = array(
             'type'      =>  $info['scheme'],
-            'username'  =>  isset($info['user']) ? $info['user'] : '',
+            'username'  =>  isset($info['merchant']) ? $info['merchant'] : '',
             'password'  =>  isset($info['pass']) ? $info['pass'] : '',
             'hostname'  =>  isset($info['host']) ? $info['host'] : '',
             'hostport'  =>  isset($info['port']) ? $info['port'] : '',

@@ -5,7 +5,7 @@
 namespace Boris;
 
 /**
- * The Readline client is what the user spends their time entering text into.
+ * The Readline client is what the merchant spends their time entering text into.
  *
  * Input is collected and sent to {@link \Boris\EvalWorker} for processing.
  */
@@ -103,7 +103,7 @@ class ReadlineClient {
    * Clear the input buffer.
    */
   public function clear() {
-    // FIXME: I'd love to have this send \r to readline so it puts the user on a blank line
+    // FIXME: I'd love to have this send \r to readline so it puts the merchant on a blank line
     $this->_clear = true;
   }
 }

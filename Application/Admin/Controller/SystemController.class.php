@@ -32,20 +32,20 @@ class SystemController extends AdminBaseController  {
     }
 
     //意见反馈列表
-    public function feedList(){
+    public function opinionList(){
         $keyword = I('keyword','');
         $this->assign('keyword',$keyword);
         $where['u.nickname'] = array('like','%'.$keyword.'%');
         $where['fb.content'] = array('like','%'.$keyword.'%');
         $where['_logic'] = 'OR';
         $page = I('p',1);
-        $this->list = M('Feedback')
+        $this->list = M('Opinion')
             ->field('fb.*,u.nickname')
-            ->join('axd_user u ON u.user_id = fb.user_id')
+            ->join('ar_user u ON u.user_id = fb.user_id')
             ->alias('fb')
             ->where($where)->page($page,20)->select();
         //数据分页
-        $count = M('Feedback')->join('axd_user u ON u.user_id = fb.user_id')
+        $count = M('Opinion')->join('ar_user u ON u.user_id = fb.user_id')
             ->alias('fb')->where($where)->count();
         $Page = new \Think\Page($count,20);
         $show = $Page->show();

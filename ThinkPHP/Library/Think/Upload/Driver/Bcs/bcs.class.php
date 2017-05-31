@@ -1211,12 +1211,12 @@ class BaiduBCS {
 			throw new BCS_Exception ( "Invalid acl array" );
 		}
 		foreach ( $acl ['statements'] as $key => $statement ) {
-			// user resource action effect must in statement
-			if (! isset ( $statement ['user'] ) || ! isset ( $statement ['resource'] ) || ! isset ( $statement ['action'] ) || ! isset ( $statement ['effect'] )) {
+			// merchant resource action effect must in statement
+			if (! isset ( $statement ['merchant'] ) || ! isset ( $statement ['resource'] ) || ! isset ( $statement ['action'] ) || ! isset ( $statement ['effect'] )) {
 				throw new BCS_Exception ( 'Param miss: format acl error, please check your param!' );
 			}
-			if (! is_array ( $statement ['user'] ) || ! is_array ( $statement ['resource'] )) {
-				throw new BCS_Exception ( 'Param error: user or resource must be array, please check your param!' );
+			if (! is_array ( $statement ['merchant'] ) || ! is_array ( $statement ['resource'] )) {
+				throw new BCS_Exception ( 'Param error: merchant or resource must be array, please check your param!' );
 			}
 			if (! is_array ( $statement ['action'] ) || ! count ( array_diff ( $statement ['action'], self::$ACL_ACTIONS ) ) == 0) {
 				throw new BCS_Exception ( 'Param error: action, please check your param!' );

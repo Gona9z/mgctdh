@@ -56,9 +56,9 @@ class Cx extends TagLib {
     /**
      * volist标签解析 循环输出数据集
      * 格式：
-     * <volist name="userList" id="user" empty="" >
-     * {user.username}
-     * {user.email}
+     * <volist name="userList" id="merchant" empty="" >
+     * {merchant.username}
+     * {merchant.email}
      * </volist>
      * @access public
      * @param array $tag 标签属性

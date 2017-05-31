@@ -2,57 +2,57 @@
 <html lang="en">
 <head>
     <title><?php echo ($pro_name); ?>台管理系统</title>
-    <link rel="stylesheet" href="/axd/Public/assets/css/share.css" /><!--另添加样式文件-->
+    <link rel="stylesheet" href="/mgctdh/Public/assets/css/share.css" /><!--另添加样式文件-->
     <meta charset="utf-8" />
 <meta name="description" content="overview &amp; stats" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <!-- basic styles -->
-<link href="/axd/Public/assets/css/bootstrap.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="/axd/Public/assets/css/font-awesome.min.css" />
+<link href="/mgctdh/Public/assets/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="/mgctdh/Public/assets/css/font-awesome.min.css" />
 <!--[if IE 7]>
   <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
 <![endif]-->
 <!-- page specific plugin styles -->
 <!-- fonts -->
 <!-- ace styles -->
-<link rel="stylesheet" href="/axd/Public/assets/css/ace.min.css" />
-<link rel="stylesheet" href="/axd/Public/assets/css/ace-rtl.min.css" />
-<link rel="stylesheet" href="/axd/Public/assets/css/ace-skins.min.css" />
+<link rel="stylesheet" href="/mgctdh/Public/assets/css/ace.min.css" />
+<link rel="stylesheet" href="/mgctdh/Public/assets/css/ace-rtl.min.css" />
+<link rel="stylesheet" href="/mgctdh/Public/assets/css/ace-skins.min.css" />
 <!--[if lte IE 8]>
   <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
 <![endif]-->
 <!-- inline styles related to this page -->
 <!-- ace settings handler -->
-<script src="/axd/Public/assets/js/ace-extra.min.js"></script>
+<script src="/mgctdh/Public/assets/js/ace-extra.min.js"></script>
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
 <script src="assets/js/html5shiv.js"></script>
 <script src="assets/js/respond.min.js"></script>
 <![endif]-->
 	<!--myStyle-->
-<link rel="stylesheet" href="/axd/Public/assets/css/style.css" />
+<link rel="stylesheet" href="/mgctdh/Public/assets/css/style.css" />
 <!--[if !IE]> -->
-<script src="/axd/Public/assets/js/jquery-2.0.3.min.js"></script>
+<script src="/mgctdh/Public/assets/js/jquery-2.0.3.min.js"></script>
 <!-- <![endif]-->
 <!--[if IE]>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <![endif]-->
 <!-- icon -->
-<link rel="icon" href="/axd/Public/img/title_icon.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="/axd/Public/img/title_icon.ico">
-<link rel="Bookmark" href="/axd/Public/img/title_icon.ico">
+<link rel="icon" href="/mgctdh/Public/img/title_icon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/mgctdh/Public/img/title_icon.ico">
+<link rel="Bookmark" href="/mgctdh/Public/img/title_icon.ico">
 <!-- icon--end -->
-<script src="/axd/Public/back_js/mode_show.js"></script>
+<script src="/mgctdh/Public/back_js/mode_show.js"></script>
 <!--头部文件-->
-    <link href="/axd/Public/assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <link href="/mgctdh/Public/assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
     <!--讨论区滚动条begin-->
-    <link rel="stylesheet" type="text/css" href="/axd/Public/assets/css/jscrollpane1.css" />
+    <link rel="stylesheet" type="text/css" href="/mgctdh/Public/assets/css/jscrollpane1.css" />
     <!--上传文件-->
-    <link href="/axd/Public/assets/plugins/bootstrap-fileinput/css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="/axd/Public/back_css/edit_common.css">
-    <script src="/axd/Public/back_js/thumb_img.js"></script>
-    <script src="/axd/Public/back_js/jquery-form.js"></script>
-    <script src="/axd/Public/jedate/jedate.js"></script>
+    <link href="/mgctdh/Public/assets/plugins/bootstrap-fileinput/css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/mgctdh/Public/back_css/edit_common.css">
+    <script src="/mgctdh/Public/back_js/thumb_img.js"></script>
+    <script src="/mgctdh/Public/back_js/jquery-form.js"></script>
+    <script src="/mgctdh/Public/jedate/jedate.js"></script>
     <style>
         #commodity_main input[type=file]{margin-bottom: 10px;}
         #commodity_main img{width: 100px;height: 100px;}
@@ -67,7 +67,7 @@
                 minDate:"1950-01-01 00:00:00",
             })
         })
-        var MODULE = "/axd/Admin";
+        var MODULE = "/mgctdh/Admin";
     </script>
 </head>
 
@@ -82,7 +82,7 @@
 					<a href="#" class="navbar-brand">
 						<small>
 							<i class="icon-tags"></i>
-							<?php echo ($pro_name); ?>后台管理系统
+							<?php echo ($pro_name); ?> 后台管理系统
 						</small>
 					</a><!-- /.brand -->
 				</div><!-- /.navbar-header -->
@@ -92,7 +92,7 @@
 
 						<li class="light-blue">
 							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
-								<img class="nav-user-photo" src="/axd/Public/back_img/icon_logo.png" alt="Jason's Photo" style="height: 40px;width: 40px;"/>
+								<img class="nav-user-photo" src="/mgctdh/Public/back_img/icon_logo.png" alt="Jason's Photo" style="height: 40px;width: 40px;"/>
 								<span class="user-info">
 									<small>Welcome,</small>
 									<?php echo ($_SESSION['axd_admin']['account']); ?>
@@ -184,7 +184,7 @@
 			  <br />
 			  <br /> 
 			  <div class="form-group" style="text-align: center;">
-			 		<button type="button" class="btn btn-primary text-center" data-dismiss="modal" id="submit" style="width: 15%; margin:0 20px 0 20px;" onclick="window.location.href='/axd/Admin/Admin/logout'">确定</button>
+			 		<button type="button" class="btn btn-primary text-center" data-dismiss="modal" id="submit" style="width: 15%; margin:0 20px 0 20px;" onclick="window.location.href='/mgctdh/Admin/Admin/logout'">确定</button>
 			 		<button type="button" class="btn btn-primary text-center" data-dismiss="modal" id="submit" style="width: 15%;">取消</button>
 			  </div>
 			</form>
@@ -217,7 +217,7 @@
 
 			<ul class="nav nav-list">
 				<li>
-					<a href="/axd/Admin/Index/welp">
+					<a href="/mgctdh/Admin/Index/welp">
 						<i class="icon-dashboard"></i>
 						<span class="menu-text"> 欢迎页 </span>
 					</a>
@@ -253,18 +253,18 @@
 					</ul>
 				</li>
 
-				<li class="dlgl">
+				<li class="sjgl">
 					<a href="" class="dropdown-toggle">
 						<i class="icon-github-alt"></i>
-						<span class="menu-text"> 代理管理 </span>
+						<span class="menu-text"> 商家管理 </span>
 						<b class="arrow fa fa-angle-down"></b>
 					</a>
 					<ul class="submenu nav-show pfdt">
 						<?php if(in_array(16,session('role_pri'))) { ?>
-						<li class="dllb">
-							<a href="<?php echo U('Admin/Agent/agentList');?>">
+						<li class="sjlb">
+							<a href="<?php echo U('Admin/Merchant/merchantList');?>">
 								<i class="menu-icon fa fa-caret-right"></i>
-								代理列表
+								商家列表
 							</a>
 							<b class="arrow"></b>
 						</li>
@@ -732,70 +732,54 @@
         </div>
 
         <div id="commodity_details">
-            <h1><img src="/axd/Public/back_img/ico.png">修改会员信息
-                <a href="javascript:history.go(-1);"><span><img src="/axd/Public/back_img/return.png"></span></a></h1>
+            <h1><img src="/mgctdh/Public/back_img/ico.png">修改会员信息
+                <a href="javascript:history.go(-1);"><span><img src="/mgctdh/Public/back_img/return.png"></span></a></h1>
             <div id="commodity_list">
                 <!--通用信息_开始-->
-                <form action="/axd/Admin/User/editUser" method="post" id="edit_form" enctype="multipart/form-data" >
+                <form action="/mgctdh/Admin/User/editUser" method="post" id="edit_form" enctype="multipart/form-data" >
 
                     <div id="commodity_main" class="clear">
                         <table>
                             <input type="hidden" value="<?php echo ($user['user_id']); ?>" name="id">
                             <tr>
                                 <th>账号：</th>
-                                <td><input type="text" value="<?php echo ($user['phone']); ?>" disabled="disabled"></td>
-                            </tr>
-                            <tr>
-                                <th>学校：</th>
-                                <td>
-                                    <select name="school_id">
-                                        <?php if(is_array($school_list)): foreach($school_list as $key=>$s): ?><option value="<?php echo ($s['school_id']); ?>"
-                                            <?php if($s['school_id'] == $user['school_id']): ?>selected="selected"<?php endif; ?>
-                                            ><?php echo ($s["name"]); ?></option><?php endforeach; endif; ?>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>头像：</th>
-                                <td>
-                                    <?php if(!empty($user['image'])): ?><img src="/axd<?php echo ($user['image']); ?>" id="to_img">
-                                        <?php else: ?>
-                                        <img src="" id="to_img"><?php endif; ?>
-                                    <input type="file" id="form_file" onchange="getImageFormat('form_file','to_img');" name="form_file"/>
-                                </td>
+                                <td><input type="text" value="<?php echo ($user['account']); ?>" disabled="disabled"></td>
                             </tr>
                             <tr>
                                 <th>昵称：</th>
                                 <td><input type="text" value="<?php echo ($user["nickname"]); ?>" name="nickname"></td>
                             </tr>
                             <tr>
-                                <th>性别：</th>
+                                <th>头像：</th>
                                 <td>
-                                    <select name="sex">
-                                        <option value="1">男</option>
-                                        <option value="2">女</option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>出生日期：</th>
-                                <td>
-                                    <input type="text" value="<?php echo (date('Y-m-d',$user['birthday'])); ?>" name="birthday"
-                                    class="dateinfo" readonly="readonly">
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>是否单身：</th>
-                                <td>
-                                    <select name="single">
-                                        <option value="0">否</option>
-                                        <option value="1">是</option>
-                                    </select>
+                                    <?php if(!empty($user['image'])): ?><img src="/mgctdh<?php echo ($user['image']); ?>" id="to_img">
+                                        <?php else: ?>
+                                        <img src="" id="to_img"><?php endif; ?>
+                                    <input type="file" id="form_file" onchange="getImageFormat('form_file','to_img');" name="form_file"/>
                                 </td>
                             </tr>
                             <tr>
                                 <th>积分：</th>
                                 <td><input type="text" value="<?php echo ($user["integral"]); ?>" name="integral"></td>
+                            </tr>
+                            <tr>
+                                <th>出生日期：</th>
+                                <td>
+                                    <input type="text" value="<?php echo ($user['birthday']); ?>" name="birthday"
+                                           class="dateinfo" readonly="readonly">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>最喜欢的食物：</th>
+                                <td><input type="text" name="favorite_foods" value="<?php echo ($user["favorite_foods"]); ?>"></td>
+                            </tr>
+                            <tr>
+                                <th>最喜欢的餐厅：</th>
+                                <td><input type="text" name="favorite_restaurants" value="<?php echo ($user["favorite_restaurants"]); ?>"></td>
+                            </tr>
+                            <tr>
+                                <th>披萨：</th>
+                                <td><input type="text" value="<?php echo ($user["pizza"]); ?>" name="pizza"></td>
                             </tr>
                             <tr>
                                 <th>状态：</th>
@@ -831,20 +815,20 @@
 		 window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
 		</script>
 		<![endif]-->
-		<script src="/axd/Public/assets/js/bootstrap.min.js"></script>
-		<script src="/axd/Public/assets/js/typeahead-bs2.min.js"></script>
+		<script src="/mgctdh/Public/assets/js/bootstrap.min.js"></script>
+		<script src="/mgctdh/Public/assets/js/typeahead-bs2.min.js"></script>
 		<!-- page specific plugin scripts -->
 		<!--[if lte IE 8]>
 		  <script src="assets/js/excanvas.min.js"></script>
 		<![endif]-->
-		<script src="/axd/Public/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
-		<script src="/axd/Public/assets/js/jquery.ui.touch-punch.min.js"></script>
-		<script src="/axd/Public/assets/js/jquery.slimscroll.min.js"></script>
-		<script src="/axd/Public/assets/js/jquery.easy-pie-chart.min.js"></script>
-		<script src="/axd/Public/assets/js/jquery.sparkline.min.js"></script>
+		<script src="/mgctdh/Public/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="/mgctdh/Public/assets/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="/mgctdh/Public/assets/js/jquery.slimscroll.min.js"></script>
+		<script src="/mgctdh/Public/assets/js/jquery.easy-pie-chart.min.js"></script>
+		<script src="/mgctdh/Public/assets/js/jquery.sparkline.min.js"></script>
 		<!-- ace scripts -->
-		<script src="/axd/Public/assets/js/ace-elements.min.js"></script>
-		<script src="/axd/Public/assets/js/ace.min.js"></script>
+		<script src="/mgctdh/Public/assets/js/ace-elements.min.js"></script>
+		<script src="/mgctdh/Public/assets/js/ace.min.js"></script>
 		<!-- inline scripts related to this page -->
 		<!--弹出层开始-->
 		<script>
@@ -906,7 +890,7 @@
     $(".hygl .hylb").addClass("active");
     $('#li1_btn').click(function(){
         $('#edit_form').ajaxSubmit({
-            url:"/axd/Admin/User/editUser",
+            url:"/mgctdh/Admin/User/editUser",
             dataType: "json",
             beforeSend: function() {
                 $('#li1_btn').attr('disabled','true');

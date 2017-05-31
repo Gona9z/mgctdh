@@ -54,7 +54,7 @@
                             </span>
                         </div>
                         <div class="right">
-                            <a href="<?php echo U('Api/Goods/shareGoods',array('id'=>$g['goods_id']));?>">查看详情</a>
+                            <a href="<?php echo U('Api/Merchant/shareGoods',array('id'=>$g['goods_id']));?>">查看详情</a>
                         </div>
                     </div>
                 </li><?php endforeach; endif; ?>

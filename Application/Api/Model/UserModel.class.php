@@ -17,7 +17,7 @@ class UserModel extends Model{
 		    if(''!=$open_id && !empty($open_id)){
                 $data['open_id'] = $open_id;
                 //抓取图片地址并保存
-//                $image = 'Public/uploads/user/'.time().'.jpg';
+//                $image = 'Public/uploads/merchant/'.time().'.jpg';
 //                file_put_contents($image,file_get_contents($image_url));
 //                $data['image'] = '/'.$image;
                 $data['image'] = $image_url;
@@ -60,7 +60,7 @@ class UserModel extends Model{
 		$query['last_login']=time();
 		$query['last_ip']=$ip;
 		M('User')->save($query);
-		return array('msg'=>'登录成功','errorCode'=>0,'user'=>$query,);
+		return array('msg'=>'登录成功','errorCode'=>0,'merchant'=>$query,);
 	}
 	/*
 	 * @description : 修改用户信息
@@ -78,7 +78,7 @@ class UserModel extends Model{
 			$imageList=explode(",",$image);
 			//将base64解析为图片，存进相应的文件夹，并把路径保存在数据里
 			foreach($imageList as $key=>$val){
-				$pic_url=file_upload($val,"png","user");   //生成图片并保存在相应的文件夹，file_upload()返回图片保存过后的链接
+				$pic_url=file_upload($val,"png","merchant");   //生成图片并保存在相应的文件夹，file_upload()返回图片保存过后的链接
 			}
 			$data['image'] = $pic_url;
 			unlink('.'.$user['image']);
@@ -211,7 +211,7 @@ class UserModel extends Model{
         $integral_data['note'] = '积分商品兑换';
         $integral_data['type'] = 3;
         $res2 = $model->table(C('DB_PREFIX').'sign')->add($integral_data);
-        $res3 = $model->table(C('DB_PREFIX').'user')->where("user_id='$user_id'")->setDec('integral',$integral);
+        $res3 = $model->table(C('DB_PREFIX').'merchant')->where("user_id='$user_id'")->setDec('integral',$integral);
         if ($res!==false && $res2!==false && $res3!==false) {
             $model->commit();
             return array('msg'=>'兑换成功','errorCode'=>'0',);
@@ -269,7 +269,7 @@ class UserModel extends Model{
         $query['last_login']=time();
         $query['last_ip']=$ip;
         M('User')->save($query);
-        return array('msg'=>'登录成功','errorCode'=>0,'user'=>$query,);
+        return array('msg'=>'登录成功','errorCode'=>0,'merchant'=>$query,);
     }
 
     /**
@@ -289,7 +289,7 @@ class UserModel extends Model{
                 if('1'==$type){
                     M('Subject')->where("subject_id='$id'")->setInc('share_count');
                 }elseif('2'==$type){
-                    M('Goods')->where("goods_id='$id'")->setInc('share_count');
+                    M('Merchant')->where("goods_id='$id'")->setInc('share_count');
                 }else{
                     M('Interact')->where("interact_id='$id'")->setInc('share_count');
                 }

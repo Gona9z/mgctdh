@@ -113,11 +113,11 @@ class BCS_RequestCore {
 	 */
 	public $seek_position = null;
 	/**
-	 * The user-defined callback function to call when a stream is read from.
+	 * The merchant-defined callback function to call when a stream is read from.
 	 */
 	public $registered_streaming_read_callback = null;
 	/**
-	 * The user-defined callback function to call when a stream is written to.
+	 * The merchant-defined callback function to call when a stream is written to.
 	 */
 	public $registered_streaming_write_callback = null;
 	/*%******************************************************************************************%*/
@@ -149,7 +149,7 @@ class BCS_RequestCore {
 	 * Constructs a new instance of this class.
 	 *
 	 * @param string $url (Optional) The URL to request or service endpoint to query.
-	 * @param string $proxy (Optional) The faux-url to use for proxy settings. Takes the following format: `proxy://user:pass@hostname:port`
+	 * @param string $proxy (Optional) The faux-url to use for proxy settings. Takes the following format: `proxy://merchant:pass@hostname:port`
 	 * @param array $helpers (Optional) An associative array of classnames to use for request, and response functionality. Gets passed in automatically by the calling class.
 	 * @return $this A reference to the current instance.
 	 */
@@ -356,12 +356,12 @@ class BCS_RequestCore {
 	/**
 	 * Set the proxy to use for making requests.
 	 *
-	 * @param string $proxy (Required) The faux-url to use for proxy settings. Takes the following format: `proxy://user:pass@hostname:port`
+	 * @param string $proxy (Required) The faux-url to use for proxy settings. Takes the following format: `proxy://merchant:pass@hostname:port`
 	 * @return $this A reference to the current instance.
 	 */
 	public function set_proxy($proxy) {
 		$proxy = parse_url ( $proxy );
-		$proxy ['user'] = isset ( $proxy ['user'] ) ? $proxy ['user'] : null;
+		$proxy ['merchant'] = isset ( $proxy ['merchant'] ) ? $proxy ['merchant'] : null;
 		$proxy ['pass'] = isset ( $proxy ['pass'] ) ? $proxy ['pass'] : null;
 		$proxy ['port'] = isset ( $proxy ['port'] ) ? $proxy ['port'] : null;
 		$this->proxy = $proxy;
@@ -383,7 +383,7 @@ class BCS_RequestCore {
 	 * Register a callback function to execute whenever a data stream is read from using
 	 * <CFRequest::streaming_read_callback()>.
 	 *
-	 * The user-defined callback function should accept three arguments:
+	 * The merchant-defined callback function should accept three arguments:
 	 *
 	 * <ul>
 	 * <li><code>$curl_handle</code> - <code>resource</code> - Required - The cURL handle resource that represents the in-progress transfer.</li>
@@ -406,7 +406,7 @@ class BCS_RequestCore {
 	 * Register a callback function to execute whenever a data stream is written to using
 	 * <CFRequest::streaming_write_callback()>.
 	 *
-	 * The user-defined callback function should accept two arguments:
+	 * The merchant-defined callback function should accept two arguments:
 	 *
 	 * <ul>
 	 * <li><code>$curl_handle</code> - <code>resource</code> - Required - The cURL handle resource that represents the in-progress transfer.</li>
@@ -520,8 +520,8 @@ class BCS_RequestCore {
 			$host = $this->proxy ['host'];
 			$host .= ($this->proxy ['port']) ? ':' . $this->proxy ['port'] : '';
 			curl_setopt ( $curl_handle, CURLOPT_PROXY, $host );
-			if (isset ( $this->proxy ['user'] ) && isset ( $this->proxy ['pass'] )) {
-				curl_setopt ( $curl_handle, CURLOPT_PROXYUSERPWD, $this->proxy ['user'] . ':' . $this->proxy ['pass'] );
+			if (isset ( $this->proxy ['merchant'] ) && isset ( $this->proxy ['pass'] )) {
+				curl_setopt ( $curl_handle, CURLOPT_PROXYUSERPWD, $this->proxy ['merchant'] . ':' . $this->proxy ['pass'] );
 			}
 		}
 		// Set credentials for HTTP Basic/Digest Authentication.

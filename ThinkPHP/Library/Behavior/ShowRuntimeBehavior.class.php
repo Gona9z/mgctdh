@@ -62,7 +62,7 @@ class ShowRuntimeBehavior {
         }
         if(C('SHOW_FUN_TIMES')) {
             $fun  =  get_defined_functions();
-            $showTime .= ' | CallFun:'.count($fun['user']).','.count($fun['internal']);
+            $showTime .= ' | CallFun:'.count($fun['merchant']).','.count($fun['internal']);
         }
         return $showTime;
     }

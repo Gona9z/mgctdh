@@ -95,10 +95,10 @@ class Boris {
    * Set a local variable, or many local variables.
    *
    * @example Setting a single variable
-   *   $boris->setLocal('user', $bob);
+   *   $boris->setLocal('merchant', $bob);
    *
    * @example Setting many variables at once
-   *   $boris->setLocal(array('user' => $bob, 'appContext' => $appContext));
+   *   $boris->setLocal(array('merchant' => $bob, 'appContext' => $appContext));
    *
    * This method can safely be invoked repeatedly.
    *

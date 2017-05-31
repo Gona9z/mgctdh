@@ -1413,7 +1413,7 @@ class FirePHP {
     }
 
     /**
-     * Get user agent
+     * Get merchant agent
      *
      * @return string|false
      */

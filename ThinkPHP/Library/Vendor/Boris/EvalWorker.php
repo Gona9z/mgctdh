@@ -87,7 +87,7 @@ class EvalWorker {
 
     $this->_write($this->_socket, self::READY);
 
-    /* Note the naming of the local variables due to shared scope with the user here */
+    /* Note the naming of the local variables due to shared scope with the merchant here */
     for (;;) {
       declare(ticks = 1);
       // don't exit on ctrl-c
@@ -120,20 +120,20 @@ class EvalWorker {
           $__response = self::FAILED;
         }
       } else {
-        // user exception handlers normally cause a clean exit, so Boris will exit too
+        // merchant exception handlers normally cause a clean exit, so Boris will exit too
         if (!$this->_exceptionHandler =
           set_exception_handler(array($this, 'delegateExceptionHandler'))) {
           restore_exception_handler();
         }
 
-        // undo ctrl-c signal handling ready for user code execution
+        // undo ctrl-c signal handling ready for merchant code execution
         pcntl_signal(SIGINT, SIG_DFL, true);
         $__pid = posix_getpid();
 
         $__result = eval($__input);
 
         if (posix_getpid() != $__pid) {
-          // whatever the user entered caused a forked child
+          // whatever the merchant entered caused a forked child
           // (totally valid, but we don't want that child to loop and wait for input)
           exit(0);
         }
@@ -163,7 +163,7 @@ class EvalWorker {
   }
 
   /**
-   * If any user-defined exception handler is present, call it, but be sure to exit correctly.
+   * If any merchant-defined exception handler is present, call it, but be sure to exit correctly.
    */
   public function delegateExceptionHandler($ex) {
     call_user_func($this->_exceptionHandler, $ex);

@@ -399,7 +399,7 @@ class PHPExcel_Reader_OOCalc extends PHPExcel_Reader_Abstract implements PHPExce
 							$creationDate = strtotime($propertyValue);
 							$docProps->setCreated($creationDate);
 							break;
-					case 'user-defined' :
+					case 'merchant-defined' :
 							$propertyValueType = PHPExcel_DocumentProperties::PROPERTY_TYPE_STRING;
 							foreach ($propertyValueAttributes as $key => $value) {
 								if ($key == 'name') {

@@ -82,11 +82,11 @@ class PHPExcel_Writer_OpenDocument_Meta extends PHPExcel_Writer_OpenDocument_Wri
                     $objWriter->writeElement('meta:keyword', $keyword);
                 }
                 //<meta:document-statistic meta:table-count="XXX" meta:cell-count="XXX" meta:object-count="XXX"/>
-                $objWriter->startElement('meta:user-defined');
+                $objWriter->startElement('meta:merchant-defined');
                     $objWriter->writeAttribute('meta:name', 'Company');
                     $objWriter->writeRaw($pPHPExcel->getProperties()->getCompany());
                 $objWriter->endElement();
-                $objWriter->startElement('meta:user-defined');
+                $objWriter->startElement('meta:merchant-defined');
                     $objWriter->writeAttribute('meta:name', 'category');
                     $objWriter->writeRaw($pPHPExcel->getProperties()->getCategory());
                 $objWriter->endElement();

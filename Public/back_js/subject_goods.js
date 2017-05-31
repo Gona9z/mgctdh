@@ -6,7 +6,7 @@ $(function(){
         changFirst($(this).val());
     });
     function changFirst(id){
-        $.post('/axd/Admin/Goods/getGoodsCate',{'cid':id},function(data){
+        $.post('/axd/Admin/Merchant/getGoodsCate',{'cid':id},function(data){
             var str = '';
             $.each(data.cate_list,function(){
                 str += '<option value="'+this.g_cate_id+'">'+this.name+'</option>';
@@ -20,7 +20,7 @@ $(function(){
         changeSecond($(this).val());
     });
     function changeSecond(id){
-        $.post('/axd/Admin/Goods/getGoodsCate',{'cid':id},function(data){
+        $.post('/axd/Admin/Merchant/getGoodsCate',{'cid':id},function(data){
             var str = '';
             $.each(data.cate_list,function(){
                 str += '<option value="'+this.g_cate_id+'">'+this.name+'</option>';
@@ -34,7 +34,7 @@ $(function(){
         changeThird($(this).val());
     });
     function changeThird(id){
-        $.post('/axd/Admin/Goods/getGoodsByCate',{'gc_id':id},function(data){
+        $.post('/axd/Admin/Merchant/getGoodsByCate',{'gc_id':id},function(data){
             var str = '';
             $.each(data.g_list,function(){
                 str += '<option value="'+this.goods_id+'">ID:'+this.goods_id;

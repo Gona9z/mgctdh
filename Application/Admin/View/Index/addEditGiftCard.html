@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{$pro_name}台管理系统</title>
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/share.css" /><!--另添加样式文件-->
+    <include  file="Public/assets/common/header.html"/><!--头部文件-->
+    <link href="__PUBLIC__/assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <!--讨论区滚动条begin-->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/css/jscrollpane1.css" />
+    <!--上传文件-->
+    <link href="__PUBLIC__/assets/plugins/bootstrap-fileinput/css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="__PUBLIC__/back_css/edit_common.css">
+
+    <script src="__PUBLIC__/back_js/thumb_img.js"></script>
+    <script src="__PUBLIC__/back_js/jquery-form.js"></script>
+    <script src="__PUBLIC__/jedate/jedate.js"></script>
+    <script src="__PUBLIC__/back_js/goods_addEdit.js"></script>
+    <style>
+        #commodity_main input[type=file]{margin-bottom: 10px;}
+        #commodity_main img{width: 150px;height: 150px;}
+        #commodity_main textarea{width: 98%;height: 100px;}
+    </style>
+    <script>
+        $(function(){
+            jeDate({
+                dateCell:"#dateinfo",
+                format:"YYYY-MM-DD",
+                isinitVal:true,
+                isTime:true, //isClear:false,
+                minDate:"1950-01-01 00:00:00",
+            })
+        })
+        var MODULE = "__MODULE__";
+    </script>
+</head>
+
+<body>
+<include  file="Public/assets/common/top.html"/>
+<div class="main-container" id="main-container">
+    <include  file="Public/assets/common/nav.html"/><!--左侧导航栏-->
+    <div class="main-content">
+        <div class="breadcrumbs" id="breadcrumbs">
+            <ul class="breadcrumb">
+                <li>
+                    <i class="icon-home home-icon"></i>
+                    <a href="#">首页</a>
+                </li>
+                <li class="active">公共管理</li>
+                <li class="active">礼品卡列表</li>
+                <li class="active">编辑礼品卡</li>
+            </ul><!-- .breadcrumb -->
+        </div>
+
+        <div id="commodity_details">
+            <h1><img src="__PUBLIC__/back_img/ico.png"><empty name="Think.get.id">添加<else/>修改</empty>礼品卡
+                <a href="javascript:history.go(-1);"><span><img src="__PUBLIC__/back_img/return.png"></span></a></h1>
+            <div id="commodity_list">
+                <!--通用信息_开始-->
+                <form action="__ACTION__" method="post" id="goods_form" enctype="multipart/form-data" >
+
+                    <div id="commodity_main" class="clear">
+                        <table>
+                            <input type="hidden" value="{$gc['gift_card_id']}" name="id">
+                            <tr>
+                                <th>名称：</th>
+                                <td><input type="text" value="{$gc['title']}" name="title"></td>
+                            </tr>
+                            <tr>
+                                <th>图片：</th>
+                                <td>
+                                    <notempty name="gc['image']">
+                                        <img src="__APP__{$gc['image']}" id="to_img">
+                                        <else/>
+                                        <img src="" id="to_img">
+                                    </notempty>
+                                    <input type="file" id="form_file" onchange="getImageFormat('form_file','to_img');" name="form_file"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>披萨：</th>
+                                <td><input type="text" value="{$gc.pizza}" name="pizza"></td>
+                            </tr>
+                            <tr>
+                                <th>数量：</th>
+                                <td><input type="text" name="num" value="{$gc.num}"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <input id="li1_btn" type="button" value="保存"/>
+                </form>
+                <!--通用信息_结束-->
+            </div>
+        </div>
+    </div><!-- /.main-content -->
+</div><!--main-container-->
+
+<include  file="Public/assets/common/footer.html"/>
+
+</body>
+
+<script>
+    $(".gggl").addClass("active open");
+    $(".gggl .lpklb").addClass("active");
+    $('#li1_btn').click(function(){
+        $('#goods_form').ajaxSubmit({
+            url:"__ACTION__",
+            dataType: "json",
+            beforeSend: function() {
+                $('#li1_btn').attr('disabled','true');
+                $('#li1_btn').attr('value','上传中...');
+            },
+            type: "post",
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            success : function(data){
+                alert(data.msg);
+                if(0==data.errorCode){
+                    location.href = document.referrer;
+                }else{
+                    $('#li1_btn').removeAttr('disabled');
+                    $('#li1_btn').attr('value','保存');
+                }
+            }
+        });
+    });
+</script>
+</html>

@@ -82,8 +82,8 @@ class PHPExcel_Shared_Excel5
 	}
 
 	/**
-	 * Convert the height of a cell from user's units to pixels. By interpolation
-	 * the relationship is: y = 4/3x. If the height hasn't been set by the user we
+	 * Convert the height of a cell from merchant's units to pixels. By interpolation
+	 * the relationship is: y = 4/3x. If the height hasn't been set by the merchant we
 	 * use the default value. If the row is hidden we use a value of zero.
 	 *
 	 * @param PHPExcel_Worksheet $sheet The sheet

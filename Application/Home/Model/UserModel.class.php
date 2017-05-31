@@ -21,7 +21,7 @@ class UserModel extends Model{
 		$query['last_login']=time();
 		$query['last_ip']=$ip;
 		M('User')->save($query);
-		return array('msg'=>'登录成功','errorCode'=>0,'user'=>$query,);
+		return array('msg'=>'登录成功','errorCode'=>0,'merchant'=>$query,);
 	}
 
     /**
@@ -59,7 +59,7 @@ class UserModel extends Model{
         $integral_data['note'] = '积分商品兑换';
         $integral_data['type'] = 3;
         $res2 = $model->table(C('DB_PREFIX').'sign')->add($integral_data);
-        $res3 = $model->table(C('DB_PREFIX').'user')->where("user_id='$user_id'")->setDec('integral',$integral);
+        $res3 = $model->table(C('DB_PREFIX').'merchant')->where("user_id='$user_id'")->setDec('integral',$integral);
         if ($res && $res2 && $res3) {
             $model->commit();
             return array('msg'=>'兑换成功','errorCode'=>'0',);

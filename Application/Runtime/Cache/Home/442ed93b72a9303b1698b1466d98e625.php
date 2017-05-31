@@ -192,7 +192,7 @@
     <div class="school">
         <a href="<?php echo U('Index/index');?>"><div class="logo"></div></a>
         <div class="search">
-            <?php if(empty($URL)): ?><form action="<?php echo U('Goods/searchGoods');?>" method="post" id="form_g">
+            <?php if(empty($URL)): ?><form action="<?php echo U('Merchant/searchGoods');?>" method="post" id="form_g">
                     <input class="search_box" type="text" placeholder="搜索美文、宝贝" name="keyword" value="<?php echo ($keyword); ?>" id="search_go">
                     <input type="button" class="search_btn" value="搜索" id="click_search_box_g">
                 </form>
@@ -253,13 +253,13 @@
         <div class="nav_box"> 
             <ul>
                 <a href="/axd"><li id="jump_home">首页</li></a>
-                <a href="<?php echo U('Goods/gCatePage',array('f_cate_id'=>1));?>"><li id="jump_god_male">男神</li></a>
-                <a href="<?php echo U('Goods/gCatePage',array('f_cate_id'=>2));?>"><li id="jump_god_female">女神</li></a>
-                <a href="<?php echo U('Goods/gCatePageSysV',array('cate_id'=>1));?>"><li id="jump_couples">情侣专区</li></a>
-                <a href="<?php echo U('Goods/gCatePageSysV',array('cate_id'=>2));?>"><li id="jump_dormitory">宿舍专区</li></a>
-                <a href="<?php echo U('Goods/gCatePageSysV',array('cate_id'=>3));?>"><li id="jump_version">吃货世界</li></a>
+                <a href="<?php echo U('Merchant/gCatePage',array('f_cate_id'=>1));?>"><li id="jump_god_male">男神</li></a>
+                <a href="<?php echo U('Merchant/gCatePage',array('f_cate_id'=>2));?>"><li id="jump_god_female">女神</li></a>
+                <a href="<?php echo U('Merchant/gCatePageSysV',array('cate_id'=>1));?>"><li id="jump_couples">情侣专区</li></a>
+                <a href="<?php echo U('Merchant/gCatePageSysV',array('cate_id'=>2));?>"><li id="jump_dormitory">宿舍专区</li></a>
+                <a href="<?php echo U('Merchant/gCatePageSysV',array('cate_id'=>3));?>"><li id="jump_version">吃货世界</li></a>
                 <a href="<?php echo U('Subject/subjectList');?>"><li id="jump_notes">美文美搭</li></a>
-                <a href="<?php echo U('Goods/integralGoods');?>"><li id="jump_integral">积分兑换</li></a>
+                <a href="<?php echo U('Merchant/integralGoods');?>"><li id="jump_integral">积分兑换</li></a>
             </ul>
         </div>
     </div>

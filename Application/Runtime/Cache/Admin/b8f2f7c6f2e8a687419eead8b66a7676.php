@@ -406,7 +406,7 @@
 						<!--===========-->
 						<?php if(in_array(23,session('role_pri'))) { ?>
 						<li class="spfllb">
-							<a href="<?php echo U('Admin/Goods/goodsCate',array('sex'=>1));?>">
+							<a href="<?php echo U('Admin/Merchant/goodsCate',array('sex'=>1));?>">
 								<i class="menu-icon fa fa-caret-right"></i>
 								商品分类列表
 							</a>
@@ -416,7 +416,7 @@
 						<!--===========-->
 						<?php if(in_array(24,session('role_pri'))) { ?>
 						<li class="splb">
-							<a href="<?php echo U('Admin/Goods/goodsList');?>">
+							<a href="<?php echo U('Admin/Merchant/goodsList');?>">
 								<i class="menu-icon fa fa-caret-right"></i>
 								商品列表
 							</a>
@@ -571,7 +571,7 @@
 						<!--===========-->
 						<?php if(in_array(34,session('role_pri'))) { ?>
 						<li class="sppl">
-							<a href="<?php echo U('Admin/Goods/goodsComment');?>">
+							<a href="<?php echo U('Admin/Merchant/goodsComment');?>">
 								<i class="menu-icon fa fa-caret-right"></i>
 								商品评论
 							</a>
@@ -632,7 +632,7 @@
 						<!--===========-->
 						<?php if(in_array(39,session('role_pri'))) { ?>
 						<li class="tbddlb">
-							<a href="<?php echo U('Admin/Goods/tbOrder');?>">
+							<a href="<?php echo U('Admin/Merchant/tbOrder');?>">
 								<i class="menu-icon fa fa-caret-right"></i>
 								淘宝订单列表
 							</a>
@@ -780,7 +780,7 @@
                         </div>
                     </form>
                 </div>-->
-                <a href="<?php echo U('Admin/Goods/addEditGCate');;?>" class='btn btn-sm btn-primary pull-left'>添加</a>
+                <a href="<?php echo U('Admin/Merchant/addEditGCate');;?>" class='btn btn-sm btn-primary pull-left'>添加</a>
             </div>
 
             <table class="table table-bordered" id="list-table">
@@ -803,7 +803,7 @@
                         <?php if(!empty($c['image'])): ?><img src="/axd<?php echo ($c["image"]); ?>"><?php endif; ?>
                     </td>
                     <td class="operation">
-                        <?php if($c['sys_value'] != 1): ?><a href="<?php echo U('Admin/Goods/addEditGCate',array('id'=>$c['g_cate_id']));?>">编辑</a>
+                        <?php if($c['sys_value'] != 1): ?><a href="<?php echo U('Admin/Merchant/addEditGCate',array('id'=>$c['g_cate_id']));?>">编辑</a>
                             <a href="javaScript:void(0);" onclick="delGCate('<?php echo ($c["g_cate_id"]); ?>')">删除</a><?php endif; ?>
                     </td>
                     </tr><?php endforeach; endif; ?>
@@ -906,7 +906,7 @@
     //删除商品
     function delGCate(id){
         if(confirm("是否删除该数据")){
-            $.post("<?php echo U('Admin/Goods/delGCate');?>",{'id':id},function(data){
+            $.post("<?php echo U('Admin/Merchant/delGCate');?>",{'id':id},function(data){
                 alert(data.msg);
                 if('0'==data.errorCode){
                     window.location.reload();

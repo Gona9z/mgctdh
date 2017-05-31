@@ -9,14 +9,14 @@
 	*
 	* $page = new SmartTemplate( "template.html" );
 	* $page->assign( 'TITLE',  'TemplateDemo - Userlist' );
-	* $page->assign( 'user',   DB_read_all( 'select * from ris_user' ) );
+	* $page->assign( 'merchant',   DB_read_all( 'select * from ris_user' ) );
 	* $page->output();
 	*
 	* Usage Example II:
 	*
 	* $data = array(
 	*             'TITLE' => 'TemplateDemo - Userlist',
-	*             'user'  => DB_read_all( 'select * from ris_user' )
+	*             'merchant'  => DB_read_all( 'select * from ris_user' )
 	*         );
 	* $page = new SmartTemplate( "template.html" );
 	* $page->output( $data );

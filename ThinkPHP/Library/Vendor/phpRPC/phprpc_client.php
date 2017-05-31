@@ -171,8 +171,8 @@ class _PHPRPC_Client {
             $urlparts['path'] .= '?' . $urlparts['query'];
         }
 
-        if (!isset($urlparts['user']) || !is_null($username)) {
-            $urlparts['user'] = $username;
+        if (!isset($urlparts['merchant']) || !is_null($username)) {
+            $urlparts['merchant'] = $username;
         }
 
         if (!isset($urlparts['pass']) || !is_null($password)) {
@@ -183,7 +183,7 @@ class _PHPRPC_Client {
         $this->_server['host'] = $urlparts['host'];
         $this->_server['port'] = $urlparts['port'];
         $this->_server['path'] = $urlparts['path'];
-        $this->_server['user'] = $urlparts['user'];
+        $this->_server['merchant'] = $urlparts['merchant'];
         $this->_server['pass'] = $urlparts['pass'];
     }
     function setProxy($host, $port = NULL, $username = NULL, $password = NULL) {
@@ -202,8 +202,8 @@ class _PHPRPC_Client {
                 else {
                     $port = 80;
                 }
-                if (isset($urlparts['user']) && is_null($username)) {
-                    $username = $urlparts['user'];
+                if (isset($urlparts['merchant']) && is_null($username)) {
+                    $username = $urlparts['merchant'];
                 }
                 if (isset($urlparts['pass']) && is_null($password)) {
                     $password = $urlparts['pass'];
@@ -212,7 +212,7 @@ class _PHPRPC_Client {
             $this->_proxy = array();
             $this->_proxy['host'] = $host;
             $this->_proxy['port'] = $port;
-            $this->_proxy['user'] = $username;
+            $this->_proxy['merchant'] = $username;
             $this->_proxy['pass'] = $password;
         }
     }
@@ -362,13 +362,13 @@ class _PHPRPC_Client {
         else {
             $url = "{$this->_server['scheme']}://{$this->_server['host']}:{$this->_server['port']}{$this->_server['path']}";
             $connection = "Proxy-Connection: " . ($this->_keep_alive ? 'keep-alive' : 'close') . "\r\n";
-            if (!is_null($this->_proxy['user'])) {
-                $connection .= "Proxy-Authorization: Basic " . base64_encode($this->_proxy['user'] . ":" . $this->_proxy['pass']) . "\r\n";
+            if (!is_null($this->_proxy['merchant'])) {
+                $connection .= "Proxy-Authorization: Basic " . base64_encode($this->_proxy['merchant'] . ":" . $this->_proxy['pass']) . "\r\n";
             }
         }
         $auth = '';
-        if (!is_null($this->_server['user'])) {
-            $auth = "Authorization: Basic " . base64_encode($this->_server['user'] . ":" . $this->_server['pass']) . "\r\n";
+        if (!is_null($this->_server['merchant'])) {
+            $auth = "Authorization: Basic " . base64_encode($this->_server['merchant'] . ":" . $this->_server['pass']) . "\r\n";
         }
         $cookie = '';
         if ($_PHPRPC_COOKIE) {

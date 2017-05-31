@@ -51,8 +51,8 @@
 // Primary changes made by canyoncasa (dvc) for ParseXL 1.10 ...
 // http://sourceforge.net/tracker/index.php?func=detail&aid=1466964&group_id=99160&atid=623334
 //	 Decoding of formula conditions, results, and tokens.
-//	 Support for user-defined named cells added as an array "namedcells"
-//		 Patch code for user-defined named cells supports single cells only.
+//	 Support for merchant-defined named cells added as an array "namedcells"
+//		 Patch code for merchant-defined named cells supports single cells only.
 //		 NOTE: this patch only works for BIFF8 as BIFF5-7 use a different
 //		 external sheet reference structure
 
@@ -1172,7 +1172,7 @@ class PHPExcel_Reader_Excel5 extends PHPExcel_Reader_Abstract implements PHPExce
 		// Get additional document summary information data
 		$this->_documentSummaryInformation = $ole->getStream($ole->documentSummaryInformation);
 
-		// Get user-defined property data
+		// Get merchant-defined property data
 //		$this->_userDefinedProperties = $ole->getUserDefinedProperties();
 	}
 
@@ -2029,7 +2029,7 @@ class PHPExcel_Reader_Excel5 extends PHPExcel_Reader_Abstract implements PHPExce
 			// offset:  2; size: 2; Index to FORMAT record
 			$numberFormatIndex = self::_GetInt2d($recordData, 2);
 			if (isset($this->_formats[$numberFormatIndex])) {
-				// then we have user-defined format code
+				// then we have merchant-defined format code
 				$numberformat = array('code' => $this->_formats[$numberFormatIndex]);
 			} elseif (($code = PHPExcel_Style_NumberFormat::builtInFormatCode($numberFormatIndex)) !== '') {
 				// then we have built-in format code
@@ -2483,7 +2483,7 @@ class PHPExcel_Reader_Excel5 extends PHPExcel_Reader_Abstract implements PHPExce
 			// bit: 11-0; mask 0x0FFF; index to XF record
 			$xfIndex = (0x0FFF & $ixfe) >> 0;
 
-			// bit: 15; mask 0x8000; 0 = user-defined style, 1 = built-in style
+			// bit: 15; mask 0x8000; 0 = merchant-defined style, 1 = built-in style
 			$isBuiltIn = (bool) ((0x8000 & $ixfe) >> 15);
 
 			if ($isBuiltIn) {
@@ -2500,7 +2500,7 @@ class PHPExcel_Reader_Excel5 extends PHPExcel_Reader_Abstract implements PHPExce
 				}
 
 			} else {
-				// user-defined; not supported by PHPExcel
+				// merchant-defined; not supported by PHPExcel
 			}
 		}
 	}
@@ -2736,7 +2736,7 @@ class PHPExcel_Reader_Excel5 extends PHPExcel_Reader_Abstract implements PHPExce
 			// offset: 0; size: 2; option flags
 			$opts = self::_GetInt2d($recordData, 0);
 
-				// bit: 5; mask: 0x0020; 0 = user-defined name, 1 = built-in-name
+				// bit: 5; mask: 0x0020; 0 = merchant-defined name, 1 = built-in-name
 				$isBuiltInName = (0x0020 & $opts) >> 5;
 
 			// offset: 2; size: 1; keyboard shortcut
@@ -4906,7 +4906,7 @@ class PHPExcel_Reader_Excel5 extends PHPExcel_Reader_Abstract implements PHPExce
 		// offset: 19; size: 2; option flags
 		$options = self::_GetInt2d($recordData, 19);
 
-		// bit: 0; mask 0x0001; 1 = user may edit objects, 0 = users must not edit objects
+		// bit: 0; mask 0x0001; 1 = merchant may edit objects, 0 = users must not edit objects
 		$bool = (0x0001 & $options) >> 0;
 		$this->_phpSheet->getProtection()->setObjects(!$bool);
 

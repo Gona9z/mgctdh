@@ -220,7 +220,7 @@ function T($template='',$layer=''){
     }
     $info   =   parse_url($template);
     $file   =   $info['host'].(isset($info['path'])?$info['path']:'');
-    $module =   isset($info['user'])?$info['user'].'/':MODULE_NAME.'/';
+    $module =   isset($info['merchant'])?$info['merchant'].'/':MODULE_NAME.'/';
     $extend =   $info['scheme'];
     $layer  =   $layer?$layer:C('DEFAULT_V_LAYER');
 

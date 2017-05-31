@@ -19,7 +19,7 @@ class MergeModel extends Model {
     protected $masterModel  =   '';         //  主模型
     protected $joinType     =   'INNER';    //  聚合模型的查询JOIN类型
     protected $fk           =   '';         //  外键名 默认为主表名_id
-    protected $mapFields    =   array();    //  需要处理的模型映射字段，避免混淆 array( id => 'user.id'  )
+    protected $mapFields    =   array();    //  需要处理的模型映射字段，避免混淆 array( id => 'merchant.id'  )
 
     /**
      * 架构函数

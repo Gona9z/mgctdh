@@ -2,27 +2,21 @@
 namespace Admin\Controller;
 use Think\Controller;
 class UserController extends AdminBaseController  {
-    public function index(){
-    }
 
     //app用户列表
     public function userList(){
         $keyword = I('keyword','');
         $this->assign('keyword',$keyword);
         $keyword = str_replace("%","\\%",$keyword);
-        $where['phone'] = array('like','%'.$keyword.'%');
+        $where['account'] = array('like','%'.$keyword.'%');
         $where['_logic'] = 'OR';
         $where['nickname'] = array('like','%'.$keyword.'%');
         $page = I('p',1);
         //app用户列表
-        $this->list = M('User')
-            ->field('u.*,s.name AS school_name')
-            ->join('LEFT JOIN axd_school s ON s.school_id = u.school_id')
-            ->where($where)
-            ->alias('u')->order('reg_time DESC')->page($page,20)->select();
+        $this->list = M('User')->where($where)
+            ->order('reg_time DESC')->page($page,10)->select();
         //数据分页
-        $count = M('User')->join('LEFT JOIN axd_school s ON s.school_id = u.school_id')
-            ->alias('u')->where($where)->count();
+        $count = M('User')->where($where)->count();
         $Page = new \Think\Page($count,20);
         $show = $Page->show();
         $this->assign('page',$show);
@@ -34,7 +28,6 @@ class UserController extends AdminBaseController  {
         $id = I('id');
         $user = M('User')->field('password,accesstoken,open_id',ture)->find($id);
         if(IS_GET){
-            $this->school_list = M('School')->select();
             $this->assign('user',$user);
             $this->display();
         }else{
@@ -55,7 +48,7 @@ class UserController extends AdminBaseController  {
             $data['integral'] = I('integral',0);
             $data['disable'] = I('disable',0);
             if($_FILES['form_file']!=''&&!empty($_FILES['form_file'])){   //判断图片是否有上传
-                $res = upload_file($_FILES['form_file'],'user');
+                $res = upload_file($_FILES['form_file'],'merchant');
                 if($res['errorCode']!=0){   //文件上传失败
                     $this->request_ajaxReturn('编辑失败,'.$res['msg'],1);
                 }else{          //文件上传成功
@@ -117,5 +110,12 @@ class UserController extends AdminBaseController  {
         $title_arr = array('ID','账号','昵称','头像','性别','出生日期','是否单身','学校','积分','状态');
         array_unshift($data,$title_arr);
         create_xls($data,$title_arr,array(10,20,20,20,10,15,10,15,10,10),'用户列表'.date("Ymd", time()));
+    }
+
+    //用户银行卡列表
+    public function userBankCard(){
+        $where['user_id'] = I('user_id');
+        $this->list = M('UserBankCard')->select();
+        $this->display();
     }
 }

@@ -412,9 +412,9 @@ class PHPExcel_Worksheet_AutoFilter_Column_Rule
 	public function setRule($pOperator = self::AUTOFILTER_COLUMN_RULE_EQUAL, $pValue = '', $pGrouping = NULL) {
 		$this->setOperator($pOperator);
 		$this->setValue($pValue);
-		//	Only set grouping if it's been passed in as a user-supplied argument,
+		//	Only set grouping if it's been passed in as a merchant-supplied argument,
 		//		otherwise we're calculating it when we setValue() and don't want to overwrite that
-		//		If the user supplies an argumnet for grouping, then on their own head be it
+		//		If the merchant supplies an argumnet for grouping, then on their own head be it
 		if ($pGrouping !== NULL)
 			$this->setGrouping($pGrouping);
 

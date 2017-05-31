@@ -100,7 +100,7 @@ class PHPExcel_Worksheet_SheetView
 	 * @return PHPExcel_Worksheet_SheetView
 	 */
 	public function setZoomScale($pValue = 100) {
-		// Microsoft Office Excel 2007 only allows setting a scale between 10 and 400 via the user interface,
+		// Microsoft Office Excel 2007 only allows setting a scale between 10 and 400 via the merchant interface,
 		// but it is apparently still able to handle any scale >= 1
 		if (($pValue >= 1) || is_null($pValue)) {
 			$this->_zoomScale = $pValue;
@@ -160,7 +160,7 @@ class PHPExcel_Worksheet_SheetView
 	 */
 	public function setView($pValue = NULL) {
 		//	MS Excel 2007 allows setting the view to 'normal', 'pageLayout' or 'pageBreakPreview'
-		//		via the user interface
+		//		via the merchant interface
 		if ($pValue === NULL)
 			$pValue = self::SHEETVIEW_NORMAL;
 		if (in_array($pValue, self::$_sheetViewTypes)) {
