@@ -1,421 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1dc6569d-24d3-4413-b625-35aabed19859" name="Default" comment="接口开发--0531（11接口）">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/gift_card/gift1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/m_demo1.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/m_demo2.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Controller/MerchantController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Controller/MerchantController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Logic/UserLogic.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/08b6c58dfc6f320861d0389dc4fbdb01.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/8d5584210d52d415535fa993dba696af.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/b816fadedab3d69d75eb50d150f486b9.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/fec52905ddfcb41195042c35cf63a3af.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Admin/17_05_29.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Admin/17_05_31.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Api/17_05_29.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Api/17_05_31.log" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Admin/Controller/AdController.class.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Admin/Controller/SubjectController.class.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Admin/View/Goods/addEditGoods.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Admin/View/Goods/tbOrder.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Admin/View/Index/addEditStartPage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Admin/View/Index/addExpress.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Admin/View/Index/addHotKeyword.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Admin/View/Index/dealTaoCommandPage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Admin/View/Index/eventList.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Admin/View/Index/hotKeyword.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Admin/View/Index/partnerList.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Admin/View/Index/startPageList.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Admin/View/Index/taoCommandList.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Admin/View/User/addSchool.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Admin/View/User/schoolList.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/banner/2016/12/4245111121.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/banner/2016/12/4995111307.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/banner/2016/12/7625104137.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/banner/2016/12/9440111245.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/collocation/2016/12/16/2915084510.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/collocation/2016/12/16/3906084528.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/collocation/2016/12/16/3994084536.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/collocation/2016/12/16/4178084543.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/collocation/2016/12/16/4226084449.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/collocation/2016/12/16/5888084459.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/collocation/2016/12/16/6017084551.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/collocation/2016/12/16/6614100412.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/collocation/2016/12/16/9722084520.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/collocation/2016/12/20/7567092752.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/collocation/2017/03/02/8952000408.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/collocation_cate/2017/03/09/1609142636.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/collocation_cate/2017/03/09/1702142359.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/collocation_cate/2017/03/09/4584142619.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/02/1472805969186439.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/02/1472806048761230.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/02/1472806524617285.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/02/1472806530905736.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/02/1472806539864931.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/02/1472806556753406.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472874303935047.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472881974058364.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472883090016472.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472883991504768.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472884287821647.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472884355904573.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472884416714286.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472884516245687.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472884572461859.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472884639086439.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472885099069827.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472885195149328.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472885289480691.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472885355482690.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472885457316708.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472889591258794.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472889829250937.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472889896275109.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472890105516840.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472890237352714.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472890386792014.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472890483938507.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472891659760219.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472892025519780.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472892375823145.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472892517621487.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472892673013485.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472892988738405.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472893237120978.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472893351180729.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472893565974682.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472893678140728.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472893781892154.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472893852098673.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472893901720186.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472893959410276.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472894002593074.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472894128759642.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472894167506417.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472894234625180.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472894283817490.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472895805745692.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472895933762049.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472896038506748.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472896558765342.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/03/1472896614431896.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/09/25/1474787370469371.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/10/10/1476057265905831.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/10/10/1476058652764139.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/10/12/1476246392309681.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/10/12/1476272770092647.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/10/12/1476272773029314.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/10/12/1476272791321679.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/10/12/1476273107327061.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/10/12/1476273120984017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/10/12/1476273582470839.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/10/12/1476273585736280.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/10/12/1476273606674538.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/10/12/1476273608973205.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/10/13/1476330547805496.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/12/1106095138.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/12/1514085951.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/12/2323085422.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/12/2375095655.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/12/2462094809.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/12/2643085020.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/12/2954085753.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/12/3115095258.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/12/3431095025.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/12/4960095933.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/12/5246094925.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/12/5426192950.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/12/5604100136.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/12/5759193206.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/12/7890085602.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/12/8074095741.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/12/8109085308.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/12/8915095442.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/12/9161100033.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2016/12/9694095839.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2017/03/19/2557214341.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2017/03/19/3775233235.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2017/03/19/4554233407.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2017/03/19/5662215040.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2017/03/19/6361233059.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2017/03/19/8419231512.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2017/03/21/8497234821.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2017/03/22/5240004458.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2017/03/22/7071004841.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2017/03/22/9344004441.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods/2017/03/25/3797093631.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods_cate/2016/12/1039091140.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods_cate/2016/12/1730094107.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods_cate/2016/12/1841093111.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods_cate/2016/12/2132092802.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods_cate/2016/12/2391092117.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods_cate/2016/12/2413091416.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods_cate/2016/12/2966092445.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods_cate/2016/12/3021094406.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods_cate/2016/12/3317092205.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods_cate/2016/12/3774084147.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods_cate/2016/12/3899093036.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods_cate/2016/12/3928093201.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods_cate/2016/12/4417092855.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods_cate/2016/12/4464092421.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods_cate/2016/12/4961094204.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods_cate/2016/12/5492091348.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods_cate/2016/12/5786092433.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods_cate/2016/12/6469093154.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods_cate/2016/12/7404090730.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods_cate/2016/12/7489091450.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods_cate/2016/12/7620091321.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods_cate/2016/12/8104091604.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods_cate/2016/12/9086092253.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods_cate/2016/12/9318093928.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods_cate/2016/12/9558092741.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/goods_cate/2016/12/9837094248.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/integral_goods/2016/12/1094172650.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/integral_goods/2016/12/1310173002.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/integral_goods/2016/12/2049173050.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/integral_goods/2016/12/2482173223.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/integral_goods/2016/12/2821173259.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/integral_goods/2016/12/2908172755.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/integral_goods/2016/12/4045173139.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/integral_goods/2016/12/5618173114.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/integral_goods/2016/12/5622173247.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/integral_goods/2016/12/5967173332.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/integral_goods/2016/12/6864172903.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/integral_goods/2016/12/7250173338.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/integral_goods/2016/12/8312173308.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/integral_goods/2016/12/8634173428.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/interact/2016/12/14/1784170647.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/interact/2016/12/14/2375170343.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/interact/2016/12/14/5872170223.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/interact/2016/12/14/9219150647.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/interact/2016/12/14/9305152330.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/interact/2017/03/09/5657215754.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/partner/2016/12/1278113803.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/partner/2016/12/3418113853.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/start_page/2017/02/10/7724095802.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/1013153722.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/1057162807.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/1500161808.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/1586154016.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/1756151912.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/1776153314.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/1821165232.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/1830163012.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/2020162612.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/2070164308.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/2115164843.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/2133163749.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/2248160800.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/2606164042.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/3143164843.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/3362153314.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/3572154246.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/3651160405.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/3696164308.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/3827162150.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/3970160800.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/3982161808.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/4197160800.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/4228154820.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/4322155120.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/4591153722.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/4715153722.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/5278163323.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/5448155551.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/5541164607.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/5958154246.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/5987155832.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/6062162612.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/6099164042.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/6214165232.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/6385163551.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/6400151905.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/6472154016.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/6480154016.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/6517155120.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/6520163551.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/6750164308.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/6832165232.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/6834154507.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/6884164607.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/7076163551.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/7120164042.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/7199155551.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/7203162612.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/7272163749.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/7293152857.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/7327163012.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/7416154507.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/7907154820.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/8037164607.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/8043164843.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/8051160405.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/8325163323.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/8352162807.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/8356154820.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/8367162807.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/8497155832.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/8505161808.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/8764154246.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/8838153314.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/8856160405.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/8972155551.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/9099155832.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/9211162150.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/9279154507.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/9313162150.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/9419155120.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/9643163012.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/9654163323.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2016/12/9959163749.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2017/03/09/5621142109.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2017/03/09/8277142109.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2017/03/09/9719142109.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2017/03/19/1261231950.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2017/03/19/1502231950.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2017/03/19/2878231950.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2017/03/19/4526232236.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2017/03/19/4529232051.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2017/03/19/5281232236.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2017/03/19/5896232051.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2017/03/19/6572232236.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2017/03/19/6606225358.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2017/03/19/7006232051.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2017/03/19/7615230338.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2017/03/19/7932225358.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2017/03/19/8542225358.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2017/03/19/9127230338.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2017/03/19/9380230338.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2017/03/22/1130151647.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2017/03/22/1912151340.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2017/03/22/3781151051.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2017/03/22/7395151725.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2017/03/22/8492151041.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/subject/2017/03/22/9966151647.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/uploadimage/2017/03/09/58c15f32240a3.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/uploadimage/2017/03/09/58c163805e99c.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/uploadimage/2017/03/09/58c1638de5653.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/uploadvideo/2017/03/09/58c163e66b35d.mp4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/uploadvideo/2017/03/10/58c26f173445f.mp4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/user/1303235016.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/user/1489409770.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/user/2017/02/08/4914145226.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/user/2017/02/08/5441145215.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/user/2017/02/08/7827145221.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/user/2017/02/08/9861145236.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/uploads/user/3351225302.png" afterPath="" />
+    <list default="true" id="1dc6569d-24d3-4413-b625-35aabed19859" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Logic/MerchantLogic.class.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Api/Model/CollocationModel.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Api/Model/GoodsModel.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Api/Model/InteractModel.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Api/Model/SubjectModel.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Api/Model/UserModel.class.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/AdminController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/AdminController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/SystemController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/SystemController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/UserController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/UserController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Index/login.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Index/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Index/welp.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Index/welp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/User/editUser.html" afterPath="$PROJECT_DIR$/Application/Admin/View/User/editUser.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/User/userList.html" afterPath="$PROJECT_DIR$/Application/Admin/View/User/userList.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Api/Common/function.php" afterPath="$PROJECT_DIR$/Application/Api/Common/function.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Api/Controller/IndexController.class.php" afterPath="$PROJECT_DIR$/Application/Api/Controller/IndexController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Api/Controller/MerchantController.class.php" afterPath="$PROJECT_DIR$/Application/Api/Controller/MerchantController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Api/Controller/UserController.class.php" afterPath="$PROJECT_DIR$/Application/Api/Controller/UserController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Api/Model/UserModel.class.php" afterPath="$PROJECT_DIR$/Application/Api/Model/UserModel.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Api/Logic/UserLogic.class.php" afterPath="$PROJECT_DIR$/Application/Api/Logic/UserLogic.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Api/View/Index/index.html" afterPath="$PROJECT_DIR$/Application/Api/View/Index/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Model/UserModel.class.php" afterPath="$PROJECT_DIR$/Application/Home/Model/UserModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/041185b974292283d2f6098acc3220ec.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/041185b974292283d2f6098acc3220ec.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/0505573853887f23b2528a2acd92d90b.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/0505573853887f23b2528a2acd92d90b.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/158b5ad56125cf32f080faa049cf37d8.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/158b5ad56125cf32f080faa049cf37d8.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/3b2621a22f13f08469ce34b860ce450f.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/3b2621a22f13f08469ce34b860ce450f.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/40ee8edb8bea287435a4a423f69563e0.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/40ee8edb8bea287435a4a423f69563e0.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/4643fb3c0763ca4693278d5787eaccad.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/4643fb3c0763ca4693278d5787eaccad.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/50ebd1acaa8d9e3b3806e0789d8f1101.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/50ebd1acaa8d9e3b3806e0789d8f1101.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/577d71df4452d2b8a36723e028540e25.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/577d71df4452d2b8a36723e028540e25.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/5d04b7b5ef129840d40dc5ecb077568e.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/5d04b7b5ef129840d40dc5ecb077568e.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/5f95636604cb9c0f58483d318236a347.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/5f95636604cb9c0f58483d318236a347.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/65aaba559045601cbff28c81393b42a7.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/65aaba559045601cbff28c81393b42a7.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/6e29e633b2050b0ea8cfba4653b347c2.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/6e29e633b2050b0ea8cfba4653b347c2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/7c3aed1365bace85b2f672defe30538d.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/7c3aed1365bace85b2f672defe30538d.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/8bd21d2c32e7461b1552343c6e3bd647.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/8bd21d2c32e7461b1552343c6e3bd647.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/9beb605fd668f513a2096751df6360b9.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/9beb605fd668f513a2096751df6360b9.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/a043613e267e85f6d4a5eea07584d209.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/a043613e267e85f6d4a5eea07584d209.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/a48627511369c0cf1c5d34fd494ee6ae.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/a48627511369c0cf1c5d34fd494ee6ae.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/acd4f68891c287aa9ff8ef8e442c52e6.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/acd4f68891c287aa9ff8ef8e442c52e6.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/b8f2f7c6f2e8a687419eead8b66a7676.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/b8f2f7c6f2e8a687419eead8b66a7676.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/bec1636dc6b9c71cb9d7071f2538a6e3.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/bec1636dc6b9c71cb9d7071f2538a6e3.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/c43fc2bfc5de19a802dde295ae048585.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/c43fc2bfc5de19a802dde295ae048585.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/d779518500cb33d46591de4518dc6d35.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/d779518500cb33d46591de4518dc6d35.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/dca44af2f7f066cdddc1f3252a6806d1.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/dca44af2f7f066cdddc1f3252a6806d1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/e22f462ef5ab46317af9803b1e501e9e.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/e22f462ef5ab46317af9803b1e501e9e.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/e46618a655350a7f3a5a1c7682ec8ce2.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/e46618a655350a7f3a5a1c7682ec8ce2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/ea906784b753ceeca4d496484269b8fb.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/ea906784b753ceeca4d496484269b8fb.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/ee65992c8e6739d9db72ca0b629f4c67.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/ee65992c8e6739d9db72ca0b629f4c67.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/ef9c40b18f35a002cb71e2226d181e86.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/ef9c40b18f35a002cb71e2226d181e86.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/fd8db13da1500736658b617f5c41c7cb.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/fd8db13da1500736658b617f5c41c7cb.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Common/Conf/config.php" afterPath="$PROJECT_DIR$/Application/Common/Conf/config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Api/51b31191c7d9f8df7ef9291eadae4e42.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Api/51b31191c7d9f8df7ef9291eadae4e42.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Api/cde3d62f57279dd3e3e336ce5f106d09.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Api/cde3d62f57279dd3e3e336ce5f106d09.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/25bb2c381f98c27aacc12447c867872c.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/25bb2c381f98c27aacc12447c867872c.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/3c0a1355a51e5335187c06c11e7966b2.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/3c0a1355a51e5335187c06c11e7966b2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/442ed93b72a9303b1698b1466d98e625.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/442ed93b72a9303b1698b1466d98e625.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/9477c8d9fd7c67d8683302849b63da32.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/9477c8d9fd7c67d8683302849b63da32.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/e77bb5348092951721b3f5087d38e9e4.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/e77bb5348092951721b3f5087d38e9e4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/assets/common/nav.html" afterPath="$PROJECT_DIR$/Public/assets/common/nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/assets/common/top.html" afterPath="$PROJECT_DIR$/Public/assets/common/top.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/assets/js/jquery.dataTables.min.js" afterPath="$PROJECT_DIR$/Public/assets/js/jquery.dataTables.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/assets/js/jquery.jqGrid.min.js" afterPath="$PROJECT_DIR$/Public/assets/js/jquery.jqGrid.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/assets/js/jquery.ui.core.js" afterPath="$PROJECT_DIR$/Public/assets/js/jquery.ui.core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/assets/js/moment.js" afterPath="$PROJECT_DIR$/Public/assets/js/moment.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/back_js/goods_addEdit.js" afterPath="$PROJECT_DIR$/Public/back_js/goods_addEdit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/back_js/goods_cate.js" afterPath="$PROJECT_DIR$/Public/back_js/goods_cate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/back_js/jquery-1.12.4.js" afterPath="$PROJECT_DIR$/Public/back_js/jquery-1.12.4.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/back_js/jquery-form.js" afterPath="$PROJECT_DIR$/Public/back_js/jquery-form.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/back_js/subject_goods.js" afterPath="$PROJECT_DIR$/Public/back_js/subject_goods.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/ueditor/lang/en/en.js" afterPath="$PROJECT_DIR$/Public/ueditor/lang/en/en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/ueditor/third-party/SyntaxHighlighter/shCore.js" afterPath="$PROJECT_DIR$/Public/ueditor/third-party/SyntaxHighlighter/shCore.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/ueditor/third-party/codemirror/codemirror.js" afterPath="$PROJECT_DIR$/Public/ueditor/third-party/codemirror/codemirror.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/ueditor/third-party/highcharts/highcharts.src.js" afterPath="$PROJECT_DIR$/Public/ueditor/third-party/highcharts/highcharts.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/ueditor/third-party/highcharts/modules/map.src.js" afterPath="$PROJECT_DIR$/Public/ueditor/third-party/highcharts/modules/map.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/ueditor/third-party/jquery-1.10.2.js" afterPath="$PROJECT_DIR$/Public/ueditor/third-party/jquery-1.10.2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/ueditor/third-party/video-js/video-js.css" afterPath="$PROJECT_DIR$/Public/ueditor/third-party/video-js/video-js.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/ueditor/third-party/video-js/video.dev.js" afterPath="$PROJECT_DIR$/Public/ueditor/third-party/video-js/video.dev.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/ueditor/third-party/video-js/video.js" afterPath="$PROJECT_DIR$/Public/ueditor/third-party/video-js/video.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/ueditor/third-party/xss.min.js" afterPath="$PROJECT_DIR$/Public/ueditor/third-party/xss.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/ueditor/ueditor.all.min.js" afterPath="$PROJECT_DIR$/Public/ueditor/ueditor.all.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Common/functions.php" afterPath="$PROJECT_DIR$/ThinkPHP/Common/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Library/Behavior/BuildLiteBehavior.class.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Behavior/BuildLiteBehavior.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Library/Behavior/FireShowPageTraceBehavior.class.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Behavior/FireShowPageTraceBehavior.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Library/Behavior/ShowRuntimeBehavior.class.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Behavior/ShowRuntimeBehavior.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Library/Org/Util/Rbac.class.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Org/Util/Rbac.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Library/Think/Db.class.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Think/Db.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Library/Think/Model/MergeModel.class.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Think/Model/MergeModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Library/Think/Template/TagLib/Cx.class.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Think/Template/TagLib/Cx.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Library/Think/Upload/Driver/Bcs/bcs.class.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Think/Upload/Driver/Bcs/bcs.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Library/Think/Upload/Driver/Bcs/requestcore.class.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Think/Upload/Driver/Bcs/requestcore.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/Boris/Boris.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/Boris/Boris.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/Boris/EvalWorker.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/Boris/EvalWorker.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/Boris/ReadlineClient.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/Boris/ReadlineClient.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/PHPExcel/PHPExcel/Reader/Excel5.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/PHPExcel/PHPExcel/Reader/Excel5.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/PHPExcel/PHPExcel/Reader/Gnumeric.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/PHPExcel/PHPExcel/Reader/Gnumeric.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/PHPExcel/PHPExcel/Reader/OOCalc.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/PHPExcel/PHPExcel/Reader/OOCalc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/PHPExcel/PHPExcel/Shared/Excel5.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/PHPExcel/PHPExcel/Shared/Excel5.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/PHPExcel/PHPExcel/Worksheet/AutoFilter/Column/Rule.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/PHPExcel/PHPExcel/Worksheet/AutoFilter/Column/Rule.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/PHPExcel/PHPExcel/Worksheet/SheetView.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/PHPExcel/PHPExcel/Worksheet/SheetView.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/PHPExcel/PHPExcel/Writer/OpenDocument/Meta.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/PHPExcel/PHPExcel/Writer/OpenDocument/Meta.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/Phpqrcode/index.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/Phpqrcode/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/SmartTemplate/class.smarttemplate.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/SmartTemplate/class.smarttemplate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/Smarty/Smarty.class.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/Smarty/Smarty.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/Smarty/plugins/function.fetch.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/Smarty/plugins/function.fetch.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/Smarty/sysplugins/smarty_internal_compile_call.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/Smarty/sysplugins/smarty_internal_compile_call.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/Smarty/sysplugins/smarty_internal_configfileparser.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/Smarty/sysplugins/smarty_internal_configfileparser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/phpRPC/phprpc_client.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/phpRPC/phprpc_client.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Mode/Lite/functions.php" afterPath="$PROJECT_DIR$/ThinkPHP/Mode/Lite/functions.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/Admin/View/Goods/addEditGCate.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Merchant/addEditGCate.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/Admin/View/Goods/goodsCate.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Merchant/goodsCate.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/Admin/View/Goods/goodsComment.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Merchant/goodsComment.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/Admin/View/Goods/goodsList.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Merchant/merchantList.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/Admin/View/Index/addEditEvent.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Merchant/addEditMerchant.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/Admin/View/Index/addEditPartner.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Index/addEditGiftCard.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/Admin/View/Index/expressList.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Index/giftCardList.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Api/17_05_31.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Api/17_05_31.log" />
     </list>
     <ignored path="mgctdh.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -440,21 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="IndexController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php">
+      <file leaf-file-name="MerchantController.class.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Application/Api/Controller/MerchantController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.class.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/Api/Controller/UserController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="272">
+              <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -478,7 +68,6 @@
       <list>
         <option value="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/View/Index/index.html" />
-        <option value="$PROJECT_DIR$/Application/Common/Conf/config.php" />
         <option value="$PROJECT_DIR$/Application/Api/Controller/GoodsController.class.php" />
         <option value="$PROJECT_DIR$/Public/assets/common/top.html" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Index/login.html" />
@@ -495,12 +84,14 @@
         <option value="$PROJECT_DIR$/Application/Admin/Controller/UserController.class.php" />
         <option value="$PROJECT_DIR$/Public/assets/common/nav.html" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/SystemController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Logic/UserLogic.class.php" />
-        <option value="$PROJECT_DIR$/Application/Api/View/Index/index.html" />
         <option value="$PROJECT_DIR$/Application/Api/Common/function.php" />
         <option value="$PROJECT_DIR$/Application/Api/Controller/IndexController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Controller/MerchantController.class.php" />
         <option value="$PROJECT_DIR$/Application/Api/Controller/UserController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Logic/UserLogic.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/View/Index/index.html" />
+        <option value="$PROJECT_DIR$/Application/Api/Logic/MerchantLogic.class.php" />
+        <option value="$PROJECT_DIR$/Application/Common/Conf/config.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Controller/MerchantController.class.php" />
       </list>
     </option>
   </component>
@@ -512,8 +103,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="425" />
-    <option name="y" value="77" />
+    <option name="x" value="207" />
+    <option name="y" value="164" />
     <option name="width" value="1440" />
     <option name="height" value="763" />
   </component>
@@ -542,10 +133,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane />
-      </pane>
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -585,7 +172,29 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Api">
+            <PATH_ELEMENT USER_OBJECT="Common">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="mgctdh">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Application">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Common">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Conf">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -604,10 +213,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="Api">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Logic">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -636,6 +241,10 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane />
+      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -647,11 +256,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\proj_php\mgctdh\Application\Api\Logic" />
       <recent name="D:\proj_php\mgctdh\Application\Api\Controller" />
       <recent name="D:\proj_php\mgctdh\Public\uploads\gift_card" />
       <recent name="D:\proj_php\mgctdh\Public\uploads" />
       <recent name="D:\proj_php\mgctdh\Application\Admin\Controller" />
-      <recent name="D:\proj_php\mgctdh\Application\Api\View\Index" />
     </key>
   </component>
   <component name="RunManager">
@@ -719,7 +328,16 @@
       <workItem from="1496035731312" duration="8135000" />
       <workItem from="1496189941605" duration="3843000" />
       <workItem from="1496201691947" duration="7790000" />
-      <workItem from="1496212128259" duration="616000" />
+      <workItem from="1496212128259" duration="1556000" />
+      <workItem from="1496275666675" duration="17522000" />
+      <workItem from="1496310000536" duration="16000" />
+      <workItem from="1496628878096" duration="646000" />
+      <workItem from="1496711216601" duration="370000" />
+      <workItem from="1496728371202" duration="283000" />
+      <workItem from="1496728712113" duration="811000" />
+      <workItem from="1496762966651" duration="616000" />
+      <workItem from="1496908996119" duration="355000" />
+      <workItem from="1497219544029" duration="43000" />
     </task>
     <task id="LOCAL-00001" summary="框架基础配置搭建-0527">
       <created>1495870220998</created>
@@ -742,19 +360,25 @@
       <option name="project" value="LOCAL" />
       <updated>1496036121569</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="接口开发--0531（11接口）">
+      <created>1496212922030</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1496212922030</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30379000" />
+    <option name="totallyTimeSpent" value="51981000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="425" y="77" width="1440" height="763" extended-state="0" />
+    <frame x="207" y="164" width="1440" height="763" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17205057" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32668713" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -762,6 +386,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32668713" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -794,13 +419,38 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Application/Api/Controller/MerchantController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3757">
+          <caret line="221" column="123" selection-start-line="221" selection-start-column="18" selection-end-line="221" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Logic/MerchantLogic.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Controller/UserController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Api/View/Index/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1751">
           <caret line="103" column="49" selection-start-line="103" selection-start-column="33" selection-end-line="103" selection-end-column="49" />
-          <folding>
-            <element signature="n#style#0;n#strong#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -808,7 +458,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -816,7 +465,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
           <caret line="54" column="45" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -824,7 +472,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -839,7 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -847,7 +493,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="61" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -862,7 +507,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="61" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -908,20 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Common/Conf/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Controller/GoodsController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/GoodsController.class.php" />
     <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/AgentController.class.php" />
     <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/SubjectController.class.php" />
@@ -962,7 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-234">
           <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -991,7 +620,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="38" selection-start-line="0" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1006,7 +634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="89" column="33" selection-start-line="89" selection-start-column="33" selection-end-line="89" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1021,7 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="79">
           <caret line="54" column="60" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1029,7 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1074">
           <caret line="117" column="50" selection-start-line="117" selection-start-column="50" selection-end-line="117" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1044,7 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
           <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1052,57 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="132" column="66" selection-start-line="132" selection-start-column="66" selection-end-line="132" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Logic/UserLogic.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Common/function.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="60" column="23" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Controller/IndexController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/View/Index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1751">
-          <caret line="103" column="49" selection-start-line="103" selection-start-column="33" selection-end-line="103" selection-end-column="49" />
-          <folding>
-            <element signature="n#style#0;n#strong#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Controller/MerchantController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1110,20 +683,76 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="583">
           <caret line="272" column="46" selection-start-line="272" selection-start-column="46" selection-end-line="272" selection-end-column="46" />
-          <folding>
-            <marker date="1496064590649" expanded="true" signature="7286:7766" ph="select node.... ${$table['role']}" />
-            <marker date="1496064590649" expanded="true" signature="8050:8552" ph="select node.... ${$table['role']}" />
-            <marker date="1496064590649" expanded="true" signature="8892:9397" ph="select node.... ${$table['role']}" />
-            <marker date="1496064590649" expanded="true" signature="9872:10377" ph="select node.... ${$table['role']}" />
-            <marker date="1496064590649" expanded="true" signature="11107:11524" ph="select acces... ${$table['role']}" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Common/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="104" column="9" selection-start-line="104" selection-start-column="9" selection-end-line="104" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Logic/UserLogic.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Logic/MerchantLogic.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="66" column="63" selection-start-line="66" selection-start-column="63" selection-end-line="66" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/View/Index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="204" column="55" selection-start-line="204" selection-start-column="39" selection-end-line="204" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Api/Controller/UserController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="-984">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Controller/GoodsController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Controller/IndexController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="52" column="44" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Common/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="50" column="15" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Controller/MerchantController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
           <folding />
         </state>
       </provider>

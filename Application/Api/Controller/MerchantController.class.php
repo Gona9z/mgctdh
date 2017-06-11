@@ -1,12 +1,22 @@
 <?php
 namespace Api\Controller;
-class MerechantController extends ApiBaseController {
+use Api\Logic\MerchantLogic;
+
+class MerchantController extends ApiBaseController {
+    public $merchantLogic;
+    public function _initialize(){
+        $this->merchant = new MerchantLogic();
+    }
+
     //获取商家列表
     public function merchantList(){
         $page = I('page',1);
+        $sort_by = I('sort_by');//0:distance 1:popularity
         $lat = I('lat');
         $lng = I('lng');
-        $list = M('Merchant')->where()->page($page,10)->select();
+        $list = M('Merchant')
+            ->field('merchant_id,merchant_name,merchant_address,image,merchant_phone,cuisine,lat,lng')
+            ->where()->page($page,10)->select();
         request_result('', 0, $list);
     }
 
@@ -29,7 +39,7 @@ class MerechantController extends ApiBaseController {
                 ->where($where)->limit(1,3)->order('add_time DESC')->select();
             $merchant['photo'] = $photo;
             //获取菜品投票前三条
-            $food_vote = M('FoodVote')
+            $food_vote = M('FoodsVote')
                 ->field('merchant_id,user_id,add_time',true)
                 ->where($where)->limit(3)->order('add_time DESC')->select();
             $merchant['food_vote'] = $food_vote;
@@ -113,5 +123,106 @@ class MerechantController extends ApiBaseController {
             ->join('ar_user u ON u.user_id = qa.user_id')->alias('qa')
             ->where($where)->page($page,10)->select();
         request_result('', 0, $qa);
+    }
+
+    //更新餐厅等待时间
+    public function updateWaitTime(){
+        $at = I('accesstoken');
+        $user_id = getUserIdByAT($at);
+        $merchant_id = I('merchant_id');
+        $wait_time = I('wait_time');
+        //判断商家非空
+        $merchant = M('Merchant')->find($merchant_id);
+        if(empty($merchant)){
+            request_result('empty merchant info', 1);
+        }else{
+            $query = $this->merchantLogic->update_wait_time($user_id,$wait_time,$merchant_id);
+            request_result($query['msg'],$query['errorCode']);
+        }
+    }
+
+    //更新餐厅信息描述
+    public function updateDescription(){
+        $at = I('accesstoken');
+        $user_id = getUserIdByAT($at);
+        $merchant_id = I('merchant_id');
+        $description = I('description');
+        //判断商家非空
+        $merchant = M('Merchant')->find($merchant_id);
+        if(empty($merchant)){
+            request_result('empty merchant info', 1);
+        }else{
+            $query = $this->merchantLogic->update_description($user_id,$description,$merchant_id);
+            request_result($query['msg'],$query['errorCode']);
+        }
+    }
+
+    //举报餐厅信息描述
+    public function reportDescription(){
+        $at = I('accesstoken');
+        $user_id = getUserIdByAT($at);
+        $merchant_id = I('merchant_id');
+        //判断商家非空
+        $merchant = M('Merchant')->find($merchant_id);
+        if(empty($merchant)){
+            request_result('empty merchant info', 1);
+        }else{
+            $query = $this->merchantLogic->update_description($user_id,$merchant_id);
+            request_result($query['msg'],$query['errorCode']);
+        }
+    }
+
+    //上传餐厅图册
+    public function uploadMerchantPhoto(){
+        $at = I('accesstoken');
+        $user_id = getUserIdByAT($at);
+        $merchant_id = I('merchant_id');
+        $image = I('image');
+        $introduce = I('introduce');
+        //非空判断
+        $param[] = array('key'=>'image','msg'=>'photo','is_str'=>1);
+        $param[] = array('key'=>'introduce','msg'=>"photo's optional",'is_str'=>1);
+        param_validate($param);
+        //判断商家非空
+        $merchant = M('Merchant')->find($merchant_id);
+        if(empty($merchant)){
+            request_result('empty merchant info', 1);
+        }else{
+            $query = $this->merchantLogic->upload_merchant_photo($user_id,$merchant_id,$image,$introduce);
+            request_result($query['msg'],$query['errorCode']);
+        }
+    }
+
+    //获取菜品原料
+    public function getFoodsAllergens(){
+        $list = M('FoodsAllergens')->select();
+        request_result('', 0, $list);
+    }
+
+    //获取菜品营养标签
+    public function getFoodsDiets(){
+        $list = M('FoodsDiets')->select();
+        request_result('', 0, $list);
+    }
+
+    //发布/编辑菜品
+    public function addEditFoodsVote(){
+        $at = I('accesstoken');
+        $user_id = getUserIdByAT($at);
+        $merchant_id = I('merchant_id');
+        $foods_vote_id = I('foods_vote_id');
+        $foods_name = I('foods_name');
+        $foods_price = I('foods_price');
+        $allergens_str = I('allergens_str');
+        $diets_str = I('diets_str');
+        //判断商家非空
+        $merchant = M('Merchant')->find($merchant_id);
+        if(empty($merchant)){
+            request_result('empty merchant info', 1);
+        }else{
+            $query = $this->merchantLogic
+                ->edit_foods_votes($foods_vote_id,$user_id,$merchant_id,$foods_name,$foods_price,$allergens_str,$diets_str);
+            request_result($query['msg'],$query['errorCode']);
+        }
     }
 }

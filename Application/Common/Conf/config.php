@@ -45,9 +45,9 @@ $otherArr = array(
 			'__JS__' => __ROOT__.'/Public/js',
 	),
 	//网站路径返回//C('BASE_URL')
-	'WEB_URL'	=>	'http://localhost:8088/mgctdh/',
+//	'WEB_URL'	=>	'http://localhost:8088/mgctdh/',
 //	'WEB_URL'	=>	'http://192.168.0.187:8088/mgctdh/',
-// 	'WEB_URL'	=>	'http://'.$_SERVER['SERVER_NAME'].'/mgctdh/',
+ 	'WEB_URL'	=>	'http://'.$_SERVER['SERVER_NAME'].'/mgctdh/',
     //助通短信-请求链接
     'VCODE_URL' => 'http://www.ztsms.cn/sendNSms.do',
     //助通短信-用户名
